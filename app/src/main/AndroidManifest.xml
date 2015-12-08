@@ -3,7 +3,6 @@
     package="rikka.smscodehelper">
 
     <uses-permission android:name="android.permission.RECEIVE_SMS"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
