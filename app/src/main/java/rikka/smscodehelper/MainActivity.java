@@ -27,16 +27,16 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.DialogStyle);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            builder.setMessage("在 Android 6.0 以上需要由用户授予权限，点击获取后，如果没有权限将弹出授权窗口，授权后应用将会从启动器隐藏。");
-            builder.setPositiveButton("获取权限", new DialogInterface.OnClickListener() {
+            builder.setMessage(R.string.tip_m);
+            builder.setPositiveButton(R.string.get_permission, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     getPermission(Manifest.permission.RECEIVE_SMS);
                 }
             });
         } else {
-            builder.setMessage("点击确认后应用将会从启动器隐藏。");
-            builder.setPositiveButton("确认", new DialogInterface.OnClickListener() {
+            builder.setMessage(getString(R.string.tip_m));
+            builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     hideLauncher();
@@ -48,14 +48,6 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog alertDialog = builder.create();
         alertDialog.setCanceledOnTouchOutside(false);
         alertDialog.show();
-
-        /*Button button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                getPermission(Manifest.permission.RECEIVE_SMS);
-            }
-        });*/
     }
 
     private void getPermission(String permission)
@@ -73,8 +65,8 @@ public class MainActivity extends AppCompatActivity {
                     AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.DialogStyle);
 
                     builder.setTitle("OAQ");
-                    builder.setMessage("被拒绝了");
-                    builder.setPositiveButton("退出", new DialogInterface.OnClickListener() {
+                    builder.setMessage(R.string.permission_denied);
+                    builder.setPositiveButton(R.string.exit, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             finish();
