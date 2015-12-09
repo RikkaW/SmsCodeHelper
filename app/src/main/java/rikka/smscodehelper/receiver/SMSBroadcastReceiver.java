@@ -37,7 +37,8 @@ public class SMSBroadcastReceiver extends BroadcastReceiver {
             makeSenderList(sender, content, "[", "]");
             makeSenderList(sender, content, "【", "】");
 
-            Comparator<String> stringComparator = new Comparator<String>(){
+            // 大概是最短的那个
+            Collections.sort(sender,  new Comparator<String>(){
                 @Override
                 public int compare(String o1, String o2) {
                     if (o1.length() > o2.length()) {
@@ -48,23 +49,40 @@ public class SMSBroadcastReceiver extends BroadcastReceiver {
                         return 0;
                     }
                 }
-            };
-
-            // 大概是最短的那个
-            Collections.sort(sender, stringComparator);
+            });
 
             // 找到数字
             ArrayList<String> code = new ArrayList<>();
 
+            // 先找到 "验证码" 什么的
+            int start = findStart(content);
             // 大概应该在 "验证码" 什么的后面吧
-            findNumber(code, content, findStart(content));
+            findNumber(code, content, start);
+
+            // 出现了 "验证码" 什么的但是又没找到数字的情况
+            if (start > 0 && code.size() == 0)
+                findNumber(code, content, 0);
 
             // 大概也是最短的那个
-            Collections.sort(sender, stringComparator);
+            Collections.sort(code, new Comparator<String>() {
+                @Override
+                public int compare(String o1, String o2) {
+                    // 长度小于4的大概不是验证码吧
+                    if (o1.length() < 4 || o1.length() > o2.length()) {
+                        return 1;
+                    } else if (o1.length() < o2.length()) {
+                        return -1;
+                    } else {
+                        return 0;
+                    }
+                }
+            });
 
-            if (sender.size() > 0 && code.size() > 0)
+            // 找到了 [] 或者出现了 "验证码"
+            if ((sender.size() > 0 || start > 0) && code.size() > 0)
                Toast.makeText(context, String.format(context.getString(R.string.toast_format), code.get(0)), Toast.LENGTH_LONG).show();
 
+            // 复制到剪贴板
             ClipboardManager clipboardManager = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
             ClipData clipData = ClipData.newPlainText("SmsCode", code.get(0));
             clipboardManager.setPrimaryClip(clipData);
@@ -92,6 +110,9 @@ public class SMSBroadcastReceiver extends BroadcastReceiver {
     public int findStart(String content) {
         int codeFindStart;
         codeFindStart = content.indexOf("验证码");
+
+        if (codeFindStart == -1)
+            codeFindStart = content.indexOf("校验码");
 
         if (codeFindStart == -1)
             codeFindStart = content.indexOf("码");

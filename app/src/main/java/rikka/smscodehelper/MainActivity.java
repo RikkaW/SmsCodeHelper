@@ -31,22 +31,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 getPermission(Manifest.permission.RECEIVE_SMS);
-
-
             }
         });
     }
 
     private void getPermission(String permission)
     {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (ContextCompat.checkSelfPermission(this, permission) != PackageManager.PERMISSION_GRANTED) {
-                    ActivityCompat.requestPermissions(this, new String[]{permission}, 0);
-                }
-                else {
-                    Snackbar.make(findViewById(R.id.content), "好像不用获取权限的样子呢 ><", Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show();
-                }
+        if (ContextCompat.checkSelfPermission(this, permission) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{permission}, 0);
+        }
+        else {
+            Snackbar.make(findViewById(R.id.content), "好像已经有权限啦 ><", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
         }
     }
 
