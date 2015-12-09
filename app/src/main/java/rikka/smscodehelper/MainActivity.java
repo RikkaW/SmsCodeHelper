@@ -1,6 +1,8 @@
 package rikka.smscodehelper;
 
 import android.Manifest;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -22,27 +24,44 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("");
-        setSupportActionBar(toolbar);
+        AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.DialogStyle);
 
-        Button button = (Button) findViewById(R.id.button);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            builder.setMessage("在 Android 6.0 以上需要由用户授予权限，点击获取后，如果没有权限将弹出授权窗口，授权后应用将会从启动器隐藏。");
+            builder.setPositiveButton("获取权限", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    getPermission(Manifest.permission.RECEIVE_SMS);
+                }
+            });
+        } else {
+            builder.setMessage("点击确认后应用将会从启动器隐藏。");
+            builder.setPositiveButton("确认", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    hideLauncher();
+                    finish();
+                }
+            });
+        }
+
+        AlertDialog alertDialog = builder.create();
+        alertDialog.setCanceledOnTouchOutside(false);
+        alertDialog.show();
+
+        /*Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 getPermission(Manifest.permission.RECEIVE_SMS);
             }
-        });
+        });*/
     }
 
     private void getPermission(String permission)
     {
         if (ContextCompat.checkSelfPermission(this, permission) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{permission}, 0);
-        }
-        else {
-            Snackbar.make(findViewById(R.id.content), "好像已经有权限啦 ><", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show();
         }
     }
 
@@ -51,12 +70,21 @@ public class MainActivity extends AppCompatActivity {
         switch (requestCode) {
             case 0:
                 if (grantResults[0] != PackageManager.PERMISSION_GRANTED) {
-                    Snackbar.make(findViewById(R.id.content), "被拒绝了 OAQ", Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show();
+                    AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.DialogStyle);
+
+                    builder.setTitle("OAQ");
+                    builder.setMessage("被拒绝了");
+                    builder.setPositiveButton("退出", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            finish();
+                        }
+                    });
+                    builder.create().show();
                 }
                 else {
-                    Snackbar.make(findViewById(R.id.content), "有权限啦 www", Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show();
+                    finish();
+                    hideLauncher();
                 }
                 break;
             default:
@@ -64,4 +92,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    private void hideLauncher() {
+        PackageManager p = getApplicationContext().getPackageManager();
+        p.setComponentEnabledSetting(getComponentName(),PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+    }
 }
