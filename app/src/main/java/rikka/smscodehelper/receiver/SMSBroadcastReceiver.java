@@ -1,13 +1,9 @@
 package rikka.smscodehelper.receiver;
 
-import android.app.Notification;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.ClipData;
 import android.content.Context;
 import android.content.Intent;
-import android.support.v4.app.NotificationCompat;
 import android.telephony.SmsMessage;
 import android.content.ClipboardManager;
 import android.widget.Toast;
@@ -33,6 +29,7 @@ public class SMSBroadcastReceiver extends BroadcastReceiver {
             SmsMessage message = SmsMessage.createFromPdu(sms);
 
             String content = message.getMessageBody();
+            content += " ";
 
             String number = message.getOriginatingAddress();
 
@@ -41,8 +38,7 @@ public class SMSBroadcastReceiver extends BroadcastReceiver {
             makeSenderList(sender, content, "[", "]");
             makeSenderList(sender, content, "【", "】");
 
-            // 大概是最短的那个
-            Collections.sort(sender,  new Comparator<String>(){
+            Comparator<String> compactor = new Comparator<String>(){
                 @Override
                 public int compare(String o1, String o2) {
                     if (o1.length() > o2.length()) {
@@ -53,37 +49,26 @@ public class SMSBroadcastReceiver extends BroadcastReceiver {
                         return 0;
                     }
                 }
-            });
+            };
+
+            // 大概是最短的那个
+            Collections.sort(sender, compactor);
 
             // 找到数字
             ArrayList<String> code = new ArrayList<>();
 
             // 先找到 "验证码" 什么的
             int start = findStart(content);
+
             // 大概应该在 "验证码" 什么的后面吧
-            findNumber(code, content, start);
+            findcode(code, content, start == -1 ? 0 : start);
 
-            // 出现了 "验证码" 什么的但是又没找到数字的情况
-            if (start > 0 && code.size() == 0)
-                findNumber(code, content, 0);
-
-            // 大概也是最短的那个
-            Collections.sort(code, new Comparator<String>() {
-                @Override
-                public int compare(String o1, String o2) {
-                    // 长度小于4的大概不是验证码吧
-                    if (o1.length() < 4 || o1.length() > o2.length()) {
-                        return 1;
-                    } else if (o1.length() < o2.length()) {
-                        return -1;
-                    } else {
-                        return 0;
-                    }
-                }
-            });
+            // 出现了 "验证码" 什么的但是又没找到的情况
+            if (start != -1 && code.size() == 0)
+                findcode(code, content, 0);
 
             // 找到了 [] 或者出现了 "验证码"
-            if ((sender.size() > 0 || start > 0) && code.size() > 0) {
+            if ((sender.size() > 0 || start != -1) && code.size() > 0) {
                 // toast
                 Toast.makeText(context, String.format(context.getString(R.string.toast_format), code.get(0)), Toast.LENGTH_LONG).show();
 
@@ -151,7 +136,7 @@ public class SMSBroadcastReceiver extends BroadcastReceiver {
         return codeFindStart;
     }
 
-    public void findNumber(ArrayList<String>list, String content, int start) {
+    public void findcode(ArrayList<String>list, String content, int start) {
         int curpos = start;
         int startpos = -1;
         int length = content.length();
@@ -159,20 +144,19 @@ public class SMSBroadcastReceiver extends BroadcastReceiver {
         while (curpos < length) {
             char ch = content.charAt(curpos);
 
-            if (startpos == -1 && Character.isDigit(ch)) {
+            if (startpos == -1 && ((ch >= 'A' && ch <= 'Z') || Character.isDigit(ch))) {
                 startpos = curpos;
             }
 
-            if (startpos != -1 && !Character.isDigit(ch)) {
-                list.add(content.substring(startpos, curpos));
+            if (startpos != -1 && (!(ch >= 'A' && ch <= 'Z') && !Character.isDigit(ch))) {
+                // 长度4以上
+                if (curpos - startpos >= 4)
+                    list.add(content.substring(startpos, curpos));
+
                 startpos = -1;
             }
 
             curpos ++;
-        }
-
-        if (startpos != -1) {
-            list.add(content.substring(startpos, content.length()));
         }
     }
 }
