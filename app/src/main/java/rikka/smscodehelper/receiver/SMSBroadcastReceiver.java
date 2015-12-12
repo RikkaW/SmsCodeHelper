@@ -61,7 +61,8 @@ public class SMSBroadcastReceiver extends BroadcastReceiver {
             int start = findStart(content);
 
             // 大概应该在 "验证码" 什么的后面吧
-            findcode(code, content, start == -1 ? 0 : start);
+            // 只找1个
+            findcode(code, content, start == -1 ? 0 : start, 1);
 
             // 出现了 "验证码" 什么的但是又没找到的情况
             if (start != -1 && code.size() == 0)
@@ -137,10 +138,15 @@ public class SMSBroadcastReceiver extends BroadcastReceiver {
     }
 
     public void findcode(ArrayList<String>list, String content, int start) {
+        findcode(list, content, start, -1);
+    }
+
+    public void findcode(ArrayList<String>list, String content, int start, int max) {
         int curpos = start;
         int startpos = -1;
         int length = content.length();
 
+        int i = 0;
         while (curpos < length) {
             char ch = content.charAt(curpos);
 
@@ -150,8 +156,13 @@ public class SMSBroadcastReceiver extends BroadcastReceiver {
 
             if (startpos != -1 && (!(ch >= 'A' && ch <= 'Z') && !Character.isDigit(ch))) {
                 // 长度4以上
-                if (curpos - startpos >= 4)
+                if (curpos - startpos >= 4) {
                     list.add(content.substring(startpos, curpos));
+
+                    i++;
+                    if (i != -1 && i == max)
+                        return;
+                }
 
                 startpos = -1;
             }
