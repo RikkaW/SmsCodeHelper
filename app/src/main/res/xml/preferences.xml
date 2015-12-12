@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:persistent="true">
+    <PreferenceCategory android:title="@string/preference_category_general">
+        <SwitchPreference android:key="hidden_launcher_icon"
+            android:title="@string/preference_hide_launcher_icon_title"
+            android:defaultValue="false"/>
+        <ListPreference android:key="parse_type"
+            android:title="@string/preference_parse_type"
+            android:defaultValue="1"
+            android:entryValues="@array/parse_type_values"
+            android:entries="@array/parse_type_entries"/>
+        <SwitchPreference android:key="notification"
+            android:title="@string/preference_notification_title"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preference_category_about">
+        <Preference
+            android:key="help_feedback"
+            android:title="@string/preference_application_help_feedback_title">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="market://details?id=rikka.smscodehelper">
+            </intent>
+        </Preference>
+        <Preference
+            android:title="@string/preference_application_rate_app_title">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="market://details?id=rikka.smscodehelper">
+            </intent>
+        </Preference>
+        <me.gitai.library.widget.LicensePreference
+            android:key="application_open_source_license"
+            android:title="@string/preference_application_open_source_license_title"/>
+        <me.gitai.library.widget.VersionPreference
+            android:key="application_version"
+            android:title="@string/preference_application_version_title"/>
+    </PreferenceCategory>
+</PreferenceScreen>

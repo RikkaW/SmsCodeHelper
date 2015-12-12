@@ -1,14 +1,29 @@
 <resources>
     <string name="app_name">验证码复制器</string>
 
+    <string name="title">SMSCode Helper</string>
+
     <string name="toast_format" formatted="false">%s 已被复制到剪贴板</string>
 
     <string name="tip_m">在 Android 6.0 以上需要由用户授予权限，点击获取后，如果没有权限将弹出授权窗口。\n授权后应用将会从启动器隐藏。</string>
-    <string name="tip">点击确认后应用将会从启动器隐藏。</string>
 
     <string name="get_permission">获取权限</string>
-    <string name="ok">确认</string>
     <string name="exit">退出</string>
     <string name="permission_denied">被拒绝了..</string>
 
+    <string name="preference_parse_type">解析器</string>
+
+    <string name="preference_notification_title">通知</string>
+
+    <string name="dialog_licenses_title">开源许可</string>
+
+    <string name="preference_hide_launcher_icon_title">隐藏启动器</string>
+
+    <string name="preference_category_general">全局</string>
+    <string name="preference_category_about">关于</string>
+
+    <string name="preference_application_open_source_license_title">开源许可</string>
+    <string name="preference_application_version_title">应用版本</string>
+    <string name="preference_application_rate_app_title">评价应用</string>
+    <string name="preference_application_help_feedback_title"><![CDATA[帮助 & 反馈]]></string>
 </resources>

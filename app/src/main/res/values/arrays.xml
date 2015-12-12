@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="parse_type_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="parse_type_entries">
+        <item>V1</item>
+        <item>Regex</item>
+    </string-array>
+</resources>
