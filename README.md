@@ -27,9 +27,10 @@ GPLv3+
 * Add Preferences Activity
 * Add Regex Parser type
 * Notification
-* Minify apk size
+* Minify apk size(52.2kb)
 * more...
 by gitai/dphdjy
+[smscodehelper-release-1.0.6.apk](./apk/smscodehelper-release-1.0.6.apk)
 
 ### v1.0.5(10005)
 
