@@ -1,4 +1,3 @@
-import java.text.DateFormat  
 import java.text.SimpleDateFormat
 
 apply plugin: 'com.android.application'
@@ -25,17 +24,17 @@ android {
 
     signingConfigs {
         release {
-	if (config.releaseSigning.storePassword != null) {
+            if (config.releaseSigning.storePassword != null) {
                 storeFile file(config.releaseSigning.storeFile)
                 storePassword config.releaseSigning.storePassword
                 keyAlias config.releaseSigning.alias
                 keyPassword config.releaseSigning.aliasPassword
-           }else{
-               storeFile file(System.console().readLine("\n\$ Enter keystore path: "))
-	    storePassword System.console().readLine("\n\$ Enter keystore password: ")
-	    keyAlias System.console().readLine("\n\$ Enter key alias: ")
-	    keyPassword System.console().readLine("\n\$ Enter key password: ")
-           }
+            }/*else{
+                storeFile file(System.console().readLine("\n\$ Enter keystore path: "))
+                storePassword System.console().readLine("\n\$ Enter keystore password: ")
+                keyAlias System.console().readLine("\n\$ Enter key alias: ")
+                keyPassword System.console().readLine("\n\$ Enter key password: ")
+            }*/
         }
     }
 

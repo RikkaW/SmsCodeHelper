@@ -37,8 +37,6 @@ public class SMSBroadcastReceiver extends BroadcastReceiver {
                 return;
             }
 
-
-
             int parseType = Integer.parseInt(SharedPreferencesUtil.getInstence(null).getString("parse_type", String.valueOf(SMSCode.PARSE_TYPE_V1)));
             SMSCode.SMSInfo smsinfo = SMSCode.parse(content, parseType);
             if (smsinfo == null || StringUtils.isEmpty(smsinfo.code)){
