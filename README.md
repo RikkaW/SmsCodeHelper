@@ -5,8 +5,7 @@ SMSCodeHelper
 
 Copy verification code from SMS automatically.
 
-
-Download from [Play Store](https://play.google.com/store/apps/details?id=rikka.smscodehelper)
+[![Download from  Google Play](http://steverichey.github.io/google-play-badge-svg/img/en_get.svg)](https://play.google.com/store/apps/details?id=rikka.smscodehelper)
 
 ## Build with Gradle
 
