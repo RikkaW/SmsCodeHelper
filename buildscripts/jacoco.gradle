@@ -1,0 +1,53 @@
+apply plugin: 'jacoco'
+
+jacoco {
+    toolVersion = versions.jacoco
+}
+
+/**
+ * Create a code-coverage report task for the given build variant
+ */
+def createJacocoTask(variant) {
+    def buildTypeName = variant.buildType.name.capitalize()
+    def flavorName = variant.flavorName.capitalize()
+
+    def testTaskName = "test${flavorName}${buildTypeName}UnitTest"
+
+    //noinspection GroovyAssignabilityCheck
+    task "${testTaskName}Coverage"(type: JacocoReport, dependsOn: testTaskName) {
+        group = "Reporting"
+        description = "Generate Jacoco coverage reports for variant ${variant.name}"
+
+        classDirectories = fileTree(
+                dir: "${project.buildDir}/intermediates/classes/${variant.dirName}",
+                excludes: ['**/R.class',
+                           '**/R$*.class',
+                           '**/*$$*.*',
+                           '**/*_MembersInjector.*',
+                           '**/BuildConfig.*',
+                           '**/Manifest*.*',
+
+                           // App-specific classes
+                           'com/dphdjy/android/seed/module/*',
+                           'com/dphdjy/android/seed/mvp/view/*',
+
+                           // These classes either aren't testable or aren't important..
+                           'com/dphdjy/android/seed/util/CrashlyticsLogger.*']
+        )
+
+        def coverageSourceDirs = ["${rootDir}/app/src/main/java"]
+        additionalSourceDirs = files(coverageSourceDirs)
+        sourceDirectories = files(coverageSourceDirs)
+        executionData = files("${project.buildDir}/jacoco/${testTaskName}.exec")
+
+        reports {
+            xml.enabled = true
+            html.enabled = true
+        }
+    }
+}
+
+// Export our functions
+ext {
+    createJacocoTask = this.&createJacocoTask
+}

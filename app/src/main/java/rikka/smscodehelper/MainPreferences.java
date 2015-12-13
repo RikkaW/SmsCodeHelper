@@ -73,7 +73,7 @@ public class MainPreferences extends PreferenceActivity implements Preference.On
         switch (preference.getKey()){
             case "hidden_launcher_icon":
                 hideLauncher((Boolean) newValue);
-                break;
+                return true;
         }
         return false;
     }

@@ -18,3 +18,30 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+subprojects {
+    ext {
+        config = [
+                applicationId : "rikka.smscodehelper",
+
+                compileSdkVersion : 23,
+                buildToolsVersion : "23.0.1",
+                minSdkVersion : 15,
+                targetSdkVersion : 23,
+
+                releaseSigning : [
+                        storeFile : System.getenv("KEYSTORE"),
+                        storePassword : System.getenv("KEYSTORE_PASSWORD"),
+                        alias : System.getenv("KEY_ALIAS"),
+                        aliasPassword: System.getenv("KEY_PASSWORD")
+                ],
+
+                versionCode : 10006,
+                versionName : "1.0.6"
+        ]
+
+        versions = [
+            androidSupport : "23.0.1"
+        ]
+    }
+}

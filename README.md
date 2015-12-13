@@ -11,9 +11,20 @@ Download from [Play Store](https://play.google.com/store/apps/details?id=rikka.s
 ## Build with Gradle
 
 1. `git clone https://github.com/RikkaW/SmsCodeHelper`
-2. `cd SmsCodeHelper`
-3. `gradle clean build`
-4. `find -name "*.apk"`
+2.  create a key store file and change configuration
+3. `cd SmsCodeHelper`
+4. `gradle clean build`
+5. `find -name "rikka.smscodehelper*.apk"`
+
+## Signing Configs
+```
+releaseSigning : [
+        storeFile : System.getenv("KEYSTORE"),
+        storePassword : System.getenv("KEYSTORE_PASSWORD"),
+        alias : System.getenv("KEY_ALIAS"),
+        aliasPassword: System.getenv("KEY_PASSWORD")
+],
+```
 
 ## Licenses
 
