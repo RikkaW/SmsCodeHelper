@@ -34,7 +34,8 @@ GPLv3+
 
 ### v1.0.6(10006)
 
-[smscodehelper-release-1.0.6.apk](./apk/smscodehelper-release-1.0.6.apk)
+[Debug-v1.0.6.apk](./apk/rikka.smscodehelper-debug-c10006-v1.0.6-t12131130.apk)
+[Release-v1.0.6.apk](./apk/rikka.smscodehelper-release-c10006-v1.0.6-t12131130.apk)
 
 * Rewrite
 * Add Preferences Activity
