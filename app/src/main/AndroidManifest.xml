@@ -5,23 +5,20 @@
     <uses-permission android:name="android.permission.RECEIVE_SMS"/>
 
     <application
+        android:name=".SMSApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/Transparent"
+        android:theme="@style/AppTheme"
+        android:supportsRtl="true">
+        <activity android:name=".MainPreferences"
+            android:label="@string/title"
             android:excludeFromRecents="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <receiver android:name=".receiver.SMSBroadcastReceiver">
             <intent-filter android:priority="1000">
                 <action android:name="android.provider.Telephony.SMS_RECEIVED"/>

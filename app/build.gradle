@@ -1,30 +1,73 @@
+import java.text.SimpleDateFormat
+
 apply plugin: 'com.android.application'
 
+apply from: '../buildscripts/utils.gradle'
+
+def buildTime() {  
+    def df = new SimpleDateFormat("MMddHHmm")  
+    df.setTimeZone(TimeZone.getDefault())  
+    return df.format(new Date())  
+} 
+
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
 
     defaultConfig {
-        applicationId "rikka.smscodehelper"
-        minSdkVersion 15
-        targetSdkVersion 23
-        versionCode 10005
-        versionName "1.0.5"
+        applicationId config.applicationId
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
     }
-    buildTypes {
+
+    signingConfigs {
         release {
-            minifyEnabled false
+            if (config.releaseSigning.storePassword != null) {
+                storeFile file(config.releaseSigning.storeFile)
+                storePassword config.releaseSigning.storePassword
+                keyAlias config.releaseSigning.alias
+                keyPassword config.releaseSigning.aliasPassword
+            }/*else{
+                storeFile file(System.console().readLine("\n\$ Enter keystore path: "))
+                storePassword System.console().readLine("\n\$ Enter keystore password: ")
+                keyAlias System.console().readLine("\n\$ Enter key alias: ")
+                keyPassword System.console().readLine("\n\$ Enter key password: ")
+            }*/
+        }
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix = ".debug"
+            versionNameSuffix "-${getCiBuildNumber()}"
+        }
+        release {
+            zipAlignEnabled true
+            minifyEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
-            if (output.outputFile != null && output.outputFile.name.endsWith('.apk')) {
-                output.outputFile = file("${output.outputFile.parent}/smscodehelper" +
-                        "-${variant.buildType.name.toLowerCase()}" +
-                        "-${variant.versionName}" +
-                        ".apk")
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                def fileName = outputFile.name.replace("app",  config.applicationId)
+
+                fileName = fileName.replace(".apk", ""
+                    + "-c" 
+                    + defaultConfig.versionCode 
+                    + "-v" 
+                    + defaultConfig.versionName 
+                    + "-t" 
+                    + buildTime() 
+                    + ".apk")
+
+                output.outputFile = new File(outputFile.parent, fileName)
             }
         }
     }
@@ -34,5 +77,5 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile "com.android.support:support-v4:${versions.androidSupport}"
 }

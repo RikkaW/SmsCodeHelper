@@ -1,9 +1,17 @@
-<resources>>
+<resources>
 
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
+    <!--
+        Base application theme for API 19+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 19+ devices.
+    -->    
+    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
+        <!-- API 19 theme customizations can go here. -->
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
     </style>
+
+    <style name="ActionBarStyle" parent="android:Widget.Material.ActionBar.Solid">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
 </resources>

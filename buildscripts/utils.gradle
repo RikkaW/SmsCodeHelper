@@ -1,0 +1,54 @@
+def isCiBuild() {
+    def buildTag = System.getenv("BUILD_TAG")
+    return buildTag?.startsWith("jenkins") ? true : false
+}
+
+def getBuildTime() {
+    return new java.text.SimpleDateFormat("yyyy-MM-dd'T'HH:mm'Z'").format(new Date())
+}
+
+/**
+ * Get the Git Sha
+ * @return The abbreviated git sha
+ */
+def gitSha() {
+    return 'git rev-parse --short HEAD'.execute().text.trim()
+}
+
+/**
+ * Extracts Git branch name from env variable or using local Git.
+ *
+ * @return Branch name, e.g. "develop".
+ */
+def gitBranchName() {
+    def branchName = System.getenv("GIT_BRANCH")
+    if (branchName != null) {
+        // Use env value, check for undesired "origin/" prefix (passed by Jenkins)
+        def originPrefix = "origin/"
+        if (branchName.startsWith(originPrefix)) {
+            branchName = branchName.substring(originPrefix.length())
+        }
+    } else {
+        // Otherwise, attempt to extract branch from local Git
+        branchName = "git --work-tree=${rootDir}/.. rev-parse --abbrev-ref HEAD".execute().text.trim()
+    }
+    return branchName.replaceAll("/", "_").replaceAll(" ", "_")
+}
+
+def getCiBuildNumber() {
+    String buildNumber = System.getenv('BUILD_NUMBER');
+    if (buildNumber == null) {
+        return 'local'
+    } else {
+        return buildNumber
+    }
+}
+
+// Export our functions
+ext {
+    isCiBuild = this.&isCiBuild
+    gitBranchName = this.&gitBranchName
+    getCiBuildNumber = this.&getCiBuildNumber
+    getGitSha = this.&gitSha
+    getBuildTime = this.&getBuildTime
+}

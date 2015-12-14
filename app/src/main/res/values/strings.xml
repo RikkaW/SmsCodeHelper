@@ -1,14 +1,30 @@
 <resources>
-    <string name="app_name">SmsCodeHelper</string>
+    <string name="app_name">SMSCodeHelper</string>
+
+    <string name="title">SMSCode Helper</string>
 
     <string name="toast_format" formatted="false">%s has been copied to clipboard.</string>
 
     <string name="tip_m">After Android 6.0, permission should be authorized by user.\nApp will be hide from launcher if authorized.</string>
-    <string name="tip">App will be hide from launcher.</string>
 
     <string name="get_permission">GET PERMISSION</string>
-    <string name="ok">OK</string>
     <string name="exit">Exit</string>
     <string name="permission_denied">Denied..</string>
+
+    <string name="preference_parse_type">Parse Type</string>
+
+    <string name="preference_notification_title">Notification</string>
+
+    <string name="dialog_licenses_title">Open Source Licenses</string>
+
+    <string name="preference_hide_launcher_icon_title">Hide launcher Icon</string>
+
+    <string name="preference_category_general">General</string>
+    <string name="preference_category_about">About</string>
+
+    <string name="preference_application_open_source_license_title">Open Source Licenses</string>
+    <string name="preference_application_version_title">Application version</string>
+    <string name="preference_application_rate_app_title">Rate App</string>
+    <string name="preference_application_help_feedback_title"><![CDATA[Help & Feedback]]></string>
 
 </resources>
