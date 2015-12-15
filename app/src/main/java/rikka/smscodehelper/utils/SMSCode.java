@@ -3,6 +3,8 @@ package rikka.smscodehelper.utils;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by Rikka on 2015/12/14.
@@ -22,6 +24,10 @@ public class SMSCode {
     public static SMSInfo findSMSCode(String content) {
         if (content.length() == 0)
             return null;
+
+        // 去掉 URL
+        String pattern = "[a-zA-z]+://[^\\s]*";
+        content = content.replaceAll(pattern, "");
 
         // 找到并去掉发送者
         ArrayList<String> sender = new ArrayList<>();
