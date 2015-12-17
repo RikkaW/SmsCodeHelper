@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
  */
 public class SMSCode {
 
-    public static class SMSInfo{
+    public static class SMSInfo {
         public String sender;
         public String code;
 
