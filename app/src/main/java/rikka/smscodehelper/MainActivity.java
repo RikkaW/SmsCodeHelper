@@ -7,8 +7,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -20,7 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.DialogStyle);
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M &&
+                ContextCompat.checkSelfPermission(this, Manifest.permission.RECEIVE_SMS) != PackageManager.PERMISSION_GRANTED) {
             builder.setMessage(R.string.tip_m);
             builder.setPositiveButton(R.string.get_permission, new DialogInterface.OnClickListener() {
                 @Override
@@ -44,8 +45,7 @@ public class MainActivity extends AppCompatActivity {
         alertDialog.show();
     }
 
-    private void getPermission(String permission)
-    {
+    private void getPermission(String permission) {
         if (ContextCompat.checkSelfPermission(this, permission) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{permission}, 0);
         }
@@ -67,8 +67,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     });
                     builder.create().show();
-                }
-                else {
+                } else {
                     finish();
                     hideLauncher();
                 }
@@ -80,6 +79,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void hideLauncher() {
         PackageManager p = getApplicationContext().getPackageManager();
-        p.setComponentEnabledSetting(getComponentName(),PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+        p.setComponentEnabledSetting(getComponentName(), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
     }
 }
