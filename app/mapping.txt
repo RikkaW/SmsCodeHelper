@@ -228,7 +228,29 @@ android.support.v4.app.RemoteInputCompatJellybean -> a.a.a.a.ay:
     android.os.Bundle[] toBundleArray(android.support.v4.app.RemoteInputCompatBase$RemoteInput[]) -> a
 android.support.v4.content.ContextCompat -> a.a.a.b.a:
     int checkSelfPermission(android.content.Context,java.lang.String) -> a
-com.readystatesoftware.systembartint.SystemBarTintManager -> b.a.a.a:
+com.mokee.mms.utils.CaptchasUtils -> b.a.a.a.a:
+    java.lang.String[] g -> b
+    java.lang.String[] d -> c
+    java.lang.String[] f -> d
+    java.lang.String[] c -> e
+    java.lang.String[] e -> f
+    int b -> a
+    java.lang.String[] a -> g
+    void <clinit>() -> <clinit>
+    boolean isCaptchasMessage(java.lang.String) -> a
+    boolean isCaptchasEnMessage(java.lang.String) -> b
+    boolean isChineseContains(java.lang.String) -> c
+    java.lang.String tryToGetCnCaptchas(java.lang.String) -> d
+    java.lang.String tryToGetEnCaptchas(java.lang.String) -> e
+    int a(java.lang.String) -> f
+    boolean b(java.lang.String,java.lang.String) -> b
+    boolean a(java.lang.String,java.lang.String) -> c
+    boolean c(java.lang.String,java.lang.String) -> d
+    java.lang.String getCaptchaProvider(java.lang.String,java.lang.String) -> a
+    java.lang.String a(java.lang.String,java.lang.String,java.lang.String) -> a
+com.mokee.volley.VolleyError -> b.a.b.a:
+    boolean b -> a
+com.readystatesoftware.systembartint.SystemBarTintManager -> b.b.a.a:
     java.lang.String sNavBarOverride -> a
     com.readystatesoftware.systembartint.SystemBarTintManager$SystemBarConfig mConfig -> b
     boolean mStatusBarAvailable -> c
@@ -243,8 +265,8 @@ com.readystatesoftware.systembartint.SystemBarTintManager -> b.a.a.a:
     void setupNavBarView(android.content.Context,android.view.ViewGroup) -> b
     java.lang.String access$100() -> a
     void <clinit>() -> <clinit>
-com.readystatesoftware.systembartint.SystemBarTintManager$1 -> b.a.a.b:
-com.readystatesoftware.systembartint.SystemBarTintManager$SystemBarConfig -> b.a.a.c:
+com.readystatesoftware.systembartint.SystemBarTintManager$1 -> b.b.a.b:
+com.readystatesoftware.systembartint.SystemBarTintManager$SystemBarConfig -> b.b.a.c:
     boolean mTranslucentStatusBar -> a
     boolean mTranslucentNavBar -> b
     int mStatusBarHeight -> c
@@ -384,26 +406,30 @@ rikka.smscodehelper.MainPreferences$2 -> rikka.smscodehelper.b:
 rikka.smscodehelper.SMSApp -> rikka.smscodehelper.SMSApp:
     void <init>() -> <init>
     void onCreate() -> onCreate
-rikka.smscodehelper.receiver.SMSBroadcastReceiver -> rikka.smscodehelper.receiver.SMSBroadcastReceiver:
-    void <init>() -> <init>
-    void onReceive(android.content.Context,android.content.Intent) -> onReceive
-rikka.smscodehelper.utils.SMSCode -> rikka.smscodehelper.a.a:
-    rikka.smscodehelper.utils.SMSCode$SMSInfo parse(java.lang.String,int) -> a
-    rikka.smscodehelper.utils.SMSCode$SMSInfo findByV1(java.lang.String) -> a
-    void makeSenderList(java.util.ArrayList,java.lang.String,java.lang.String,java.lang.String) -> a
-    int findStart(java.lang.String) -> b
-    void findcode(java.util.ArrayList,java.lang.String,int) -> a
-    void findcode(java.util.ArrayList,java.lang.String,int,int) -> a
-    rikka.smscodehelper.utils.SMSCode$SMSInfo findByRegex(java.lang.String) -> c
-rikka.smscodehelper.utils.SMSCode$1 -> rikka.smscodehelper.a.b:
-    void <init>() -> <init>
-    int compare(java.lang.String,java.lang.String) -> a
-    int compare(java.lang.Object,java.lang.Object) -> compare
-rikka.smscodehelper.utils.SMSCode$SMSInfo -> rikka.smscodehelper.a.c:
+rikka.smscodehelper.bean.SMSInfo -> rikka.smscodehelper.a.a:
     java.lang.String sender -> a
     java.lang.String code -> b
     void <init>(java.lang.String,java.lang.String) -> <init>
-rikka.smscodehelper.utils.StringUtils -> rikka.smscodehelper.a.d:
+rikka.smscodehelper.receiver.SMSBroadcastReceiver -> rikka.smscodehelper.receiver.SMSBroadcastReceiver:
+    void <init>() -> <init>
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+rikka.smscodehelper.utils.Regex -> rikka.smscodehelper.b.a:
+    rikka.smscodehelper.bean.SMSInfo parse(java.lang.String) -> a
+rikka.smscodehelper.utils.SMSCode -> rikka.smscodehelper.b.b:
+    rikka.smscodehelper.bean.SMSInfo parse(java.lang.String,java.lang.String,int) -> a
+    rikka.smscodehelper.bean.SMSInfo findByMokee(java.lang.String,java.lang.String) -> a
+rikka.smscodehelper.utils.StringUtils -> rikka.smscodehelper.b.c:
     char[] HEX_DIGITS -> a
     boolean isEmpty(java.lang.CharSequence) -> a
     void <clinit>() -> <clinit>
+rikka.smscodehelper.utils.V1 -> rikka.smscodehelper.b.d:
+    rikka.smscodehelper.bean.SMSInfo parse(java.lang.String) -> a
+    java.lang.String cutSenderFromString(java.util.ArrayList,java.lang.String,java.lang.String,java.lang.String) -> a
+    int findKeyWord(java.lang.String) -> b
+    java.util.ArrayList findCodeSentence(java.lang.String) -> c
+    boolean isCodeChar(char) -> a
+    java.lang.String findCode(java.lang.String) -> d
+rikka.smscodehelper.utils.V1$1 -> rikka.smscodehelper.b.e:
+    void <init>() -> <init>
+    int compare(java.lang.String,java.lang.String) -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare

@@ -7,6 +7,13 @@ Copy verification code from SMS automatically.
 
 [![Download from  Google Play](http://steverichey.github.io/google-play-badge-svg/img/en_get.svg)](https://play.google.com/store/apps/details?id=rikka.smscodehelper)
 
+## Screener
+
+![](./Screener/20151225190757.png)
+![](./Screener/20151225190538.png)
+![](./Screener/20151225190615.png)
+![](./Screener/20151225190651.png)
+
 ## Build with Gradle
 
 1. `git clone https://github.com/RikkaW/SmsCodeHelper`
@@ -33,7 +40,7 @@ releaseSigning : [
 
 ### v0.0.1(1)
 
-[Release-v1.0.6.apk](./apk/me.gitai.smscodehelper-release-c1-v0.0.1-t12251803.apk)
+[Release-v1.0.6.apk](./apk/me.gitai.smscodehelper-release-c1-v0.0.1-t12251854.apk)
 
 * Add Mokee Captchas Parser
 * Modularization

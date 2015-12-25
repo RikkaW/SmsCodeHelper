@@ -16,4 +16,10 @@
 #   public *;
 #}
 
+-dontwarn com.mokee.volley.**
+-dontwarn com.mokee.google.**
+-dontwarn com.mokee.cloud.**
+-dontwarn com.mokee.os.**
+-dontwarn com.mokee.security.**
+
 -printmapping mapping.txt

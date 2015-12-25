@@ -12,8 +12,7 @@
         android:theme="@style/AppTheme"
         android:supportsRtl="true">
         <activity android:name=".MainPreferences"
-            android:label="@string/title"
-            android:excludeFromRecents="true">
+            android:label="@string/title">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
