@@ -9,10 +9,7 @@ Copy verification code from SMS automatically.
 
 ## Screener
 
-![](./Screener/20151225190757.png)
-![](./Screener/20151225190538.png)
-![](./Screener/20151225190615.png)
-![](./Screener/20151225190651.png)
+![](./Screener/20151225191021.png)
 
 ## Build with Gradle
 
