@@ -37,7 +37,7 @@ releaseSigning : [
 
 ### v0.0.1(1)
 
-[Release-v1.0.6.apk](./apk/me.gitai.smscodehelper-release-c1-v0.0.1-t12251854.apk)
+[Release-v0.0.1.apk](./apk/me.gitai.smscodehelper-release-c1-v0.0.1-t12251854.apk)
 
 * Add Mokee Captchas Parser
 * Modularization
