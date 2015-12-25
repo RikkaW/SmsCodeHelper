@@ -30,7 +30,7 @@ public class LicensePreference extends Preference implements Preference.OnPrefer
     private void init(Context context){
         licenseDialog = new MaterialDialog(context)
                 .setTitle(context.getString(R.string.dialog_licenses_title))
-                .setMessage("SMSCodeHelper\n\nhttps://github.com/RikkaW/SmsCodeHelper\n许可协议:GPL v3+\n\n维护:\nRikkaW(creator)\ngitai/dphdjy\n\n引用:\nsystembartint")
+                .setMessage("SMSCodeHelper\n\nhttps://github.com/gitaiQAQ/SMSCodeHelper\n\nAuthors:\nRikkaW(original author)\ngitai\n\nLogo:\n@萌萌的小雅酱\n\nLibraries:\nsystembartint")
                 .setNegativeButton(android.R.string.ok, null);
 
         setOnPreferenceClickListener(this);

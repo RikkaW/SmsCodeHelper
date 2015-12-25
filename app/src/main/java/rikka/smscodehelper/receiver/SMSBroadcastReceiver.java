@@ -13,6 +13,7 @@ import android.telephony.SmsMessage;
 import me.gitai.library.utils.SharedPreferencesUtil;
 import me.gitai.library.utils.ToastUtil;
 import rikka.smscodehelper.R;
+import rikka.smscodehelper.bean.SMSInfo;
 import rikka.smscodehelper.utils.SMSCode;
 import rikka.smscodehelper.utils.StringUtils;
 
@@ -38,7 +39,7 @@ public class SMSBroadcastReceiver extends BroadcastReceiver {
             }
 
             int parseType = Integer.parseInt(SharedPreferencesUtil.getInstence(null).getString("parse_type", String.valueOf(SMSCode.PARSE_TYPE_V1)));
-            SMSCode.SMSInfo smsinfo = SMSCode.parse(content, parseType);
+            SMSInfo smsinfo = SMSCode.parse(content, number, parseType);
             if (smsinfo == null || StringUtils.isEmpty(smsinfo.code)){
                 return;
             }

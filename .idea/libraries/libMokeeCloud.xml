@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="libMokeeCloud">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/libMokeeCloud.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
