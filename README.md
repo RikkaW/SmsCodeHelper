@@ -37,7 +37,7 @@ releaseSigning : [
 
 ### v0.0.2(2)
 
-[Release-v0.0.2.apk](./apk/me.gitai.smscodehelper-release-c1-v0.0.2-t12251854.apk)
+[Release-v0.0.2.apk](./apk/me.gitai.smscodehelper-release-c2-v0.0.2-t12261829.apk)
 
 * New Logo
 
