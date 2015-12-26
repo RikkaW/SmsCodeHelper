@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="empty_subject_strings">
+        <item>គ្មាន​ប្រធានបទ</item>
+    </string-array>
+    <string-array name="select_dialog_items">
+        <item>១ វិនាទី</item>
+        <item>២ វិនាទី</item>
+        <item>៣ វិនាទី</item>
+        <item>៤ វិនាទី</item>
+        <item>៥ វិនាទី</item>
+        <item>៦ វិនាទី</item>
+        <item>៧ វិនាទី</item>
+        <item>៨ វិនាទី</item>
+        <item>៩ វិនាទី</item>
+        <item>១០ វិនាទី</item>
+        <item>ផ្សេងៗ</item>
+    </string-array>
+</resources>

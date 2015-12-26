@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="#1f000000"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/stateUnspecified">
+        <color android:color="@android:color/white" />
+    </item>
+</ripple>

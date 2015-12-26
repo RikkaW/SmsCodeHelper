@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/recipient_item_bg" android:paddingLeft="@dimen/list_item_padding_outer" android:paddingRight="@dimen/list_item_padding_outer" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/contact" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_padding_outer_v" android:layout_marginBottom="@dimen/list_item_padding_outer_v" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true">
+        <TextView android:textAppearance="@269287519" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentTop="true" />
+        <TextView android:textAppearance="@269287512" android:id="@id/number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/name" android:layout_alignLeft="@id/name" />
+        <TextView android:textAppearance="@269287512" android:id="@id/type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_toRightOf="@id/number" android:layout_below="@id/name" android:layout_alignBottom="@id/number" />
+        <TextView android:textAppearance="@269287512" android:id="@id/location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_toRightOf="@id/type" android:layout_alignBottom="@id/number" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<miui.widget.ScrollableViewDrawer android:layout_width="fill_parent" android:layout_height="fill_parent" miui:contentView="@2131820603" miui:targetView="@16908298" miui:scrollableView="@16908298" miui:dragEnabled="true"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:mms="http://schemas.android.com/apk/res/com.android.mms" xmlns:miui="http://schemas.android.com/apk/res/miui">
+    <include android:id="@id/micloud_state_view" layout="@miui.system:layout/micloud_state_view" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/cloud_recommend_bar_stub" android:layout="@layout/cloud_recommend_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/yellowpage_recommend_bar_stub" android:layout="@layout/yellowpage_recommend_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.android.mms.ui.MessageListPullView android:scrollbarStyle="insideOverlay" android:id="@android:id/list" android:fadingEdgeLength="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:cacheColorHint="@null" android:divider="@null" android:fastScrollEnabled="true" mms:hasFillArea="true" mms:hasPrivateEntry="true" />
+    </LinearLayout>
+</miui.widget.ScrollableViewDrawer>

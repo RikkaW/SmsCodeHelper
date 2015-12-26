@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.ui.SlideListItemView android:orientation="horizontal" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/image_preview" android:paddingTop="@dimen/favorite_list_item_avatar_margin_bottom" android:paddingBottom="@dimen/favorite_list_item_avatar_margin_bottom" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_attach_slideshow_holo_light" android:scaleType="fitCenter" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/favorite_from_margin_left">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/list_item_from_text_size" android:textColor="@color/list_text1_color" android:id="@id/slide_number_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/duration_text">
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/list_item_subject_text_size" android:textColor="@color/list_text2_color" android:ellipsize="marquee" android:id="@id/text_preview" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="0.4" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/list_item_subject_text_size" android:textColor="@color/list_text2_color" android:ellipsize="marquee" android:id="@id/attachment_name" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="0.3" />
+                <ImageView android:id="@id/attachment_icon" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" />
+            </LinearLayout>
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/list_item_subject_text_size" android:textColor="@color/list_text2_color" android:id="@id/duration_text" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.android.mms.ui.SlideListItemView>

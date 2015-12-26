@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_sb_mark_read_selector" android:id="@id/unfiltrate" android:orderInCategory="1" android:title="@string/unfiltrate" android:showAsAction="always" />
+    <item android:icon="@drawable/ic_sb_filter_selector" android:id="@id/spam" android:orderInCategory="1" android:title="@string/spam" android:showAsAction="always" />
+    <item android:icon="@drawable/ic_sb_delete_selector" android:id="@id/delete" android:orderInCategory="1" android:title="@string/delete_message" android:showAsAction="always">
+        <menu>
+            <item android:id="@id/deletesub" android:orderInCategory="1" android:title="@string/delete_message" android:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

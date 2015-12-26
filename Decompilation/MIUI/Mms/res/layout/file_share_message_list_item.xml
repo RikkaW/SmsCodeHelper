@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/file_share_message_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/file_share_icon" />
+    <View android:id="@id/file_share_message_padding" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="@style/TextAppearance.MessageBody.In" android:ellipsize="end" android:gravity="center_vertical" android:autoLink="none" android:id="@id/file_share_message_subject" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_padding_inner" android:layout_marginBottom="@dimen/list_item_padding_inner" />
+</LinearLayout>

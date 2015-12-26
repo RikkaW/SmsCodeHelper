@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.ui.VideoAttachmentView android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/video_attachment_view" android:layout_width="@dimen/cma_edit_attachment_thumb_wh" android:layout_height="@dimen/cma_edit_attachment_thumb_wh"
+  xmlns:android="http://schemas.android.com/apk/prv/res/android">
+    <RelativeLayout android:id="@id/img_frm" android:background="@null" android:layout_width="@dimen/cma_edit_attachment_thumb_wh" android:layout_height="@dimen/cma_edit_attachment_thumb_wh">
+        <com.meizu.common.widget.RoundCornerImageView android:id="@id/video_thumbnail" style="@style/MmsAttachPictureWithCorner" />
+        <ImageView android:layout_gravity="center" android:id="@id/play_slideshow_button_small" android:longClickable="false" android:layout_width="@dimen/mms_play_btn_width" android:layout_height="@dimen/mms_play_btn_height" android:src="@drawable/mms_play_btn_selector" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/name_size_ll" android:background="@drawable/mms_mask_layer" android:paddingLeft="@dimen/attachment_image_text_spacing" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/cma_edit_attachment_name_text_size" android:textColor="@color/solid_white" android:ellipsize="middle" android:gravity="center_horizontal" android:linksClickable="false" android:id="@id/mms_file_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+            <TextView android:textSize="@dimen/cma_edit_attachment_size_text_size" android:textColor="@color/solid_white" android:gravity="center_horizontal" android:linksClickable="false" android:id="@id/mms_file_size" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.android.mms.ui.VideoAttachmentView>

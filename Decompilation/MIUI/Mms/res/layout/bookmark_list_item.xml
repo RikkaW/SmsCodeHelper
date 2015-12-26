@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.ui.MessageListItem android:id="@id/msg_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BookmarkListItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/message_body_list_stub" android:layout="@layout/message_item_list_body" android:inflatedId="@id/message_body_list_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_toLeftOf="@id/attachment_padding" />
+    <TextView android:id="@id/message_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/message_body_list_stub" android:layout_alignParentLeft="true" style="@style/TextAppearance.MessageDesc.BookmarkDate" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/attachment_padding" android:layout_toRightOf="@id/message_date" android:layout_below="@id/message_body_list_stub">
+        <TextView android:ellipsize="end" android:id="@id/message_sender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:singleLine="true" android:layout_weight="1.0" style="@style/TextAppearance.MessageDesc.BookmarkDate" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/message_slot_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" />
+    </LinearLayout>
+    <View android:id="@id/attachment_padding" android:visibility="gone" android:layout_width="23.0dip" android:layout_height="wrap_content" android:layout_toLeftOf="@id/attachment_preview" />
+    <com.android.mms.ui.ThumbnailView android:id="@id/attachment_preview" android:visibility="gone" android:layout_width="@dimen/mms_attachment_pic_width" android:layout_height="@dimen/mms_attachment_pic_height" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</com.android.mms.ui.MessageListItem>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:drawable="@drawable/mz_btn_check_button_square_on" android:state_activated="true" />
+    <item android:state_enabled="true" android:state_checked="true" android:drawable="@drawable/mz_btn_check_button_square_off" />
+    <item android:state_enabled="true" android:drawable="@drawable/mz_btn_check_button_circle_off_normal" />
+    <item android:state_enabled="false" android:drawable="@drawable/mz_btn_check_button_square_on_disable" android:state_activated="true" />
+    <item android:state_enabled="false" android:state_checked="true" android:drawable="@drawable/mz_btn_check_button_square_off_disable" />
+    <item android:drawable="@drawable/mz_btn_check_button_circle_off_disable" />
+</selector>

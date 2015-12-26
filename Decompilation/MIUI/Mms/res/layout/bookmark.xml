@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@null" android:divider="@null" android:fastScrollEnabled="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="132.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bookmark_empty" />
+        <TextView android:textAppearance="@style/TextAppearance.List.EmptyView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bookmark_empty" />
+    </LinearLayout>
+</RelativeLayout>

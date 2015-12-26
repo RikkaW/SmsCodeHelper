@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@268566529" android:id="@id/blocked_action_copy_message_text" android:title="@string/copy_message_text" android:showAsAction="ifRoom" />
+    <item android:icon="@268566533" android:id="@id/blocked_action_delete_message" android:title="@string/delete_message" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/action_button_restore_light" android:id="@id/blocked_action_restore_message" android:title="@string/restore_blocked_message" android:showAsAction="ifRoom" />
+</menu>

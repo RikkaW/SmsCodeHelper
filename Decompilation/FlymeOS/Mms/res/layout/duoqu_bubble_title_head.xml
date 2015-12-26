@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.com.xy.sms.sdk.ui.popu.widget.DuoquRelativeLayout android:id="@id/duoqu_drl_bubble_head" android:layout_width="fill_parent" android:layout_height="fill_parent" duoqu:duoqu_height="@dimen/duoqu_title_height_no_split"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:duoqu="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:id="@id/duoqu_tv_head_title_view" android:background="@color/duoqu_nearby_point_name_blue" android:layout_width="fill_parent" android:layout_height="58.0dip">
+        <ImageView android:id="@id/duoqu_tv_head_logo" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/duoqu_white" android:id="@id/duoqu_tv_head_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="21.0dip" android:singleLine="true" android:includeFontPadding="false" />
+    </LinearLayout>
+</cn.com.xy.sms.sdk.ui.popu.widget.DuoquRelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mms_config version="4">
+    <bool name="enabledMMS">true</bool>
+    <int name="maxMessageSize">305152</int>
+    <int name="maxImageHeight">1024</int>
+    <int name="maxImageWidth">1024</int>
+    <int name="defaultSMSMessagesPerThread">500</int>
+    <int name="defaultMMSMessagesPerThread">50</int>
+    <int name="minMessageCountPerThread">10</int>
+    <int name="maxMessageCountPerThread">5000</int>
+    <string name="uaProfUrl">http://218.249.47.94/Xianghe/MTK_Phone_KK_UAprofile.xml</string>
+    <int name="recipientLimit">-1</int>
+    <int name="smsToMmsTextThreshold">4</int>
+    <bool name="enableMultipartSMS">true</bool>
+    <bool name="enableSlideDuration">true</bool>
+    <int name="maxMessageTextSize">-1</int>
+    <string name="userAgent">MT6595_TD/V1 Linux/3.10.35+ Android/4.4.2 Release/ Browser/AppleWebKit537.36 Chrome/30.0.0.0 Mobile Safari/537.36 System/Android 4.4.2;</string>
+</mms_config>

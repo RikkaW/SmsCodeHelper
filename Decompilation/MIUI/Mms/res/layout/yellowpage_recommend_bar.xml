@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/recommend_bar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/recommend_msg_color" android:gravity="center_vertical" android:id="@id/recommend_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/yellowpage_recommend_msg" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="right|center" android:id="@id/recommend_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/recommend_close" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/group_send_to_panel" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/group_send_to_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/send_to" style="@style/TextAppearance.MessageDesc.SendTitle" />
+    <TextView android:ellipsize="end" android:id="@id/group_send_to" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxWidth="@dimen/max_bubble_group_title_width" android:singleLine="true" android:layout_weight="1.0" style="@style/TextAppearance.MessageDesc.Title" />
+    <TextView android:id="@id/group_send_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" style="@style/TextAppearance.MessageDesc.Title" />
+</LinearLayout>

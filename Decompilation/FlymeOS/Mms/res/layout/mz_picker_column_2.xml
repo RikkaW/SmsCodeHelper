@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/Widget.DeviceDefault.Light.MzPickerLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/mz_select_box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/mz_picker_box_selected" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/mz_column_parent" android:paddingLeft="@dimen/mz_picker_padding_left" android:paddingRight="@dimen/mz_picker_padding_right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/mz_column1Layout" android:layout_width="@dimen/mz_picker_column_width" android:layout_height="@dimen/mz_picker_height" android:layout_weight="1.0">
+            <com.meizu.widget.ScrollTextView android:id="@id/mz_scroll1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <TextView android:textSize="@dimen/mz_picker_text_size" android:textColor="@color/mz_picker_text_color" android:gravity="center" android:layout_gravity="right" android:id="@id/mz_scroll1_text" android:layout_width="@dimen/mz_picker_text_width" android:layout_height="fill_parent" android:layout_marginRight="@dimen/mz_picker_column_2_text_margin_right" />
+        </FrameLayout>
+        <ImageView android:id="@id/mz_divider_bar1" android:visibility="gone" android:layout_width="0.0px" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/mz_column2Layout" android:layout_width="@dimen/mz_picker_column_width" android:layout_height="@dimen/mz_picker_height" android:layout_weight="1.0">
+            <com.meizu.widget.ScrollTextView android:id="@id/mz_scroll2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <TextView android:textSize="@dimen/mz_picker_text_size" android:textColor="@color/mz_picker_text_color" android:gravity="center" android:layout_gravity="right" android:id="@id/mz_scroll2_text" android:layout_width="@dimen/mz_picker_text_width" android:layout_height="fill_parent" android:layout_marginRight="@dimen/mz_picker_column_2_text_margin_right" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

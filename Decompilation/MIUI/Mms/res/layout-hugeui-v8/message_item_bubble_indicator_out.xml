@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/date_indicator_panel" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/btn_resend" android:paddingLeft="20.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/hms_message_sender_failed" />
+    <include android:layout_width="wrap_content" android:layout_height="fill_parent" layout="@layout/message_item_bubble_deliver_text" />
+    <ViewStub android:layout_gravity="center_vertical" android:id="@id/group_send_icon" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout="@layout/message_item_bubble_group_send_icon_stub" android:inflatedId="@id/group_send_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@id/status_divider" android:background="@color/resend_divider_color" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="4.0dip" />
+    <TextView android:id="@id/message_date" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.MessageDesc.BubbleDate" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/message_slot_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" />
+</LinearLayout>

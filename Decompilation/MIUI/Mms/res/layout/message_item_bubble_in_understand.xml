@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:background="@drawable/understand_divider_h" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/message_body_text_font_size" android:textColor="@color/understand_button_text" android:ellipsize="end" android:gravity="center" android:id="@id/btn_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" style="@style/TextAppearance.MessageBody.In" />
+    <View android:id="@id/div_v1" android:background="@drawable/understand_divider_v" android:layout_width="1.0px" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/message_body_text_font_size" android:textColor="@color/understand_button_text" android:ellipsize="end" android:gravity="center" android:id="@id/btn_center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" style="@style/TextAppearance.MessageBody.In" />
+    <View android:id="@id/div_v2" android:background="@drawable/understand_divider_v" android:layout_width="1.0px" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/message_body_text_font_size" android:textColor="@color/understand_button_text" android:ellipsize="end" android:gravity="center" android:id="@id/btn_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" style="@style/TextAppearance.MessageBody.In" />
+</LinearLayout>

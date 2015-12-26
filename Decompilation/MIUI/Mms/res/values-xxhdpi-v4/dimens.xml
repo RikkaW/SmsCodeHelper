@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="avatar_size_large">41.0sp</dimen>
+    <dimen name="mms_attachment_pic_width">76.29999dip</dimen>
+    <dimen name="mms_attachment_pic_height">80.0dip</dimen>
+    <dimen name="max_bubble_text_width">213.29999dip</dimen>
+    <dimen name="max_bubble_group_title_width">213.29999dip</dimen>
+    <dimen name="max_bubble_card_name_width">175.0dip</dimen>
+    <dimen name="max_bubble_card_text_width">160.0dip</dimen>
+    <dimen name="recent_contact_height_2_rows">40.5dip</dimen>
+    <dimen name="recent_contact_height_1_rows">40.5dip</dimen>
+    <dimen name="recent_contact_text_size">12.0sp</dimen>
+    <dimen name="attachment_type_screen_height">226.0dip</dimen>
+    <dimen name="smiley_screen_height">178.29999dip</dimen>
+    <dimen name="attachment_type_row_height">101.69998dip</dimen>
+    <dimen name="smiley_row_height">53.299988dip</dimen>
+    <dimen name="attachment_pharse_list_item_height">51.0dip</dimen>
+    <dimen name="datetime_group_margin_v">20.0dip</dimen>
+    <dimen name="private_sms_unlock_distance">200.0dip</dimen>
+    <dimen name="max_scale_font_size">53.299988dip</dimen>
+    <dimen name="message_body_text_font_size">13.299988dip</dimen>
+    <dimen name="smiley_item_width">60.0dip</dimen>
+    <dimen name="smiley_item_height">45.299988dip</dimen>
+    <dimen name="dialog_title_vertical_padding">23.0dip</dimen>
+    <dimen name="dialog_title_horizontal_padding">23.0dip</dimen>
+    <dimen name="dialog_custom_horizontal_padding">23.0dip</dimen>
+    <dimen name="message_content_panel_min_height">23.299988dip</dimen>
+    <dimen name="max_card_width_covered">186.6dip</dimen>
+</resources>

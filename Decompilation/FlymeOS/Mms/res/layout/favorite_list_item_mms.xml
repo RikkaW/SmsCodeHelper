@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.fragmentstyle.FavoriteListItemMms android:orientation="vertical" android:background="?android:activatedBackgroundIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:mms="http://schemas.android.com/apk/res/com.android.mms">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/favorite_content" android:paddingTop="@dimen/favorite_list_item_padding_top" android:paddingBottom="@dimen/favorite_list_item_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/favorite_list_item_padding_left" android:layout_marginRight="@dimen/favorite_list_item_padding_right">
+            <include android:visibility="gone" layout="@layout/message_list_item_recv_date_status_favorite" />
+            <com.android.mms.fragmentstyle.FavoriteListItemCommon android:orientation="vertical" android:id="@id/favorite_common" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.android.mms.view.MmsLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/msg_content" android:layout_width="fill_parent" android:layout_height="wrap_content" mms:max_width="@dimen/favorite_listItem_maxWidth" mms:msg_content_layout="@layout/favorite_mms_content_view" />
+        </LinearLayout>
+        <com.meizu.common.widget.AnimCheckBox android:layout_gravity="right|center" android:id="@android:id/checkbox" android:focusable="false" android:visibility="invisible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/favorite_list_item_padding_right" style="@style/Widget.DeviceDefault.CompoundButton.CheckButtonlessMultiple.Color.LimeGreen" />
+    </FrameLayout>
+</com.android.mms.fragmentstyle.FavoriteListItemMms>

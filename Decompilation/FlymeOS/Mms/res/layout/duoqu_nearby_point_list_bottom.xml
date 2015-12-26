@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/duoqu_ll_load_more" android:background="@color/duoqu_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="58.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/duoqu_iv_load_more" android:layout_width="10.0dip" android:layout_height="58.0dip" android:src="@drawable/duoqu_nearby_point_load_more" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/duoqu_nearby_point_tip_load_more" android:gravity="center_vertical" android:id="@id/duoqu_tv_load_more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="58.0dip" android:layout_marginLeft="8.0dip" />
+</LinearLayout>

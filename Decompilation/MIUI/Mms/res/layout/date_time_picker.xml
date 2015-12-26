@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:id="@id/datetimeGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/datetime_group_margin_v" android:layout_marginBottom="@dimen/datetime_group_margin_v">
+        <RadioButton android:id="@id/date_button" android:background="@268566567" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" />
+        <RadioButton android:id="@id/time_button" android:background="@268566567" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RadioGroup>
+    <miui.widget.DatePicker android:id="@id/date_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <miui.widget.TimePicker android:id="@id/time_picker" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

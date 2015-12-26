@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/mz_checkbox_counter_disable_color_limegreen" />
+    <item android:state_enabled="true" android:state_pressed="true" android:drawable="@drawable/mz_checkbox_counter_pressed_color_limegreen" />
+    <item android:drawable="@drawable/mz_checkbox_counter_color_limegreen" />
+</selector>

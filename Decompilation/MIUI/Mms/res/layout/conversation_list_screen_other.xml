@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:mms="http://schemas.android.com/apk/res/com.android.mms">
+    <com.android.mms.ui.MessageListPullView android:scrollbarStyle="insideOverlay" android:id="@android:id/list" android:fadingEdgeLength="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:cacheColorHint="@null" android:divider="@null" android:fastScrollEnabled="true" mms:hasFillArea="true" />
+</FrameLayout>

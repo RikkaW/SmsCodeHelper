@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/mz_preference_item_padding_side" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/mc_expandable_preference_layout_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="top" android:id="@android:id/icon" android:layout_width="@dimen/mz_preference_icon_width_normal" android:layout_height="@dimen/mz_preference_icon_height_normal" android:layout_marginLeft="@dimen/mz_preference_icon_margin_horizontal" android:layout_marginTop="@dimen/mc_expandable_preference_icon_margin_top" android:layout_marginRight="@dimen/mz_preference_icon_margin_horizontal" android:scaleType="centerInside" />
+    <LinearLayout android:orientation="vertical" android:id="@id/preference_text_layout" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingEnd="8.0dip" android:layout_marginStart="@dimen/mz_preference_title_margin_left">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="end" android:id="@android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="4" android:layout_below="@android:id/title" android:layout_alignLeft="@android:id/title" />
+            <ImageView android:id="@id/pull_icon" android:descendantFocusability="blocksDescendants" android:layout_width="@dimen/mc_expandable_preference_rotate_icon_width" android:layout_height="@dimen/mc_expandable_preference_rotate_icon_width" android:layout_marginTop="@dimen/mc_expandable_preference_icon_margin_top" android:src="@drawable/mc_expandable_preference_rotate_icon" android:layout_alignParentRight="true" android:layout_marginEnd="16.0dip" />
+        </RelativeLayout>
+        <LinearLayout android:id="@id/container" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mc_expandable_preference_inner_list_margin">
+            <ListView android:id="@id/expand_listview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@null" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

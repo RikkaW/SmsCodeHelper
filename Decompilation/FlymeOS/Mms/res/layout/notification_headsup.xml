@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/notify_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center_vertical" android:id="@id/notification_content" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="7.0dip" android:paddingTop="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:mode="twoLine">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/nameMsgFrm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                    <ImageView android:id="@id/logo_img" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="11.0dip" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_contact_name" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="16.0sp" android:textColor="@color/notify_text_color" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="sans-serif" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/msg_status_sim" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cma_list_item_status_icon_margin_LR" android:scaleType="center" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/msg_popup_msg_text_size" android:textColor="@color/notify_text_color" android:ellipsize="end" android:id="@id/text" android:paddingRight="4.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="37.0dip" android:maxLines="2" android:includeFontPadding="true" android:lineSpacingExtra="@dimen/msg_popup_msg_lineSpacingExtra" />
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:gravity="center" android:id="@id/horizontal_line" android:background="#19ffffff" android:layout_width="fill_parent" android:layout_height="2.0px" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_layout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/notify_text_color" android:gravity="center" android:id="@id/btn_one" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/unfiltrate" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:id="@id/split_line_one" android:background="#19ffffff" android:layout_width="2.0px" android:layout_height="16.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/notify_text_color" android:gravity="center" android:id="@id/btn_two" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/delete_extra" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:id="@id/split_line_two" android:background="#19ffffff" android:layout_width="2.0px" android:layout_height="16.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/notify_text_color" android:gravity="center" android:id="@id/btn_three" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/quick_reply" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

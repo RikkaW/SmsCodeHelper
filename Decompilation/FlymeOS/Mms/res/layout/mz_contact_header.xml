@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/prv/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="left|center" android:orientation="vertical" android:id="@id/name_number_anchor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/contact_header_text_marginLeft" android:layout_weight="1.0">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/cma_action_bar_name_max_width">
+            <TextView android:textColor="@color/action_bar_title_color_seletor" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/CmaActionbarTitleStyle" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/cma_action_bar_online_text_size" android:textColor="@color/message_default_color" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/online_tv" android:background="@drawable/ic_online" android:paddingTop="1.0dip" android:paddingBottom="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cma_action_bar_online_margin_left" android:text="@string/online" android:singleLine="true" android:layout_weight="0.0" />
+        </LinearLayout>
+        <TextView android:textSize="?cma_action_bar_number_title_text_size_attr" android:textColor="@color/cma_actionbar_number_color_seletor" android:ellipsize="end" android:id="@id/number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cma_actionbar_number_marginTop" android:singleLine="true" style="@style/TextAppearance.Flyme.Widget.ActionBar.Subtitle" />
+    </LinearLayout>
+</LinearLayout>

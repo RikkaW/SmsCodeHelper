@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="16" android:drawable="@drawable/mz_progressbar_indeterminate1" />
+    <item android:duration="16" android:drawable="@drawable/mz_progressbar_indeterminate2" />
+    <item android:duration="16" android:drawable="@drawable/mz_progressbar_indeterminate3" />
+    <item android:duration="16" android:drawable="@drawable/mz_progressbar_indeterminate4" />
+    <item android:duration="16" android:drawable="@drawable/mz_progressbar_indeterminate5" />
+    <item android:duration="16" android:drawable="@drawable/mz_progressbar_indeterminate6" />
+    <item android:duration="16" android:drawable="@drawable/mz_progressbar_indeterminate7" />
+    <item android:duration="16" android:drawable="@drawable/mz_progressbar_indeterminate8" />
+    <item android:duration="16" android:drawable="@drawable/mz_progressbar_indeterminate9" />
+    <item android:duration="16" android:drawable="@drawable/mz_progressbar_indeterminate10" />
+    <item android:duration="16" android:drawable="@drawable/mz_progressbar_indeterminate11" />
+    <item android:duration="16" android:drawable="@drawable/mz_progressbar_indeterminate12" />
+    <item android:duration="16" android:drawable="@drawable/mz_progressbar_indeterminate13" />
+    <item android:duration="16" android:drawable="@drawable/mz_progressbar_indeterminate14" />
+    <item android:duration="16" android:drawable="@drawable/mz_progressbar_indeterminate15" />
+</animation-list>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="shrinkableIndex" format="integer" />
+    <attr name="verticalSpacing" format="dimension" />
+    <attr name="horizontalSpacing" format="dimension" />
+    <attr name="hasFillArea" format="boolean" />
+    <attr name="hasPrivateEntry" format="boolean" />
+    <attr name="hasMore" format="boolean" />
+    <attr name="interval" format="dimension" />
+    <attr name="indicatorWidth" format="dimension" />
+    <attr name="indicatorMaxHeight" format="dimension" />
+    <attr name="indicatorNum" format="integer" />
+    <attr name="defaultColor" format="color" />
+    <attr name="indicatorColor" format="color" />
+</resources>

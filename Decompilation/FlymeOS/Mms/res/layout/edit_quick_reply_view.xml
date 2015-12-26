@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.quickreply.EditQuickReplyView android:id="@id/quick_reply_item_rl" android:paddingLeft="@dimen/mz_list_item_content_padding_left" android:paddingRight="@dimen/mz_list_item_content_padding_right" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/phrase_edittext" style="@style/QuickReplyEditTextTheme" />
+</com.android.mms.quickreply.EditQuickReplyView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/parentPanel" android:paddingLeft="@dimen/mc_loadingviewdialog_padding" android:paddingTop="@dimen/mc_loadingviewdialog_padding_top" android:paddingRight="@dimen/mc_loadingviewdialog_padding" android:paddingBottom="@dimen/mc_loadingviewdialog_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:meizu="http://schemas.android.com/apk/res-auto">
+    <com.meizu.common.widget.LoadingView android:id="@id/loadingView" android:layout_width="wrap_content" android:layout_height="wrap_content" meizu:mcLoadingRadius="6.0dip" meizu:mcRingWidth="2.0dip" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffffffff" android:id="@id/message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mc_loadingviewdialog_message_margin_left" />
+</LinearLayout>

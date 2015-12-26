@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="empty_subject_strings">
+        <item>teemat ei ole</item>
+    </string-array>
+    <string-array name="select_dialog_items">
+        <item>1 sekund</item>
+        <item>2 sekundit</item>
+        <item>3 sekundit</item>
+        <item>4 sekundit</item>
+        <item>5 sekundit</item>
+        <item>6 sekundit</item>
+        <item>7 sekundit</item>
+        <item>8 sekundit</item>
+        <item>9 sekundit</item>
+        <item>10 sekundit</item>
+        <item>Muu</item>
+    </string-array>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:gravity="center" android:id="@android:id/message" android:layout_width="fill_parent" android:layout_height="34.0dip" style="?android:attr/textAppearanceMedium" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/number_field" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:layout_weight="1.0">
+        <LinearLayout android:gravity="bottom" android:id="@id/mc_edit_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:minHeight="55.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="empty_subject_strings">
+        <item>Không có chủ đề</item>
+    </string-array>
+    <string-array name="prefEntries_vibrateWhen">
+        <item>Luôn luôn</item>
+        <item>Chỉ khi im lặng</item>
+        <item>Không bao giờ</item>
+    </string-array>
+    <string-array name="select_dialog_items">
+        <item>1 giây</item>
+        <item>2 giây</item>
+        <item>3 giây</item>
+        <item>4 giây</item>
+        <item>5 giây</item>
+        <item>6 giây</item>
+        <item>7 giây</item>
+        <item>8 giây</item>
+        <item>9 giây</item>
+        <item>10 giây</item>
+        <item>Khác</item>
+    </string-array>
+    <string-array name="confirm_dialog_titlet">
+        <item>Xóa tin nhắn?</item>
+        <item>Xóa các mục đã chọn?</item>
+    </string-array>
+    <string-array name="phrases">
+        <item>Hiện tôi đang bận, sẽ liên lạc sau.</item>
+        <item>Hãy gọi cho tôi sau, cảm ơn.</item>
+        <item>Được rồi, cảm ơn.</item>
+        <item>Đang kẹt xe, tôi sẽ muộn một chút.</item>
+    </string-array>
+    <string-array name="sns_error_msg">
+        <item>Người dùng Weibo không hợp lệ</item>
+        <item>Truy cập bị giới hạn</item>
+        <item>Người dùng không tồn tại</item>
+        <item>Nội dung trống. Gửi thất bại</item>
+        <item>Không nhập vào quá 300 ký tự</item>
+        <item>Vi phạm các quy định liên quan, hoạt động không hợp lệ</item>
+        <item>Không thể đăng cùng một nội dung trong vòng 10 phút</item>
+        <item>URL bạn đã nhập có vẻ không an toàn</item>
+        <item>Căn cứ các luật và quy định hiện hành, không thể đăng nội dung này</item>
+        <item>Tính năng này hiện chưa sử dụng được</item>
+        <item>Không thể gửi tin nhắn riêng cho người dùng này do các cài đặt quyền riêng tư của người dùng</item>
+        <item>Trạng thái đăng nhập bất ngờ</item>
+        <item>Tài khoản bị khóa</item>
+        <item>Nội dung này tạm thời không cho xem</item>
+        <item>Bạn không thể gửi tin nhắn riêng cho người dùng không theo dõi bạn</item>
+        <item>Tin nhắn riêng không hợp lệ</item>
+        <item>Tin nhắn riêng không tồn tại</item>
+        <item>Bạn không thể gửi lại cùng một tin nhắn riêng</item>
+        <item>ID nhắn tin riêng không hợp lệ</item>
+        <item>Đã gửi quá nhiều tin nhắn</item>
+        <item>Điều này vi phạm các quy định liên quan và sẽ bị chặn</item>
+        <item>Căn cứ các luật và quy định hiện hành, bạn không thể gửi bất cứ tin nhắn riêng nào</item>
+        <item>Mã thông báo đã hết hạn</item>
+        <item>Bạn không thể gửi tin nhắn riêng cho người dùng này do các cài đặt của người dùng</item>
+        <item>Bạn đã gửi nó rồi. Một lần là đủ</item>
+    </string-array>
+    <string-array name="mc_custom_time_picker_lunar_day">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="mc_custom_time_picker_lunar_month">
+        <item>Thg 1</item>
+        <item>Thg 2</item>
+        <item>Thg 3</item>
+        <item>Thg 4</item>
+        <item>Thg 5</item>
+        <item>Thg 6</item>
+        <item>Thg 7</item>
+        <item>Thg 8</item>
+        <item>Thg 9</item>
+        <item>Thg 10</item>
+        <item>Thg 11</item>
+        <item>Thg 12</item>
+    </string-array>
+</resources>

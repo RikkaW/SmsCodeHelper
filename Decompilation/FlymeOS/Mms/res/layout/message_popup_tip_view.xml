@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_vertical" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/nameMsgFrm" android:paddingLeft="@dimen/msg_popup_tip_paddingLeft" android:paddingTop="@dimen/msg_popup_tip_paddingTop" android:paddingRight="@dimen/msg_popup_tip_paddingRight" android:paddingBottom="@dimen/msg_popup_tip_paddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:mode="twoLine">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/nameMsgFrm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/msg_popup_tip_paddingRight" android:layout_toLeftOf="@id/msg_popup_close" android:layout_alignParentLeft="true">
+                <ImageView android:id="@id/avatar" android:layout_width="@dimen/msg_popup_contact_icon_width" android:layout_height="@dimen/msg_popup_contact_icon_height" android:layout_marginRight="@dimen/msg_popup_contact_icon_margin_right" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_contact_name" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/msg_popup_from_text_size" android:textColor="@color/msg_popup_from_text_color" android:ellipsize="end" android:id="@id/from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/msg_status_sim" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cma_list_item_status_icon_margin_LR" android:scaleType="center" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@id/msg_popup_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/message_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/msg_popup_msg_text_size" android:textColor="@color/msg_popup_msg_text_color" android:ellipsize="end" android:id="@id/msgBody" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/msg_popup_tip_msgBody_marginTop" android:maxLines="3" android:includeFontPadding="true" android:lineSpacingExtra="@dimen/msg_popup_msg_lineSpacingExtra" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="top|right|center" android:id="@id/dialBtn" android:paddingTop="@dimen/msg_popup_dialer_icon_marginTop" android:paddingRight="@dimen/msg_popup_dialer_icon_marginRight" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mms_popup_dial" />
+    <View android:layout_gravity="top|right|center" android:id="@id/msg_popup_close_area" android:layout_width="@dimen/message_popup_close_area_width" android:layout_height="@dimen/message_popup_close_area_height" />
+</FrameLayout>

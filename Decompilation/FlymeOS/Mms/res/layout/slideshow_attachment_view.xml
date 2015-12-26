@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.ui.SlideshowAttachmentView android:orientation="horizontal" android:id="@id/slideshow_attachment_view" android:layout_width="@dimen/cma_edit_attachment_thumb_wh" android:layout_height="@dimen/cma_edit_attachment_thumb_wh"
+  xmlns:android="http://schemas.android.com/apk/prv/res/android">
+    <RelativeLayout android:id="@id/img_frm" android:background="@null" android:layout_width="@dimen/cma_edit_attachment_thumb_wh" android:layout_height="@dimen/cma_edit_attachment_thumb_wh">
+        <FrameLayout android:id="@id/img_frm" android:background="@null" android:layout_width="@dimen/cma_edit_attachment_thumb_wh" android:layout_height="@dimen/cma_edit_attachment_thumb_wh">
+            <com.meizu.common.widget.RoundCornerImageView android:id="@id/slideshow_image" android:background="@drawable/mms_attachment_default_bg" style="@style/MmsAttachPictureWithCorner" />
+            <ImageView android:layout_gravity="center" android:id="@id/play_slideshow_button_small" android:longClickable="false" android:layout_width="@dimen/mms_play_btn_width" android:layout_height="@dimen/mms_play_btn_height" android:src="@drawable/mms_play_btn_selector" android:adjustViewBounds="true" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/name_size_ll" android:background="@drawable/mms_mask_layer" android:paddingLeft="@dimen/attachment_image_text_spacing" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/cma_edit_attachment_name_text_size" android:textColor="@color/solid_white" android:ellipsize="middle" android:gravity="center_horizontal" android:linksClickable="false" android:id="@id/mms_file_name" android:paddingLeft="@dimen/cma_edit_attachment_file_name_padding_left" android:paddingRight="@dimen/cma_edit_attachment_file_name_padding_right" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="@dimen/cma_edit_attachment_file_name_maxWidth" android:singleLine="true" />
+            <TextView android:textSize="@dimen/cma_edit_attachment_size_text_size" android:textColor="@color/solid_white" android:gravity="center_horizontal" android:linksClickable="false" android:id="@id/mms_file_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cma_edit_attachment_file_size_marginTop" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.android.mms.ui.SlideshowAttachmentView>

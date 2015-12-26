@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="search_results_title">
+        <item quantity="other">%1$s resultats per %2$s</item>
+        <item quantity="one">%1$s resultats per %2$s</item>
+    </plurals>
+    <plurals name="slide_duration">
+        <item quantity="other">%s sec</item>
+        <item quantity="one">%s sec.</item>
+        <item quantity="few">%s sec</item>
+    </plurals>
+</resources>

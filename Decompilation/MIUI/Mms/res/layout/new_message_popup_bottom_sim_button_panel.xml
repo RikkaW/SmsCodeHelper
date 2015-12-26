@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/sim_button_container" android:paddingLeft="15.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/sim_button1" android:background="@drawable/send_slot_btn_bg" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/sim_button1_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:src="@drawable/sim1_indicator" />
+        <TextView android:gravity="center" android:id="@id/sim_button1_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sim_card1" android:drawablePadding="2.0dip" style="@style/NormalTextSendButton" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/sim_button2" android:background="@drawable/send_slot_btn_bg" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/sim_button2_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:src="@drawable/sim2_indicator" />
+        <TextView android:gravity="center" android:id="@id/sim_button2_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sim_card2" android:drawablePadding="2.0dip" style="@style/NormalTextSendButton" />
+    </LinearLayout>
+    <Button android:background="@drawable/send_btn" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="1.0dip" />
+</LinearLayout>

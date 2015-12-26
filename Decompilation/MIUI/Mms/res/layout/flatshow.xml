@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.mms.ui.SlideshowHeader android:gravity="left|center" android:orientation="horizontal" android:id="@id/slide_header" android:background="@drawable/title_bar_tall_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/home" android:background="@268566637" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/back_to_message_list" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/TextAppearance.FlatshowTitle" android:textStyle="bold" android:ellipsize="end" android:id="@id/slide_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textAppearance="@style/TextAppearance.FlatshowSubTitle" android:ellipsize="end" android:id="@id/slide_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:id="@id/slide_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/action_mode_immersion_slide_light" />
+    </com.android.mms.ui.SlideshowHeader>
+    <ListView android:id="@id/slide_view" android:background="@drawable/flatshow_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

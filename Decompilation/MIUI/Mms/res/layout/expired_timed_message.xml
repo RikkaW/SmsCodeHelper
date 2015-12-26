@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.ui.MessageListItem android:orientation="horizontal" android:id="@id/msg_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ListItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:layout_gravity="center_vertical" android:id="@id/timed_checkbox" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentLeft="true" />
+    <TextView android:id="@id/message_recipient" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/timed_checkbox" style="@style/TextAppearance.List.Secondary" />
+    <ViewStub android:id="@id/message_body_list_stub" android:layout="@layout/message_item_list_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/attachment_preview" android:layout_toRightOf="@id/timed_checkbox" android:layout_below="@id/message_recipient" />
+    <com.android.mms.ui.ThumbnailView android:id="@id/attachment_preview" android:visibility="gone" android:layout_width="@dimen/mms_attachment_pic_width" android:layout_height="@dimen/mms_attachment_pic_height" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</com.android.mms.ui.MessageListItem>

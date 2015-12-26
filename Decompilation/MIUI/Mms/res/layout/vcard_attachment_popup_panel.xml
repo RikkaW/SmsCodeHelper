@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.ui.FloatPanelView android:orientation="vertical" android:paddingLeft="@dimen/floatpanel_padding_h" android:paddingBottom="@dimen/floatpanel_padding_v" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/panel" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@id/remove_vcard_button" android:background="@drawable/floatpanel_single_button_bg" android:text="@string/remove" style="@style/FloatPanelButton" />
+    </LinearLayout>
+    <ImageView android:id="@id/arrow_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/floatpanel_down_arrow" />
+</com.android.mms.ui.FloatPanelView>

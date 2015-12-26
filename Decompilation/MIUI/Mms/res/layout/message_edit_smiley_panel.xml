@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/smiley_panel" android:background="@drawable/attachment_screen_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/attachment_type_screen_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="top" android:id="@id/smiley_screens" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <miui.widget.ScreenView android:id="@id/smiley_screens_image_smiley" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <miui.widget.ScreenView android:id="@id/smiley_screens_image_creature" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <miui.widget.ScreenView android:id="@id/smiley_screens_image_lifestyle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <miui.widget.ScreenView android:id="@id/smiley_screens_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <miui.widget.ScreenView android:id="@id/smiley_screens_symbol" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:background="@drawable/smiley_tab_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TabWidget android:id="@id/smiley_tab_widget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@null" android:tabStripLeft="@null" android:tabStripRight="@null" android:tabStripEnabled="false">
+            <ImageButton android:gravity="center" android:background="@drawable/smiley_item_bg" android:layout_width="@dimen/smiley_item_width" android:layout_height="@dimen/smiley_item_height" android:src="@drawable/smiley_tab_image_smiley" />
+            <ImageButton android:gravity="center" android:background="@drawable/smiley_item_bg" android:layout_width="@dimen/smiley_item_width" android:layout_height="@dimen/smiley_item_height" android:src="@drawable/smiley_tab_image_creature" />
+            <ImageButton android:gravity="center" android:background="@drawable/smiley_item_bg" android:layout_width="@dimen/smiley_item_width" android:layout_height="@dimen/smiley_item_height" android:src="@drawable/smiley_tab_image_lifestyle" />
+            <ImageButton android:gravity="center" android:background="@drawable/smiley_item_bg" android:layout_width="@dimen/smiley_item_width" android:layout_height="@dimen/smiley_item_height" android:src="@drawable/smiley_tab_text" />
+            <ImageButton android:gravity="center" android:background="@drawable/smiley_item_bg" android:layout_width="@dimen/smiley_item_width" android:layout_height="@dimen/smiley_item_height" android:src="@drawable/smiley_tab_symbol" />
+        </TabWidget>
+        <ImageButton android:gravity="center" android:id="@id/smiley_back" android:background="@drawable/smiley_item_bg" android:layout_width="@dimen/smiley_item_width" android:layout_height="@dimen/smiley_item_height" android:src="@drawable/smiley_back" />
+    </LinearLayout>
+</FrameLayout>

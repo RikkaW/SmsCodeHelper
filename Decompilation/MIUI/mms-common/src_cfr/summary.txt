@@ -1,0 +1,83 @@
+Summary for /home/gitai/workspace/SMSCodeHelper/MIUI/mms-common/classes-dex2jar.jar
+Decompiled with CFR 0_110
+
+
+com.google.android.mms.pdu.MiuiPduParser
+----------------------------
+
+parseHeaders(java.io.ByteArrayInputStream )
+  Unable to fully structure code
+
+
+com.google.android.mms.pdu.MiuiPduPersister
+----------------------------
+
+convertUriToPath(android.content.Context android.net.Uri )
+  Unable to fully structure code
+loadAddress(long com.google.android.mms.pdu.PduHeaders )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: First case is not immediately after switch.
+loadParts(long )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [1[TRYBLOCK]], but top level block is 13[UNCONDITIONALDOLOOP]
+persistData(com.google.android.mms.pdu.PduPart android.net.Uri java.lang.String )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [5[TRYBLOCK]], but top level block is 45[SIMPLE_IF_TAKEN]
+load(android.net.Uri )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [1[TRYBLOCK]], but top level block is 41[CATCHBLOCK]
+persistPart(com.google.android.mms.pdu.PduPart long )
+  Unable to fully structure code
+recoverPersistPart(java.util.ArrayList<com.google.android.mms.pdu.PduPart> java.util.ArrayList )
+  Exception : java.lang.IllegalStateException: Backjump on non jumping statement [] lbl80 : TryStatement: try { 1[TRYBLOCK]
+
+updateParts(android.net.Uri com.google.android.mms.pdu.PduBody )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [3[TRYBLOCK]], but top level block is 16[FORLOOP]
+
+
+com.google.android.mms.pdu.PduComposer
+----------------------------
+
+makeMessageBody(int )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Started 2 blocks at once
+appendUintvarInteger(long )
+  Unable to fully structure code
+
+
+com.google.android.mms.pdu.PduParser
+----------------------------
+
+parseHeaders(java.io.ByteArrayInputStream )
+  Unable to fully structure code
+
+
+com.google.android.mms.pdu.PduPersister
+----------------------------
+
+convertUriToPath(android.content.Context android.net.Uri )
+  Unable to fully structure code
+loadAddress(long com.google.android.mms.pdu.PduHeaders )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: First case is not immediately after switch.
+loadParts(long )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [1[TRYBLOCK]], but top level block is 13[UNCONDITIONALDOLOOP]
+persistData(com.google.android.mms.pdu.PduPart android.net.Uri java.lang.String java.util.HashMap<android.net.Uri, java.io.InputStream> )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [5[TRYBLOCK]], but top level block is 47[SIMPLE_IF_TAKEN]
+load(android.net.Uri )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [1[TRYBLOCK]], but top level block is 41[CATCHBLOCK]
+persistPart(com.google.android.mms.pdu.PduPart long java.util.HashMap<android.net.Uri, java.io.InputStream> )
+  Unable to fully structure code
+updateParts(android.net.Uri com.google.android.mms.pdu.PduBody java.util.HashMap<android.net.Uri, java.io.InputStream> )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [3[TRYBLOCK]], but top level block is 16[FORLOOP]
+
+
+com.google.android.mms.pdu.QuotedPrintable
+----------------------------
+
+decodeQuotedPrintable(byte[] )
+  Unable to fully structure code
+
+
+com.google.android.mms.util.DrmConvertSession
+----------------------------
+
+open(android.content.Context java.lang.String )
+  Exception : java.lang.IllegalStateException: Backjump on non jumping statement [6] lbl32 : TryStatement: try { 3[TRYBLOCK]
+
+close(java.lang.String )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [17[TRYBLOCK]], but top level block is 31[CATCHBLOCK]

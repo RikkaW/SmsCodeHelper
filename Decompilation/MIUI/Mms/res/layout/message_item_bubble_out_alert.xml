@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/message_item" android:background="@drawable/message_bubble_out_alert_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <ViewStub android:id="@id/group_send_to_panel" android:layout="@layout/group_send_to_panel_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_marginBottom="@dimen/bubble_text_extra_padding" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <include android:id="@id/bubble_body" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/group_send_to_panel" android:layout_alignParentLeft="true" layout="@layout/message_item_bubble_out_alert_body" />
+        <include android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/bubble_body" android:layout_alignParentLeft="true" layout="@layout/message_item_group_failed_layout" />
+    </RelativeLayout>
+    <ImageView android:id="@id/favourite" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/favourite_bubble_out" android:layout_alignLeft="@id/message_item" android:layout_alignBottom="@id/message_item" />
+    <ImageView android:id="@id/btn_resend" android:paddingLeft="@dimen/bubble_message_resend_padding_h" android:paddingTop="@dimen/bubble_message_resend_padding_v" android:paddingRight="@dimen/bubble_message_resend_padding_h" android:paddingBottom="@dimen/bubble_message_resend_padding_v" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hms_message_sender_failed" android:layout_toLeftOf="@id/message_item" android:layout_centerVertical="true" />
+    <include android:id="@id/deliver_status" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/btn_resend" android:layout_centerVertical="true" layout="@layout/message_item_bubble_deliver_text" />
+</RelativeLayout>

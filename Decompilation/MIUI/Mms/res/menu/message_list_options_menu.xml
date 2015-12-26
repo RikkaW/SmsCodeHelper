@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/action_button_forward_light" android:id="@id/action_forward_message" android:title="@string/menu_forward" android:showAsAction="ifRoom" />
+    <item android:icon="@268566529" android:id="@id/action_copy_message_text" android:title="@string/copy_message_text" android:showAsAction="ifRoom" />
+    <item android:icon="@268566533" android:id="@id/action_delete_message" android:title="@string/delete_message" android:showAsAction="ifRoom" />
+    <item android:icon="@268566565" android:id="@id/action_lock_message" android:title="@string/menu_lock" android:showAsAction="ifRoom" />
+    <item android:icon="@268566539" android:id="@id/action_unlock_message" android:title="@string/menu_unlock" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/action_button_info_light" android:id="@id/action_view_message_details" android:title="@string/view_message_details" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_menu_edit" android:id="@id/action_copy_to_sdcard" android:title="@string/copy_to_sdcard" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_menu_edit" android:id="@id/action_copy_to_sim" android:title="@string/save_to_sim" android:showAsAction="ifRoom" />
+    <item android:id="@id/action_select_copy_text" android:title="@string/select_copy_text" android:showAsAction="ifRoom" />
+</menu>

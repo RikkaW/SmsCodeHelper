@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.mms.view.MmsFoldableTextView android:textSize="@dimen/cma_list_item_content_text_size" android:textColor="@color/send_msg_body_text_color" android:textColorHighlight="@color/send_msg_text_hightlight_color" android:textColorLink="@color/send_msg_link_color" android:ellipsize="end" android:gravity="center_vertical" android:autoLink="none" android:linksClickable="true" android:id="@id/text_view" android:paddingTop="@dimen/cma_list_item_body_paddingTop" android:paddingBottom="@dimen/cma_list_item_body_paddingBottom" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/cma_msgItem_send_maxWidth" android:lineSpacingExtra="@dimen/message_body_lineSpace" android:textSelectHandleLeft="@drawable/text_select_handle_left_message" android:textSelectHandleRight="@drawable/text_select_handle_right_message" android:textIsSelectable="true" />
+</merge>

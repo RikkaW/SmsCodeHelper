@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/smart_message_container" android:background="@drawable/cma_edit_bg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="bottom" android:id="@id/smart_message_ime_btn" android:background="@null" android:visibility="visible" android:layout_width="@dimen/cma_sendandchange_btn_width" android:layout_height="@dimen/cma_sendandchange_btn_height" android:layout_marginLeft="0.0dip" android:layout_marginBottom="@dimen/cma_editcountfrm_margin_bottom" android:src="@drawable/ic_sb_keyboard" />
+    <com.android.mms.smartmessage.SmartMessageViewContainer android:orientation="horizontal" android:id="@id/operatorOptions" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/shape_vertical_divider" android:minHeight="@dimen/message_body_minHeight" android:showDividers="middle|beginning" android:dividerPadding="@dimen/msg_body_divider_vertical_padding" />
+</LinearLayout>

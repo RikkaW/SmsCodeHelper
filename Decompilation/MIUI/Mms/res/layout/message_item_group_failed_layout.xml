@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/group_message_failed_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bubble_text_extra_padding" android:layout_marginRight="@dimen/bubble_text_extra_padding" android:layout_marginBottom="@dimen/bubble_text_extra_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/group_message_failed_title" android:background="@drawable/group_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/TextAppearance.MessageBody.Alert.Secondary" />
+    <LinearLayout android:orientation="vertical" android:id="@id/group_message_failed_items" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="2.5dip">
+        <Button android:id="@id/group_btn_resend" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MessageButton.Alert" />
+        <Button android:id="@id/group_btn_nosend" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/nosend_message" style="@style/MessageButton.Alert" />
+    </LinearLayout>
+</LinearLayout>

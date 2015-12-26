@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="prefEntries_ringtone_repeat">
+        <item>1次</item>
+        <item>2次</item>
+        <item>3次</item>
+        <item>5次</item>
+        <item>10次</item>
+    </string-array>
+    <string-array name="contact_entries">
+        <item>姓名</item>
+        <item>匿稱</item>
+        <item>電話</item>
+        <item>郵件</item>
+        <item>機構</item>
+        <item>即時消息</item>
+        <item>網絡電話</item>
+        <item>生日</item>
+        <item>網址</item>
+        <item>位址</item>
+        <item>備註</item>
+    </string-array>
+    <string-array name="entries_date_type">
+        <item>顯示簡訊的接收時間</item>
+        <item>"顯示簡訊的發送時間
+（伺服器時間，可能不準確）"</item>
+    </string-array>
+    <string-array name="entries_date_type_rightvalue">
+        <item>接收時間</item>
+        <item>發送時間</item>
+    </string-array>
+    <string-array name="resent_via_entries_sms">
+        <item>通過簡訊</item>
+        <item>通過網絡簡訊</item>
+    </string-array>
+    <string-array name="resent_via_entries_mms">
+        <item>通過MMS</item>
+        <item>通過網絡簡訊</item>
+    </string-array>
+    <string-array name="entries_sms_validity_period">
+        <item>不設定</item>
+        <item>1小時</item>
+        <item>6小時</item>
+        <item>12小時</item>
+        <item>1天</item>
+        <item>最長</item>
+    </string-array>
+    <string-array name="entries_mms_validity_period">
+        <item>最長</item>
+        <item>兩天</item>
+    </string-array>
+    <string-array name="select_dialog_items">
+        <item>1 秒</item>
+        <item>2 秒</item>
+        <item>3 秒</item>
+        <item>4 秒</item>
+        <item>5 秒</item>
+        <item>6 秒</item>
+        <item>7 秒</item>
+        <item>8 秒</item>
+        <item>9 秒</item>
+        <item>10 秒</item>
+        <item>其他...</item>
+    </string-array>
+    <string-array name="prefEntries_vibrateWhen">
+        <item>始終</item>
+        <item>僅在靜音時</item>
+        <item>不提醒</item>
+    </string-array>
+</resources>

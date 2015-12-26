@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_sb_new" android:id="@id/action_compose_new" android:visible="false" android:orderInCategory="100" android:title="@string/new_message" android:alphabeticShortcut="c" app:showAsAction="always" />
+    <item android:icon="?tittle_bar_ic_search_attr" android:id="@id/action_search" android:title="@string/menu_search" app:showAsAction="always" />
+    <item android:id="@id/action_settings" android:orderInCategory="200" android:title="@string/menu_preferences" app:showAsAction="never" />
+    <item android:id="@id/action_favorite" android:title="@string/favorite_page_label" app:showAsAction="never" />
+    <item android:id="@id/action_debug_dump" android:orderInCategory="200" android:title="@string/menu_debug_dump" app:showAsAction="never" />
+</menu>

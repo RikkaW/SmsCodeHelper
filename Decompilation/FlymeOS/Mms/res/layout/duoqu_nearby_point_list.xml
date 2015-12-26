@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff000000" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/duoqu_ll_nearby_point_loading" android:background="@color/duoqu_white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="16.0dip" android:layout_height="20.0dip" android:src="@drawable/duoqu_nearby_point_origin" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/duoqu_nearby_point_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/duoqu_tip_nearby_point_loading" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/duoqu_ll_nearby_point_not_find" android:background="@color/duoqu_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="16.0dip" android:layout_height="20.0dip" android:src="@drawable/duoqu_nearby_point_search_result" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/duoqu_nearby_point_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/duoqu_tip_nearby_point_not_find" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/duoqu_nearby_point_hyper_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/duoqu_tip_nearby_point_refresh" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/duoqu_ll_nearby_point_network_lose" android:background="@color/duoqu_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/duoqu_nearby_point_network_lose" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/duoqu_nearby_point_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/duoqu_tip_nearby_point_network_lose" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/duoqu_ll_nearby_point_list" android:background="@color/duoqu_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/duoqu_lv_nearby_point" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="never" />
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="20.0dip">
+            <TextView android:textSize="9.0sp" android:textColor="@color/duoqu_nearby_point_gray" android:layout_gravity="center_vertical" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/duoqu_tip_services_provide" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/duoqu_nearby_point_error_page" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/duoqu_errortext" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

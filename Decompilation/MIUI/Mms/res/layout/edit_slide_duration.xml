@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_title_horizontal_padding" android:layout_marginTop="@dimen/dialog_title_vertical_padding" android:layout_marginRight="@dimen/dialog_title_horizontal_padding" android:layout_marginBottom="@dimen/dialog_title_vertical_padding" android:singleLine="true" style="?android:attr/windowTitleStyle" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_custom_horizontal_padding" android:layout_marginRight="@dimen/dialog_custom_horizontal_padding">
+        <EditText android:gravity="center" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="4" android:numeric="integer" android:layout_weight="1.0" />
+        <TextView android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/secs" style="@miui:style/TextAppearance.Medium" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" style="?android:attr/buttonBarStyle">
+        <Button android:gravity="center" android:id="@id/done" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/done" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

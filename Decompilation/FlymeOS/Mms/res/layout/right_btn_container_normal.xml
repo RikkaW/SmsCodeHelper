@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/right_btn_container" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginRight="@dimen/cma_right_btn_container_marginRight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/cma_edit_textCount_text_size" android:textColor="@color/mms_editor_sms_count_color" android:gravity="center" android:id="@id/msg_mark_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <com.android.mms.view.SwitchImageButton android:id="@id/right_btn" android:background="@null" android:paddingLeft="@dimen/cma_right_btn_paddingLeft" android:paddingRight="@dimen/cma_right_btn_paddingRight" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cma_right_btn_marginBottom" android:src="@drawable/ic_send" android:layout_alignParentBottom="true" />
+</RelativeLayout>

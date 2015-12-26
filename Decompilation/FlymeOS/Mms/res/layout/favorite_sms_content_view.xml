@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.mms.view.CustomeMmsFoldableTextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/favorite_list_item_body_text_size" android:textColor="@color/favorite_list_item_body_text_color" android:ellipsize="end" android:autoLink="all" android:linksClickable="true" android:id="@id/text_view" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/favorite_list_item_body_text_line_space_extra" android:textIsSelectable="true" />
+</merge>

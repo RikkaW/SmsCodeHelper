@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/picker_holder" android:layout_width="fill_parent" android:layout_height="@dimen/mc_custom_time_picker_picker_height" android:layout_marginLeft="@dimen/mc_custom_time_picker_padding" android:layout_marginRight="@dimen/mc_custom_time_picker_padding">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/mc_column_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <FrameLayout android:id="@id/mc_column_month" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.meizu.common.widget.ScrollTextView android:id="@id/mc_scroll_month" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <TextView android:textSize="@dimen/mc_picker_text_size" android:textColor="@color/mc_picker_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/mc_scroll_month_text" android:layout_width="@dimen/mc_custom_time_picker_unit_w" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/mc_custom_time_picker_unit_margin_l" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/mc_column_day" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.meizu.common.widget.ScrollTextView android:id="@id/mc_scroll_day" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <TextView android:textSize="@dimen/mc_picker_text_size" android:textColor="@color/mc_picker_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/mc_scroll_day_text" android:layout_width="@dimen/mc_custom_time_picker_unit_w" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/mc_custom_time_picker_unit_margin_l" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/mc_column_hour" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.meizu.common.widget.ScrollTextView android:id="@id/mc_scroll_hour" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <TextView android:textSize="@dimen/mc_picker_text_size" android:textColor="@color/mc_picker_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/mc_scroll_hour_text" android:layout_width="@dimen/mc_custom_time_picker_unit_w" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/mc_custom_time_picker_unit_margin_l" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/mc_column_min" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.meizu.common.widget.ScrollTextView android:id="@id/mc_scroll_min" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <TextView android:textSize="@dimen/mc_picker_text_size" android:textColor="@color/mc_picker_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/mc_scroll_min_text" android:layout_width="@dimen/mc_custom_time_picker_unit_w" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/mc_custom_time_picker_unit_margin_l" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/mc_column_ampm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.meizu.common.widget.ScrollTextView android:id="@id/mc_scroll_ampm" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

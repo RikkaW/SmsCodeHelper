@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="240.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/blurArea" android:background="@color/mz_transparent" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+    <TextView android:textSize="32.0sp" android:gravity="center" android:id="@id/blurTitle" android:background="@color/mz_slidingmenu_background_light" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+</LinearLayout>

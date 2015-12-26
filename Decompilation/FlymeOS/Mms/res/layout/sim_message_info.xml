@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/sim_message_padding" android:paddingRight="@dimen/sim_message_padding" android:paddingBottom="@dimen/sim_message_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sim_message_title_size" android:textColor="@color/black" android:id="@id/recepient_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recv_info" />
+        <TextView android:textSize="@dimen/sim_message_title_size" android:textColor="@color/black" android:id="@id/time_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_info" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sim_message_body_size" android:textColor="@color/black" android:id="@id/showText" android:paddingLeft="@dimen/sim_message_padding" android:paddingRight="@dimen/sim_message_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

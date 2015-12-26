@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/mms_menu_forward_selector" android:id="@id/forward" android:title="@string/long_press_menu_forward" android:showAsAction="always|withText" app:showAsAction="always|withText" />
+    <item android:icon="@drawable/ic_sb_delete_selector" android:id="@id/delete" android:orderInCategory="1" android:title="@string/message_unfavorite_label" android:showAsAction="always|withText" app:showAsAction="always|withText">
+        <menu>
+            <item android:id="@id/deleteSub" android:visible="false" android:orderInCategory="1" android:title="@string/delete_message" android:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

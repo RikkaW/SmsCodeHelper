@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/custom_time_picker_text_region_height">
+        <TextView android:textSize="@dimen/custom_time_picker_text_size" android:textColor="@color/custom_time_picker_tittle_text_color" android:layout_gravity="center" android:id="@id/time_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:layout_gravity="bottom" android:id="@id/divider" android:background="@color/conv_divider" android:layout_width="fill_parent" android:layout_height="@dimen/conv_divider_height" />
+    </FrameLayout>
+    <com.android.mms.view.CustomTimePicker android:id="@id/constom_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

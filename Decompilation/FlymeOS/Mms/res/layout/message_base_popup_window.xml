@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/mz_card_list_divider_shade_light" android:showDividers="middle" android:dividerPadding="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_vertical" android:id="@id/view_first" android:background="@drawable/mz_list_selector_background" android:paddingLeft="@dimen/mz_popup_list_item_content_padding_left" android:paddingRight="@dimen/mz_popup_list_item_content_padding_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/view_by_onepage_title" android:height="@dimen/mz_list_item_height_small" style="@style/TextAppearance.Flyme.Light.Medium" />
+    <TextView android:gravity="center_vertical" android:id="@id/view_second" android:background="@drawable/mz_list_selector_background" android:paddingLeft="@dimen/mz_popup_list_item_content_padding_left" android:paddingRight="@dimen/mz_popup_list_item_content_padding_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_by_slide_title" android:height="@dimen/mz_list_item_height_small" style="@style/TextAppearance.Flyme.Light.Medium" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_mms_settings_title" android:key="pref_key_mms_settings" />
+    <PreferenceCategory android:title="@string/pref_forward_title" android:key="pref_key_forward_settings">
+        <CheckBoxPreference android:title="@string/pref_title_fwd_sender_info" android:key="pref_key_fwd_sender_info" android:defaultValue="false" />
+    </PreferenceCategory>
+    <miui.preference.RadioButtonPreferenceCategory android:title="@string/pref_title_card_format" android:key="pref_key_card_format">
+        <miui.preference.RadioButtonPreference android:title="@string/pref_title_miui_card" android:key="pref_key_card_format_miui" android:defaultValue="true" />
+        <miui.preference.RadioButtonPreference android:title="@string/pref_title_vcard" android:key="pref_key_card_format_vcard" android:defaultValue="false" />
+    </miui.preference.RadioButtonPreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_system_title" android:key="pref_key_other_settings">
+        <CheckBoxPreference android:title="@string/pref_title_allow_si_sl_push" android:key="pref_key_allow_si_sl_push" android:summary="@string/pref_summary_allow_si_sl_push" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/pref_title_hide_festival" android:key="pref_key_hide_festival" android:summary="@string/pref_summary_hide_festival" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/pref_title_festival_networking" android:key="pref_key_festival_networking" android:defaultValue="true" />
+        <Preference android:title="@string/pref_edit_smsc_address" android:key="pref_key_edit_sim_smsc_address" />
+        <Preference android:title="@string/pref_title_manage_sim_messages" android:key="pref_key_manage_sim_messages" android:summary="@string/pref_summary_manage_sim_messages" />
+        <Preference android:title="@string/pref_title_storage_status" android:key="pref_key_storage_status" />
+    </PreferenceCategory>
+</PreferenceScreen>

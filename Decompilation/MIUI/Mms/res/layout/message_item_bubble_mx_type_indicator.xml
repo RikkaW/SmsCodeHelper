@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mx_type_indicator_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bubble_indicator_top_margin" android:layout_marginBottom="@dimen/bubble_indicator_top_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/message_mx_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/TextAppearance.MessageDesc.Solid" />
+    <ImageView android:id="@id/message_mx_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/mx_type_guide" android:layout_toRightOf="@id/message_mx_type" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+    <View android:background="@drawable/mx_type_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_toLeftOf="@id/message_mx_type" android:layout_centerVertical="true" />
+    <View android:background="@drawable/mx_type_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:layout_toRightOf="@id/message_mx_guide" android:layout_centerVertical="true" />
+</RelativeLayout>

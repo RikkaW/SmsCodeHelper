@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.ui.MessageListItem android:id="@id/msg_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ListItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/message_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/checkbox_container" android:layout_alignParentLeft="true">
+        <com.android.mms.ui.ShrinkableLinearLayout android:id="@id/message_title_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" mms:shrinkableIndex="0"
+          xmlns:mms="http://schemas.android.com/apk/res/com.android.mms">
+            <TextView android:id="@id/message_slot_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" style="@style/TextAppearance.MessageDesc.Date" />
+            <TextView android:ellipsize="end" android:id="@id/message_sender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:singleLine="true" style="@style/TextAppearance.MessageDesc" />
+            <TextView android:id="@id/message_date" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.MessageDesc" />
+            <TextView android:id="@id/group_send_to" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" style="@style/TextAppearance.MessageDesc" />
+            <TextView android:id="@id/deliver_status_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" style="@style/TextAppearance.MessageDesc" />
+            <ImageView android:id="@id/favourite" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/favourite_list" />
+        </com.android.mms.ui.ShrinkableLinearLayout>
+        <ViewStub android:id="@id/message_item_list_stub" android:layout="@layout/message_item_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ViewStub android:id="@id/checkbox_container_stub" android:layout="@layout/message_list_item_bubble_checkbox" android:inflatedId="@id/checkbox_container" android:layout_width="@dimen/check_box_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bubble_checkbox_distance" android:layout_alignTop="@id/message_main" android:layout_alignBottom="@id/message_main" android:layout_alignParentRight="true" />
+</com.android.mms.ui.MessageListItem>

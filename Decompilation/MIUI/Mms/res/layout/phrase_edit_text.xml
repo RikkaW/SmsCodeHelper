@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:gravity="top|left|center" android:id="@id/new_phrase_content" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="150.0dip" android:hint="@string/new_phrase_hint" android:minLines="4" android:singleLine="false" />
+</FrameLayout>

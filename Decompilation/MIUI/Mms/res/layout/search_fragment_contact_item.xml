@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="?268501062" android:paddingLeft="@dimen/list_item_padding_outer" android:paddingRight="@dimen/list_item_padding_outer" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:textAppearance="@style/TextAppearance.List.Primary" android:id="@id/name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" class="com.android.mms.ui.SearchFragment$TextViewSnippet" />
+    <view android:textAppearance="@style/TextAppearance.List.Secondary" android:id="@id/number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" class="com.android.mms.ui.SearchFragment$TextViewSnippet" />
+</LinearLayout>

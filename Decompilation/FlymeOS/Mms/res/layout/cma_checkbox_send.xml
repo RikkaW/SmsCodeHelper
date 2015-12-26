@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox android:layout_gravity="center_vertical" android:id="@android:id/checkbox" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cma_listitem_checkbox_margin_left" style="@style/Widget.DeviceDefault.CompoundButton.CheckButtonlessMultiple.Color.LimeGreen"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

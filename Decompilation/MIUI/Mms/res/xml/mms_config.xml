@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mms_config version="4">
+    <bool name="enabledMMS">true</bool>
+    <int name="maxMessageSize">307200</int>
+    <int name="maxImageHeight">1920</int>
+    <int name="maxImageWidth">1920</int>
+    <int name="defaultSMSMessagesPerThread">500</int>
+    <int name="defaultMMSMessagesPerThread">50</int>
+    <int name="minMessageCountPerThread">10</int>
+    <int name="maxMessageCountPerThread">5000</int>
+    <string name="uaProfUrl">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
+    <int name="recipientLimit">300</int>
+    <int name="smsToMmsTextThreshold">9</int>
+    <bool name="enableMultipartSMS">false</bool>
+    <bool name="enableSlideDuration">true</bool>
+    <int name="maxMessageTextSize">-1</int>
+    <string name="logPath">/MIUI/debug_log/Mms/</string>
+</mms_config>

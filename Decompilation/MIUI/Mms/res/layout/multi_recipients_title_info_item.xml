@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/recipient_item_bg" android:paddingLeft="@dimen/list_item_padding_outer" android:paddingRight="@dimen/list_item_padding_outer" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:background="@drawable/recipient_divider_solid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <TextView android:textAppearance="@style/TextAppearance.List.Primary" android:ellipsize="end" android:id="@id/contact_info_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_padding_outer_v" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textAppearance="@style/TextAppearance.List.Secondary" android:ellipsize="end" android:id="@id/contact_info_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/list_item_padding_outer_v" android:singleLine="true" android:layout_below="@id/contact_info_name" android:layout_alignLeft="@id/contact_info_name" />
+</RelativeLayout>

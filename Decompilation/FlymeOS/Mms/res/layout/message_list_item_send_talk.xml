@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.view.MessageListItemTalk android:gravity="top|right|center" android:orientation="vertical" android:id="@id/msg_list_item_send_talk" android:clickable="false" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/message_list_item_send_date_status_favorite" />
+    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/msg_content_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ViewStub android:id="@id/resend_iv_stub" android:layout="@layout/resend_iv_stub_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+        <RelativeLayout android:id="@id/msg_content" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ProgressBar android:id="@id/talk_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:progressDrawable="@drawable/talk_process_send" style="?android:attr/progressBarStyleHorizontal" />
+            <ImageView android:id="@id/talk_amp" android:layout_width="11.0dip" android:layout_height="wrap_content" android:src="@drawable/flyme_voice_play_right" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <View android:gravity="center_vertical" android:id="@id/midddle_line" android:background="@color/send_msg_body_text_color" android:layout_width="wrap_content" android:layout_height="4.0px" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/talk_time" android:layout_toRightOf="@id/talk_amp" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/cma_list_item_talk_text_size" android:textColor="@color/send_msg_body_text_color" android:gravity="right|center" android:id="@id/talk_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.android.mms.view.MessageListItemTalk>

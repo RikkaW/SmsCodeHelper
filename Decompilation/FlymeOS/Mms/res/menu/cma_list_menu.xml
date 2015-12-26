@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="?cma_action_bar_ic_person" android:id="@id/personal_item" app:showAsAction="always" />
+    <item android:icon="?cma_action_bar_ic_dial" android:id="@id/dial_item" app:showAsAction="always" />
+</menu>

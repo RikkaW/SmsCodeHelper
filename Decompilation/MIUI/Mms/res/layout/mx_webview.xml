@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/web_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_operation_view">
+        <com.xiaomi.mms.mx.webview.NormalWebView android:id="@id/web_view" android:background="@color/web_view_activity_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_service_bar" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/font_size_area" android:padding="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_above="@id/bottom_operation_view">
+        <TextView android:gravity="center" android:id="@id/small_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:id="@id/medium_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:id="@id/big_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/bottom_operation_view" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <View android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <ImageView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

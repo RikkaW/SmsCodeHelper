@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="bottom|center" android:id="@id/timed_message_expired_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_title_horizontal_padding" android:layout_marginTop="@dimen/dialog_title_vertical_padding" android:layout_marginRight="@dimen/dialog_title_horizontal_padding" style="?android:attr/windowTitleStyle" />
+    <TextView android:gravity="top|center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_title_horizontal_padding" android:layout_marginRight="@dimen/dialog_title_horizontal_padding" android:layout_marginBottom="@dimen/dialog_title_vertical_padding" android:text="@string/timed_message_expired_title_2" style="?android:attr/windowTitleStyle" />
+    <View android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.android.mms.ui.MessageListView android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="insideOverlay" android:id="@android:id/list" android:visibility="visible" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:cacheColorHint="@null" android:divider="@null" android:layout_weight="1.0" android:fastScrollEnabled="true" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" style="?android:attr/buttonBarStyle">
+        <Button android:gravity="center" android:id="@id/resend" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/resent_message" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:gravity="center" android:id="@id/close" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nosend_message" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

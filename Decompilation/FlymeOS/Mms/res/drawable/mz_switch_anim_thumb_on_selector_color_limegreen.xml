@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/mz_switch_thumb_activated_disabled_color_limegreen" />
+    <item android:state_pressed="true" android:drawable="@drawable/mz_switch_thumb_activated_pressed_color_limegreen" />
+    <item android:drawable="@drawable/mz_switch_thumb_activated_color_limegreen" />
+</selector>

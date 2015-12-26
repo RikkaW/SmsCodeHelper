@@ -1,0 +1,103 @@
+public final class br$f
+{
+  public static final int abc_action_bar_home_description = 2131492864;
+  public static final int abc_action_bar_home_description_format = 2131493856;
+  public static final int abc_action_bar_home_subtitle_description_format = 2131493857;
+  public static final int abc_action_bar_up_description = 2131492865;
+  public static final int abc_action_menu_overflow_description = 2131492866;
+  public static final int abc_action_mode_done = 2131492867;
+  public static final int abc_activity_chooser_view_see_all = 2131492868;
+  public static final int abc_activitychooserview_choose_application = 2131492869;
+  public static final int abc_search_hint = 2131493858;
+  public static final int abc_searchview_description_clear = 2131492870;
+  public static final int abc_searchview_description_query = 2131492871;
+  public static final int abc_searchview_description_search = 2131492872;
+  public static final int abc_searchview_description_submit = 2131492873;
+  public static final int abc_searchview_description_voice = 2131492874;
+  public static final int abc_shareactionprovider_share_with = 2131492875;
+  public static final int abc_shareactionprovider_share_with_application = 2131492876;
+  public static final int abc_toolbar_collapse_description = 2131493859;
+  public static final int alwaysUse = 2131493167;
+  public static final int date_time_set = 2131493168;
+  public static final int duoqu_air_depart_time = 2131493864;
+  public static final int duoqu_air_number = 2131493865;
+  public static final int duoqu_call = 2131493866;
+  public static final int duoqu_call_phone = 2131493867;
+  public static final int duoqu_calls_callingtime = 2131493868;
+  public static final int duoqu_calls_calltime = 2131493869;
+  public static final int duoqu_calls_frequency = 2131493870;
+  public static final int duoqu_calls_last_calltime = 2131493871;
+  public static final int duoqu_calls_ownstate = 2131493872;
+  public static final int duoqu_calls_reminder_discern_call = 2131493873;
+  public static final int duoqu_calls_reminder_side_phone_num = 2131493874;
+  public static final int duoqu_calls_sideattribution = 2131493875;
+  public static final int duoqu_calls_sidestate = 2131493876;
+  public static final int duoqu_cancel = 2131493877;
+  public static final int duoqu_chonzhi = 2131493878;
+  public static final int duoqu_confirm = 2131493879;
+  public static final int duoqu_delete_en = 2131493880;
+  public static final int duoqu_delete_tw = 2131493881;
+  public static final int duoqu_delete_zh = 2131493882;
+  public static final int duoqu_dialog_content = 2131493883;
+  public static final int duoqu_dialog_title = 2131493884;
+  public static final int duoqu_double_line = 2131493885;
+  public static final int duoqu_double_line_en = 2131493886;
+  public static final int duoqu_errortext = 2131493887;
+  public static final int duoqu_forword_sms = 2131493888;
+  public static final int duoqu_has_read_en = 2131493889;
+  public static final int duoqu_has_read_tw = 2131493890;
+  public static final int duoqu_has_read_zh = 2131493891;
+  public static final int duoqu_loading = 2131493892;
+  public static final int duoqu_nearby_point_list_title = 2131493893;
+  public static final int duoqu_no_train_info = 2131493894;
+  public static final int duoqu_open_map = 2131493895;
+  public static final int duoqu_open_net = 2131493896;
+  public static final int duoqu_open_text = 2131493897;
+  public static final int duoqu_popmenu_content = 2131493898;
+  public static final int duoqu_reply_en = 2131493899;
+  public static final int duoqu_reply_sms = 2131493900;
+  public static final int duoqu_reply_tw = 2131493901;
+  public static final int duoqu_reply_zh = 2131493902;
+  public static final int duoqu_select_destination = 2131493903;
+  public static final int duoqu_send_email = 2131493904;
+  public static final int duoqu_tip_data_source = 2131493905;
+  public static final int duoqu_tip_duoqu_name = 2131493906;
+  public static final int duoqu_tip_load_more = 2131493907;
+  public static final int duoqu_tip_loading = 2131493908;
+  public static final int duoqu_tip_nearby_point_loading = 2131493909;
+  public static final int duoqu_tip_nearby_point_network_lose = 2131493910;
+  public static final int duoqu_tip_nearby_point_not_find = 2131493911;
+  public static final int duoqu_tip_nearby_point_refresh = 2131493912;
+  public static final int duoqu_tip_services_provide = 2131493913;
+  public static final int duoqu_train_arrive_time = 2131493914;
+  public static final int duoqu_train_depart_time = 2131493915;
+  public static final int duoqu_train_number = 2131493916;
+  public static final int duoqu_train_passenger = 2131493917;
+  public static final int duoqu_transfer_place = 2131493918;
+  public static final int duoqu_web_aboutus = 2131493919;
+  public static final int duoqu_web_close = 2131493920;
+  public static final int duoqu_web_network_fail = 2131493921;
+  public static final int duoqu_web_network_setting = 2131493922;
+  public static final int duoqu_web_not_find_page = 2131493923;
+  public static final int duoqu_web_reset = 2131493924;
+  public static final int mz_action_bar_multi_choice_cancel = 2131493758;
+  public static final int mz_action_bar_multi_choice_select_all = 2131493759;
+  public static final int mz_action_bar_multi_choice_select_all_cancel = 2131493760;
+  public static final int mz_action_bar_multi_choice_title = 2131493761;
+  public static final int mz_date_time_day = 2131493169;
+  public static final int mz_date_time_hour = 2131493170;
+  public static final int mz_date_time_min = 2131493171;
+  public static final int mz_date_time_month = 2131493172;
+  public static final int mz_date_time_sec = 2131493173;
+  public static final int mz_date_time_year = 2131493174;
+  public static final int mz_network_unavailable_hint = 2131493762;
+  public static final int mz_wif_setting_dialog_message = 2131493763;
+  public static final int mz_wif_setting_dialog_set = 2131493764;
+  public static final int status_bar_notification_info_overflow = 2131493944;
+}
+
+/* Location:
+ * Qualified Name:     br.f
+ * Java Class Version: 6 (50.0)
+ * JD-Core Version:    0.7.1
+ */

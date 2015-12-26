@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="right|center" android:id="@id/mms_download_controls" android:background="@drawable/download_progress_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/download_pending" android:background="@drawable/pending_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pending_fg" />
+    <Button android:layout_gravity="center" android:id="@id/btn_download_msg" android:background="@drawable/download_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <miui.widget.CircleProgressBar android:layout_gravity="center" android:id="@id/download_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

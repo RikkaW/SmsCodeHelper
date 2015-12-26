@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/status_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cma_date_favorite_margin_left" android:layout_alignParentLeft="true"
+  xmlns:android="http://schemas.android.com/apk/prv/res/android">
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="?cma_list_item_time_text_size_attr" android:textColor="@color/msg_time_color" android:id="@id/date_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_message" android:singleLine="true" />
+    <ViewStub android:id="@id/favorite_view_stub" android:layout="@layout/favorite_view_stub_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cma_list_item_status_icon_margin_LR" />
+    <ImageView android:layout_gravity="center" android:id="@id/msg_sim_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cma_list_item_sim_icon_margin_Left" android:scaleType="center" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="?cma_list_item_time_text_size_attr" android:textColor="@color/msg_time_color" android:layout_gravity="center" android:id="@id/msg_status_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cma_list_item_status_icon_margin_LR" />
+    <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="right" android:id="@id/rich_bubble_info" android:padding="@dimen/cma_list_item_rich_info_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cma_list_item_rich_info_margin_Right" android:src="@drawable/sms_icon_detail" android:scaleType="center" />
+    </LinearLayout>
+</LinearLayout>

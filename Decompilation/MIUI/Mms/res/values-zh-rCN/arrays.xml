@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="prefEntries_ringtone_repeat">
+        <item>1次</item>
+        <item>2次</item>
+        <item>3次</item>
+        <item>5次</item>
+        <item>10次</item>
+    </string-array>
+    <string-array name="contact_entries">
+        <item>姓名</item>
+        <item>昵称</item>
+        <item>电话</item>
+        <item>邮件</item>
+        <item>公司</item>
+        <item>即时消息</item>
+        <item>网络电话</item>
+        <item>生日</item>
+        <item>网址</item>
+        <item>地址</item>
+        <item>备注</item>
+    </string-array>
+    <string-array name="entries_date_type">
+        <item>显示短信的接收时间</item>
+        <item>"显示短信的发送时间
+（服务器时间，可能不准确）"</item>
+    </string-array>
+    <string-array name="entries_date_type_rightvalue">
+        <item>接收时间</item>
+        <item>发送时间</item>
+    </string-array>
+    <string-array name="resent_via_entries_sms">
+        <item>通过短信</item>
+        <item>通过网络短信</item>
+    </string-array>
+    <string-array name="resent_via_entries_mms">
+        <item>通过彩信</item>
+        <item>通过网络短信</item>
+    </string-array>
+    <string-array name="entries_sms_validity_period">
+        <item>不设置</item>
+        <item>1小时</item>
+        <item>6小时</item>
+        <item>12小时</item>
+        <item>1天</item>
+        <item>最长</item>
+    </string-array>
+    <string-array name="entries_sms_validity_period_value">
+        <item>-1</item>
+        <item>60</item>
+        <item>360</item>
+        <item>720</item>
+        <item>1440</item>
+        <item>635040</item>
+    </string-array>
+    <string-array name="entries_mms_validity_period">
+        <item>最长</item>
+        <item>两天</item>
+    </string-array>
+    <string-array name="entries_mms_validity_period_value">
+        <item>0</item>
+        <item>172800</item>
+    </string-array>
+    <string-array name="select_dialog_items">
+        <item>1 秒</item>
+        <item>2 秒</item>
+        <item>3 秒</item>
+        <item>4 秒</item>
+        <item>5 秒</item>
+        <item>6 秒</item>
+        <item>7 秒</item>
+        <item>8 秒</item>
+        <item>9 秒</item>
+        <item>10 秒</item>
+        <item>其他…</item>
+    </string-array>
+    <string-array name="prefEntries_vibrateWhen">
+        <item>始终</item>
+        <item>仅在静音时</item>
+        <item>一律不</item>
+    </string-array>
+</resources>

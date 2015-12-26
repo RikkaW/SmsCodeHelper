@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.view.MmsEllipTextView android:textSize="@dimen/mz_text_size_small" android:gravity="center_horizontal" android:id="@id/message" android:paddingLeft="@dimen/mz_alert_dialog_message_padding_left" android:paddingTop="@dimen/mz_alert_dialog_message_padding_top" android:paddingRight="@dimen/mz_alert_dialog_message_padding_right" android:paddingBottom="@dimen/mz_alert_dialog_message_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

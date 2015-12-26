@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="default_smiley_names">
+        <item>Õnnelik</item>
+        <item>Kurb</item>
+        <item>Silmapilgutus</item>
+        <item>Keel väljas</item>
+        <item>Üllatunud</item>
+        <item>Suudlus</item>
+        <item>Karjumine</item>
+        <item>Lahe</item>
+        <item>Rahasuu</item>
+        <item>Loba-aps</item>
+        <item>Piinlik</item>
+        <item>Ingel</item>
+        <item>Otsustusvõimetu</item>
+        <item>Nutt</item>
+        <item>Suletud suu</item>
+        <item>Naer</item>
+        <item>Segaduses</item>
+        <item>Süda</item>
+        <item>Vihane</item>
+        <item>Muie</item>
+        <item>Ükskõikne nägu</item>
+    </string-array>
+    <string-array name="empty_subject_strings">
+        <item>teemat ei ole</item>
+    </string-array>
+    <string-array name="prefEntries_vibrateWhen">
+        <item>Alati</item>
+        <item>Ainult hääletus režiimis</item>
+        <item>Mitte kunagi</item>
+    </string-array>
+    <string-array name="select_dialog_items">
+        <item>1 sekund</item>
+        <item>2 sekundit</item>
+        <item>3 sekundit</item>
+        <item>4 sekundit</item>
+        <item>5 sekundit</item>
+        <item>6 sekundit</item>
+        <item>7 sekundit</item>
+        <item>8 sekundit</item>
+        <item>9 sekundit</item>
+        <item>10 sekundit</item>
+        <item>Muu</item>
+    </string-array>
+    <string-array name="confirm_dialog_titlet">
+        <item>Kas kustutada sõnum?</item>
+        <item>Kas kustutada valitud üksused?</item>
+    </string-array>
+    <string-array name="phrases">
+        <item>Olen praegu hõivatud, aga võtan hiljem ühendust.</item>
+        <item>Palun helistage hiljem, aitäh.</item>
+        <item>Hästi, aitäh.</item>
+        <item>Liiklusummik, jään veidi hiljaks.</item>
+    </string-array>
+    <string-array name="sns_error_msg">
+        <item>Lubamatu Weibo kasutaja</item>
+        <item>Piiratud juurdepääs</item>
+        <item>Kasutajat pole olemas</item>
+        <item>Tühi sisu. Saatmine ebaõnnestus</item>
+        <item>Ärge sisestage rohkem kui 300 tähemärki</item>
+        <item>Reeglite rikkumine, kehtetu toiming</item>
+        <item>Sama sisu ei saa 10 minuti jooksul uuesti postitada</item>
+        <item>Sisestatud URL tundub ebaturvaline</item>
+        <item>Vastavalt kehtivatele õigusnormidele ei saa seda sisu postitada</item>
+        <item>See funktsioon pole praegu saadaval</item>
+        <item>Kasutaja privaatsussätetest tulenevalt ei saa sellele kasutajale erasõnumeid saata</item>
+        <item>Ootamatu sisselogimisolek</item>
+        <item>Konto on lukus</item>
+        <item>See sisu pole vaatamiseks ajutiselt kättesaadav</item>
+        <item>Erasõnumeid ei saa saata kasutajatele, kes teid ei jälgi</item>
+        <item>Lubamatu erasõnum</item>
+        <item>Erasõnumit pole olemas</item>
+        <item>Sama erasõnumit ei saa uuesti saata</item>
+        <item>Lubamatu erasõnumside ID</item>
+        <item>Saadeti liiga palju erasõnumeid</item>
+        <item>See era rikub vastavaid eeskirju ja on blokeeritud</item>
+        <item>Vastavalt kehtivatele õigusnormidele ei saa te erasõnumeid saata</item>
+        <item>Luba aegunud</item>
+        <item>Kasutaja sätetest tulenevalt ei saa sellele kasutajale erasõnumeid saata</item>
+        <item>Olete selle juba saatnud. Ühest korrast piisab</item>
+    </string-array>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@268566529" android:id="@id/copy_to_phone" android:title="@string/sim_copy_to_phone_memory" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/action_button_forward_light" android:id="@id/forward" android:title="@string/menu_forward" android:showAsAction="always|withText" />
+    <item android:icon="@268566533" android:id="@id/delete" android:title="@string/sim_delete" android:showAsAction="always|withText" />
+</menu>

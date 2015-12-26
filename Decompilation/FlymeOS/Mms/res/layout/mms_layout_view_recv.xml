@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mms_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:mms="http://schemas.android.com/apk/res/com.android.mms">
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/img_frm" android:clickable="false" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.android.mms.view.MessageRoundCornerImageView android:layout_gravity="center" android:id="@id/image_view" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mz_ic_list_unknow" android:scaleType="centerCrop" android:adjustViewBounds="true" mms:message_r_radius="@dimen/cma_list_item_round_radius" />
+        <ImageView android:layout_gravity="center" android:id="@id/play_slideshow_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mms_play_btn" android:adjustViewBounds="true" />
+        <TextView android:textSize="@dimen/cma_list_item_start_download_textsize" android:textColor="@color/group_detail_color" android:layout_gravity="center_vertical" android:id="@id/start_download" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/start_download_title" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/mms_extra_frm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <TextView android:textSize="@dimen/cma_list_item_mms_name_text_size" android:textColor="@color/recv_msg_attachment_name" android:ellipsize="middle" android:linksClickable="false" android:id="@id/mms_file_name" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/cma_list_item_mms_file_name_max_width" android:singleLine="true" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/cma_list_item_mms_size_text_size" android:textColor="@color/recv_msg_attachment_size" android:ellipsize="end" android:autoLink="all" android:linksClickable="false" android:id="@id/mms_file_size" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/cma_list_item_mms_size_text_size" android:textColor="@color/recv_msg_attachment_size" android:id="@id/download_goon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download_goon_title" />
+        </FrameLayout>
+        <ProgressBar android:gravity="bottom" android:layout_gravity="bottom|center" android:id="@id/mms_transcation_progress" android:visibility="invisible" android:layout_width="@dimen/cma_list_item_progress_width" android:layout_height="@dimen/cma_list_item_downProgress_height" android:layout_marginTop="@dimen/message_flymeMms_downProgress_marginTop" android:layout_marginBottom="@dimen/message_flymeMms_downProgress_marginBottom" android:progressDrawable="@drawable/mms_progress_bar_bg_send" style="?android:attr/progressBarStyleHorizontal" />
+    </LinearLayout>
+</LinearLayout>

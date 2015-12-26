@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="default_smiley_names">
+        <item>Fericit</item>
+        <item>Trist</item>
+        <item>Clipeşte</item>
+        <item>Limba scoasă</item>
+        <item>Surprins</item>
+        <item>Sărut</item>
+        <item>Ţipăt</item>
+        <item>Tare</item>
+        <item>Gură în formă de bancnotă</item>
+        <item>Piciorul în gură</item>
+        <item>Stânjenit</item>
+        <item>Înger</item>
+        <item>Indecis</item>
+        <item>Plânset</item>
+        <item>Buzele sunt pecetluite</item>
+        <item>Râset</item>
+        <item>Confuz</item>
+        <item>Inimă</item>
+        <item>Nervos</item>
+        <item>Rânjet</item>
+        <item>Faţă de poker</item>
+    </string-array>
+    <string-array name="empty_subject_strings">
+        <item>fără subiect</item>
+    </string-array>
+    <string-array name="prefEntries_vibrateWhen">
+        <item>Întotdeauna</item>
+        <item>Numai când profilul este Silenţios</item>
+        <item>Niciodată</item>
+    </string-array>
+    <string-array name="select_dialog_items">
+        <item>1 secundă</item>
+        <item>2 secunde</item>
+        <item>3 secunde</item>
+        <item>4 secunde</item>
+        <item>5 secunde</item>
+        <item>6 secunde</item>
+        <item>7 secunde</item>
+        <item>8 secunde</item>
+        <item>9 secunde</item>
+        <item>10 secunde</item>
+        <item>Altele</item>
+    </string-array>
+</resources>

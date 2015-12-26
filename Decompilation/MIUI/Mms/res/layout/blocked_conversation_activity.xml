@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.mms.ui.SizeAwareLinearLayout android:orientation="vertical" android:id="@id/msg_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/message_list" />
+        <include layout="@layout/blocked_message_bottom_panel" />
+    </com.android.mms.ui.SizeAwareLinearLayout>
+    <include layout="@layout/single_recipient_contact_panel" />
+    <ViewStub android:id="@id/black_viewstub" android:layout="@layout/black_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

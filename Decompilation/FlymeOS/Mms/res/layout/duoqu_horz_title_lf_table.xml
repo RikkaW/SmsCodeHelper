@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.com.xy.sms.sdk.ui.popu.widget.DuoquHorizLFItemTable android:id="@id/duoqu_horiz_tilte_list_lf" android:layout_width="fill_parent" android:layout_height="fill_parent" duoqu:title_textsize="14.0dip" duoqu:content_textsize="14.0dip" duoqu:content_paddingleft="10.0dip" duoqu:line_spacing="44.0dip" duoqu:line_spacing_left="20.0dip" duoqu:line_spacing_right="15.0dip" duoqu:line_spacing_top="14.0dip" duoqu:line_spacing_top_bigsize="11.0dip" duoqu:title_width="86.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:duoqu="http://schemas.android.com/apk/res-auto" />

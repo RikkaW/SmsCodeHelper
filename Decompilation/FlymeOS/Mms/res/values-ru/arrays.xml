@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="empty_subject_strings">
+        <item>без темы</item>
+    </string-array>
+    <string-array name="prefEntries_vibrateWhen">
+        <item>Всегда</item>
+        <item>Только в режиме без звука</item>
+        <item>Никогда</item>
+    </string-array>
+    <string-array name="select_dialog_items">
+        <item>1 секунда</item>
+        <item>2 сек.</item>
+        <item>3 сек.</item>
+        <item>4 сек.</item>
+        <item>5 секунд</item>
+        <item>6 секунд</item>
+        <item>7 секунд</item>
+        <item>8 секунд</item>
+        <item>9 секунд</item>
+        <item>10 секунд</item>
+        <item>Другое</item>
+    </string-array>
+    <string-array name="confirm_dialog_titlet">
+        <item>Удалить сообщение?</item>
+        <item>Удалить выбранное?</item>
+    </string-array>
+    <string-array name="phrases">
+        <item>Я занят, свяжусь позже.</item>
+        <item>Пожалуйста, позвоните мне позже.</item>
+        <item>Хорошо, спасибо.</item>
+        <item>Пробки, буду немного позже.</item>
+    </string-array>
+    <string-array name="sns_error_msg">
+        <item>Неверное имя пользователя Weibo</item>
+        <item>Ограничение прав доступа</item>
+        <item>Пользователь не существует</item>
+        <item>Пустое содержимоек. Ошибка отправки.</item>
+        <item>Ограничение на текст - 300 символов.</item>
+        <item>Нарушение правил, недопустимая операция.</item>
+        <item>Одинаковое содержимое не может быть размещено ранее, чем через 10 минут.</item>
+        <item>Возможно, введен небезопасный URL</item>
+        <item>Это содержимое не может быть отправлено в соответствии с законами и правилами.</item>
+        <item>Эта функция сейчас недоступна</item>
+        <item>Сообщения не могут быть отправлены этому пользователю из-за установок приватности</item>
+        <item>Неверный логин</item>
+        <item>Аккаунт заблокирован</item>
+        <item>Данное содержимое недоступно</item>
+        <item>Нельзя отправлять сообщения тем, кто не подписан на ваш акаунт.</item>
+        <item>Нелегальный контент</item>
+        <item>Сообщение не существует</item>
+        <item>Нельзя отправлять то же самое сообщение повторно</item>
+        <item>Нелегальный ID сообщения</item>
+        <item>Слишком много сообщений было отправлено</item>
+        <item>Сообщения были заблокированы из-за нарушения правил</item>
+        <item>В соответствии с действующими законами и нормами, вы не можете посылать личные сообщения</item>
+        <item>Токен недействителен</item>
+        <item>В соответствии с настройками, вы не можете отправлять сообщения пользователю</item>
+        <item>Вы уже отправили его один раз. Этого достаточно.</item>
+    </string-array>
+    <string-array name="mc_custom_time_picker_lunar_day">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="mc_custom_time_picker_lunar_month">
+        <item>Январь</item>
+        <item>Февраль</item>
+        <item>Март</item>
+        <item>Апрель</item>
+        <item>Май</item>
+        <item>Июнь</item>
+        <item>Июль</item>
+        <item>Август</item>
+        <item>Сентябрь</item>
+        <item>Октябрь</item>
+        <item>Ноябрь</item>
+        <item>Декабрь</item>
+    </string-array>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mc_content_toast_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/mc_content_toast_parent" android:paddingLeft="@dimen/mc_content_toast_content_horizontal_padding" android:paddingRight="@dimen/mc_content_toast_content_horizontal_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/mc_content_toast_content_margin">
+        <ImageView android:id="@android:id/icon" android:paddingRight="@dimen/mc_content_toast_ic_margin_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+        <RelativeLayout android:id="@id/preference_text_layout" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:ellipsize="end" android:id="@android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@android:id/widget_frame" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:id="@id/mc_toast_separator" android:background="#26000000" android:layout_width="fill_parent" android:layout_height="2.0px" />
+</LinearLayout>

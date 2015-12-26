@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bottom_panel" android:background="@drawable/message_edit_bottom_panel" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/bottom_editor_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <ViewStub android:id="@id/message_edit_bottom_audio_stub" android:layout="@layout/message_edit_bottom_audio_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <Button android:id="@id/switch_btn" android:background="@drawable/insert_attachment_button_unchecked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/add_attachment_button_margin" />
+            <include layout="@layout/mms_editor" />
+            <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/TextAppearance.MessageCounter" android:id="@id/text_counter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                <Button android:id="@id/send_button" android:background="@drawable/send_btn" android:nextFocusLeft="@id/embedded_text_editor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/add_attachment_button_margin" android:layout_below="@id/text_counter" android:contentDescription="@string/send_sms" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ViewStub android:id="@id/message_edit_bottom_menu_stub" android:layout="@layout/message_edit_bottom_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <ViewStub android:id="@id/message_edit_bottom_sim_button_stub" android:layout="@layout/message_edit_bottom_sim_button_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

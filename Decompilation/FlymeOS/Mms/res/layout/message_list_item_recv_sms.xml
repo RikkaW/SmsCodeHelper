@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.view.MessageListItemSms android:gravity="top|left|center" android:orientation="vertical" android:id="@id/msg_list_item_recv" android:clickable="false" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:mms="http://schemas.android.com/apk/res/com.android.mms">
+    <include layout="@layout/message_list_item_recv_date_status_favorite" />
+    <RelativeLayout android:id="@id/msg_content_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.android.mms.view.MmsLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/msg_content" android:layout_width="wrap_content" android:layout_height="wrap_content" mms:max_width="@dimen/cma_msgItem_recv_maxWidth" mms:msg_content_layout="@layout/sms_content_view_recv" />
+        <ViewStub android:gravity="left|center" android:id="@id/duoqu_rich_item_group_stub" android:layout="@layout/rich_bubble_view_group" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</com.android.mms.view.MessageListItemSms>

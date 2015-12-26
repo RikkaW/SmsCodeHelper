@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="11.0sp" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/security_alert" android:background="@drawable/security_alert_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/security_alert_desc" android:lineSpacingExtra="3.0sp" />
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/message_list_footer_height" />
+</LinearLayout>

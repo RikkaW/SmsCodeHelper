@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="@dimen/list_item_padding_outer" android:paddingRight="@dimen/list_item_padding_outer" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/show_all_msg_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

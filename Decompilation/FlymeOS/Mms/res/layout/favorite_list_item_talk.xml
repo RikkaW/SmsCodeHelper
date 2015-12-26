@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.fragmentstyle.FavoriteListItemTalk android:orientation="vertical" android:background="?android:activatedBackgroundIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/favorite_content" android:paddingTop="@dimen/favorite_list_item_padding_top" android:paddingBottom="@dimen/favorite_list_item_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/favorite_list_item_padding_left" android:layout_marginRight="@dimen/favorite_list_item_padding_right">
+            <include android:visibility="gone" layout="@layout/message_list_item_recv_date_status_favorite" />
+            <com.android.mms.fragmentstyle.FavoriteListItemCommon android:orientation="vertical" android:id="@id/favorite_common" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:id="@id/msg_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/favorite_list_item_mms_stub_margin_top">
+                <ProgressBar android:id="@id/talk_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:progressDrawable="@drawable/talk_process_recv" style="?android:attr/progressBarStyleHorizontal" />
+                <ImageView android:id="@id/talk_amp" android:layout_width="11.0dip" android:layout_height="wrap_content" android:src="@drawable/flyme_voice_play_left" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <View android:gravity="center_vertical" android:id="@id/midddle_line" android:background="@color/recv_msg_body_text_color" android:layout_width="wrap_content" android:layout_height="4.0px" android:layout_marginLeft="4.0dip" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/talk_time" android:layout_toRightOf="@id/talk_amp" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/cma_list_item_talk_text_size" android:textColor="@color/recv_msg_body_text_color" android:gravity="right|center" android:id="@id/talk_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/groud_deliver" android:paddingTop="@dimen/cma_msgItem_groud_deliver_paddingTop" android:visibility="gone" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cma_group_deliver_margin_left" android:src="@drawable/ic_group_next_selector" />
+        </LinearLayout>
+        <com.meizu.common.widget.AnimCheckBox android:layout_gravity="right|center" android:id="@android:id/checkbox" android:focusable="false" android:visibility="invisible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/favorite_list_item_padding_right" style="@style/Widget.DeviceDefault.CompoundButton.CheckButtonlessMultiple.Color.LimeGreen" />
+    </FrameLayout>
+</com.android.mms.fragmentstyle.FavoriteListItemTalk>

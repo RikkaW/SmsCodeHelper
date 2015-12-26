@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="confirm_delete_conversation">
+        <item quantity="other">%1$s conversations vont être supprimées.</item>
+        <item quantity="one">Une conversation va être supprimée.</item>
+    </plurals>
+    <plurals name="message_count_notification_overflow">
+        <item quantity="other">+ %1$s autres messages</item>
+        <item quantity="one">+ %1$s autre message</item>
+    </plurals>
+    <plurals name="recipient_count">
+        <item quantity="other">%1$s personnes</item>
+    </plurals>
+    <plurals name="search_results_title">
+        <item quantity="other">%1$s résultats pour \"%2$s\"</item>
+        <item quantity="one">%1$s résultat pour \"%2$s\"</item>
+    </plurals>
+    <plurals name="slide_duration">
+        <item quantity="other">%s s</item>
+        <item quantity="one">%s s</item>
+        <item quantity="few">%s s</item>
+    </plurals>
+</resources>

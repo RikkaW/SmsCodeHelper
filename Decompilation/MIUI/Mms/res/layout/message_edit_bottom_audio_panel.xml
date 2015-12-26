@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/audio_bottom_text_size" android:id="@id/remind_text_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/press_recording" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/audio_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_cancel" android:layout_centerInParent="true" />
+    <com.android.mms.audio.RecordingProgressView android:id="@id/recording_progress_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/audio_bottom_progress_margin_left" android:layout_alignParentLeft="true" android:layout_centerVertical="true" recording_progress:interval="@dimen/audio_bottom_progress_interval" recording_progress:defaultColor="@color/audio_bottom_default_color" recording_progress:indicatorColor="@color/audio_bottom_color"
+      xmlns:recording_progress="http://schemas.android.com/apk/res/com.android.mms" />
+    <TextView android:textSize="@dimen/audio_bottom_text_size" android:gravity="center" android:id="@id/audio_text_notify" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/audio_cancel" android:layout_toRightOf="@id/recording_progress_view" android:layout_centerVertical="true" />
+    <Button android:id="@id/audio_btn" android:background="@drawable/chat_icon_voice_p" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/audio_bottom_text_size" android:gravity="center" android:id="@id/audio_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/left_cancel" android:layout_toLeftOf="@id/audio_btn" android:layout_toRightOf="@id/audio_cancel" android:layout_centerVertical="true" />
+</RelativeLayout>

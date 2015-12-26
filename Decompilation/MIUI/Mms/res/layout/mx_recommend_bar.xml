@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@drawable/mx_recommend_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/recommend_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/mx_recommend_msg" android:layout_weight="1.0" style="@style/TextAppearance.MxRecommend" />
+    <Button android:layout_gravity="right" android:id="@id/mx_recommend_close" android:background="@drawable/mx_recommend_close" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

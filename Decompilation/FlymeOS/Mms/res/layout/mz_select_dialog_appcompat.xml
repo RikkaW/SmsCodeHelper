@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView android:id="@id/select_dialog_listview" android:scrollbars="vertical" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@null" android:divider="?listDividerAlertDialog" android:overScrollMode="ifContentScrolls" style="@style/Widget.DeviceDefault.Light.ListView.Meizu.Partition"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

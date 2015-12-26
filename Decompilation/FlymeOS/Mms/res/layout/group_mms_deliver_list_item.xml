@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/msg_delivey_info_view" android:paddingLeft="@dimen/group_detail_list_item_padding_left" android:paddingRight="@dimen/group_detail_list_item_padding_right" android:layout_width="fill_parent" android:layout_height="@dimen/group_detail_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="left|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="?group_message_delivery_list_item_from_text_size_attr" android:textColor="@color/list_text1_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/name_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="?group_detail_date_tv_text_size_attr" android:textColor="@color/deliver_time_and_status_color" android:ellipsize="end" android:id="@id/number_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/group_detail_number_tv_margin_right" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="?group_detail_date_tv_text_size_attr" android:textColor="@color/deliver_time_and_status_color" android:ellipsize="end" android:id="@id/date_tv" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/group_detail_date_tv_margin_right" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="?group_detail_date_tv_text_size_attr" android:textColor="@color/deliver_time_and_status_color" android:ellipsize="end" android:id="@id/status_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="right|center" android:id="@id/resend_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_resend_selector" android:layout_weight="0.0" />
+</LinearLayout>

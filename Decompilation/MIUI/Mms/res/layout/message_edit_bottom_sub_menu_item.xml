@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="?268501020" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/message_edit_bottom_text_size" android:textColor="@drawable/text_color_black" android:gravity="center" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/message_edit_bottom_popup_menu_height"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

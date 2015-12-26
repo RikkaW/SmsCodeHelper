@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="right" android:layout_gravity="right" android:id="@id/mc_stretch_search_layout" android:paddingLeft="@dimen/mc_stretch_search_padding_left" android:paddingRight="@dimen/mc_stretch_search_tv_padding_right" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:gravity="right|center" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/mc_stretch_search_padding_right" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" layout="@layout/mc_search_layout" />
+    <TextView android:textSize="@dimen/mz_text_size_normal" android:textColor="@color/mz_stretch_search_textview_textcolor" android:gravity="center" android:layout_gravity="right" android:id="@id/mc_search_textview" android:background="@null" android:visibility="gone" android:layout_width="@dimen/mc_stretch_search_textview_width" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="pref_key_root"
+  xmlns:android="http://schemas.android.com/apk/prv/res/android"
+  xmlns:flyme="http://schemas.android.com/apk/prv/res/flyme"
+  xmlns:mms="http://schemas.android.com/apk/res/com.android.mms.ui"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <com.meizu.common.preference.SwitchPreference android:title="@string/pref_title_notification_enabled" android:key="pref_key_enable_notifications" android:defaultValue="true" />
+    <com.meizu.common.preference.SwitchPreference android:title="@string/pref_title_sms_delivery_reports" android:key="pref_key_sms_delivery_reports" />
+    <com.meizu.common.preference.SwitchPreference android:title="@string/pref_title_mms_auto_retrieval" android:key="pref_key_mms_auto_retrieval" android:summary="@string/pref_summary_mms_auto_retrieval" android:defaultValue="true" />
+    <com.meizu.common.preference.SwitchPreference android:title="@string/pref_title_mms_retrieval_during_roaming" android:key="pref_key_mms_retrieval_during_roaming" android:defaultValue="false" />
+    <PreferenceScreen android:title="@string/pref_title_flyme_message" android:key="pref_key_manage_flyme_message" />
+    <PreferenceScreen android:title="@string/pref_title_manage_messages_spam" android:key="pref_key_manage_messages_spam" />
+    <PreferenceScreen android:title="@string/quick_reply_menu" android:key="pref_key_edit_quick_reply" android:summary="@string/pref_summary_edit_quick_reply" />
+    <PreferenceScreen android:title="@string/pref_title_manage_sim_messages" android:key="pref_key_manage_sim_messages" />
+    <com.android.mms.ui.SmsCenterNumberEditTextPreference android:persistent="true" android:singleLine="true" android:title="@string/lable_sms_center_number" android:key="pref_key_mms_center_number" android:widgetLayout="@null" android:dialogTitle="@string/dialog_sms_center_number" />
+    <ListPreference android:persistent="false" android:title="@string/pref_title_default_message_app" android:key="pre_key_change_default_message_app" mzListPreferenceMode="MODE_DROPDOWN" />
+    <PreferenceScreen android:title="@string/pref_more_title" android:key="pref_key_more" />
+</PreferenceScreen>

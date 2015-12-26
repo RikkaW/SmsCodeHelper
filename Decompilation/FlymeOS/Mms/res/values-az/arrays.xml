@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="select_dialog_items">
+        <item>1 saniyə</item>
+        <item>2 saniyə</item>
+        <item>3 saniyə</item>
+        <item>4 saniyə</item>
+        <item>5 saniyə</item>
+        <item>6 saniyə</item>
+        <item>7 saniyə</item>
+        <item>8 saniyə</item>
+        <item>9 saniyə</item>
+        <item>10 saniyə</item>
+        <item>Digər</item>
+    </string-array>
+</resources>

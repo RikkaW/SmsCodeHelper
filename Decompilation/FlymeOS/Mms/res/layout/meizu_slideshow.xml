@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/prv/res/android">
+    <ListView android:scrollbarStyle="outsideOverlay" android:id="@android:id/list" android:paddingLeft="@dimen/mms_slide_list_padding_left" android:paddingTop="@dimen/sum_actionbar_height_statusbar_height" android:paddingRight="@dimen/mms_slide_list_padding_right" android:paddingBottom="@dimen/action_bar_bottom_height" android:focusable="false" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" />
+</LinearLayout>

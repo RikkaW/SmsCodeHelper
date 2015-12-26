@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/item_parent" android:background="@drawable/cma_item_background_recv" android:layout_width="@dimen/mms_slide_media_column_width" android:layout_height="@dimen/mms_slide_media_column_heigth"
+  xmlns:android="http://schemas.android.com/apk/prv/res/android">
+    <ImageView android:id="@id/thumbnail" android:src="@drawable/mz_ic_unknow" style="@style/MmsMediaPicture" />
+    <include layout="@layout/meizu_slide_item_common" />
+</LinearLayout>

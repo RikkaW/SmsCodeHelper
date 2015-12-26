@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/mms_slide_text_size" android:textColor="@color/mms_slide_text_color" android:textColorLink="@color/message_default_color" android:autoLink="all" android:linksClickable="true" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:lineSpacingExtra="@dimen/mms_slide_text_line_space"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

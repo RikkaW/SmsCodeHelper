@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/mx_msg" android:key="pref_key_mx_msg">
+        <CheckBoxPreference android:persistent="false" android:title="@string/mx_enable" android:key="pref_key_enable_mx_switch" android:summary="@string/mx_dspt" android:defaultValue="false" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/mx_on_sim_1" android:key="pref_key_enable_mx1_switch" android:summary="@string/mx_dspt" android:defaultValue="false" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/mx_on_sim_2" android:key="pref_key_enable_mx2_switch" android:summary="@string/mx_dspt" android:defaultValue="false" />
+        <PreferenceScreen android:title="@string/mx_current_status" android:key="pref_key_mx_status">
+            <intent android:targetPackage="com.android.mms" android:action="android.intent.action.MAIN" android:targetClass="com.android.mms.ui.MxPreferenceActivity" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/pref_key_mx_feedback" android:key="pref_key_mx_feedback" android:summary="@string/pref_summary_mx_feedback">
+            <intent android:targetPackage="com.android.mms" android:action="android:intent.action.MAIN" android:targetClass="com.android.mms.ui.MxFeedbackActivity" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_notification_settings_title" android:key="pref_key_notification_settings">
+        <CheckBoxPreference android:persistent="false" android:title="@string/pref_title_notification_body_enabled" android:key="pref_key_enable_notification_body" android:summary="@string/pref_summary_notification_body_enabled" android:defaultValue="true" />
+        <com.android.mms.ui.ValueListPreference android:entries="@array/prefEntries_ringtone_repeat" android:title="@string/pref_title_ringtone_repeat" android:key="pref_key_ringtone_repeat" android:defaultValue="@string/prefDefault_ringtone_repeat" android:entryValues="@array/prefValues_ringtone_repeat" />
+        <CheckBoxPreference android:title="@string/pref_title_delivery_reports" android:key="pref_key_delivery_reports" android:summary="@string/pref_summary_delivery_reports" />
+        <CheckBoxPreference android:title="@string/pref_title_send_delivery_reports" android:key="pref_key_send_delivery_reports" android:summary="@string/pref_summary_send_delivery_reports" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_sms_theme_title" android:key="pref_key_display_settings">
+        <CheckBoxPreference android:title="@string/pref_title_show_recent_contacts" android:key="pref_key_show_recent_contacts" android:summary="@string/pref_summary_show_recent_contacts" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/pref_time_auto_group_title" android:key="pref_key_time_style_auto_group" android:summary="@string/pref_time_auto_group_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/title_collapse_sp_messages" android:key="pref_key_collapse_sp_messages" android:summary="@string/pref_collapse_sp_messages_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/title_show_sms_template" android:key="pref_key_show_template" android:summary="@string/pref_show_sms_template_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/title_show_sms_template_in" android:key="pref_key_show_template_in" android:summary="@string/pref_show_sms_template_in_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/title_allow_network_access" android:key="pref_key_allow_network_access" android:summary="@string/pref_allow_network_access_summary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/title_show_blocked_messages" android:key="pref_key_show_blocked_messages" android:summary="@string/pref_show_blocked_messages_summary" android:defaultValue="true" />
+        <com.android.mms.ui.ValueListPreference android:entries="@array/entries_date_type" android:title="@string/title_date_type" android:key="pref_key_date_type" android:defaultValue="0" android:entryValues="@array/entryvalues_date_type" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_other_title" android:key="pref_other_settings">
+        <PreferenceScreen android:title="@string/pref_message_recovery_introduction_title" android:key="pref_message_recovery_introduction" />
+        <PreferenceScreen android:title="@string/found_wild_messages_title" android:key="pref_key_download_wild_msg" />
+        <PreferenceScreen android:title="@string/pref_advanced_settings_title" android:key="pref_advanced_settings">
+            <intent android:targetPackage="com.android.mms" android:action="android.intent.action.MAIN" android:targetClass="com.android.mms.ui.MessagingAdvancedPreferenceActivity" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

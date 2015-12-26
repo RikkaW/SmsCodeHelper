@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="confirm_delete_conversation">
+        <item quantity="other">Hapus %1$s percakapam</item>
+        <item quantity="one">Hapus %1$s percakapam</item>
+    </plurals>
+    <plurals name="message_count_notification_overflow">
+        <item quantity="other">+ %1$s pesan lainnya</item>
+        <item quantity="one">+ %1$s pesan lainnya</item>
+    </plurals>
+    <plurals name="recipient_count">
+        <item quantity="other">%1$s kontak</item>
+    </plurals>
+    <plurals name="search_results_title">
+        <item quantity="other">%1$s hasil untuk %2$s</item>
+        <item quantity="one">%1$s hasil untuk %2$s</item>
+    </plurals>
+    <plurals name="slide_duration">
+        <item quantity="other">%s dtk</item>
+        <item quantity="one">%s dtk</item>
+        <item quantity="few">%s dtk</item>
+    </plurals>
+    <plurals name="confirm_delete_messages">
+        <item quantity="other">Telah menghapus %1$s pesan</item>
+        <item quantity="one">Telah menghapus %1$s pesan</item>
+    </plurals>
+</resources>

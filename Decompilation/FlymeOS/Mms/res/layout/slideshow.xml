@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/mms_slide_subject_size" android:textColor="@color/mms_slide_subject_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/subject_tv" android:paddingLeft="@dimen/mms_slide_item_subject_padding_left" android:paddingRight="@dimen/mms_slide_item_subject_padding_left" android:paddingBottom="@dimen/mms_slide_item_margin_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mms_slide_subject_top" android:minHeight="@dimen/mz_list_item_height_small" android:textIsSelectable="true" />
+        <com.android.mms.ui.SlideView android:gravity="center" android:id="@id/slide_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</merge>

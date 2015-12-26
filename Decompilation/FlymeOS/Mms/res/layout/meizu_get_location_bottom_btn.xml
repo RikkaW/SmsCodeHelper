@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/location_btn_container_height" android:divider="@drawable/shape_vertical_divider" android:showDividers="middle" android:dividerPadding="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:meizu="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/action_cancel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no" android:layout_weight="1.0" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/get_location_confirm_view_color_seletor" android:gravity="center" android:id="@id/location_confirm_menu" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/send" android:layout_weight="1.0" />
+</LinearLayout>

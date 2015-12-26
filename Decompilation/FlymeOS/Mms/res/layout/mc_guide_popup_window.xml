@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/guide_parent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/guide_bg_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/guide_bg_left" android:background="@drawable/mc_guide_left" android:layout_width="48.0dip" android:layout_height="fill_parent" />
+        <View android:id="@id/guide_bg_middle" android:background="@drawable/mc_guide_middle" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/guide_bg_right" android:background="@drawable/mc_guide_right" android:layout_width="48.0dip" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/guide_content" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/mc_guide_popup_text_size" android:textColor="#ffffffff" android:id="@id/guide_message" android:paddingLeft="13.0dip" android:paddingTop="@dimen/mc_guide_popup_text_padding_top" android:paddingBottom="@dimen/mc_guide_popup_text_padding_bottom" android:layout_width="0.0dip" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_weight="1.0" android:lineSpacingExtra="@dimen/mc_guide_popup_text_line_spacing" />
+        <FrameLayout android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/mc_guide_popup_text_size" android:paddingTop="@dimen/mc_guide_popup_text_padding_top" android:paddingBottom="@dimen/mc_guide_popup_text_padding_bottom" android:layout_width="1.0dip" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:lineSpacingExtra="@dimen/mc_guide_popup_text_line_spacing" />
+            <ImageView android:layout_gravity="center" android:id="@id/guide_close" android:paddingLeft="13.299988dip" android:paddingTop="12.829987dip" android:paddingRight="12.699982dip" android:paddingBottom="12.829987dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mc_btn_tips_delete" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

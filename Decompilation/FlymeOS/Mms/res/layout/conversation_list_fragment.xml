@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/mz_theme_list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:meizu="http://schemas.android.com/apk/res-auto">
+    <com.meizu.common.widget.EmptyView meizu:mcTitle="@string/no_conversations" meizu:mcTitleTextAppearance="?empty_view_title_style" style="@style/EmptyViewStyle" />
+    <ListView android:id="@android:id/list" android:paddingLeft="@dimen/mz_list_item_padding_left" android:paddingRight="@dimen/mz_list_item_padding_right" android:focusable="true" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:divider="@null" />
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_vertical" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/msg_popup_tip_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/nameMsgFrm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/shape_horizontal_divider" android:mode="twoLine" android:showDividers="middle">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/msg_popup_veri_from_margin_top" android:paddingBottom="@dimen/msg_popup_veri_btns_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/msg_popup_from_text_size" android:textColor="@color/msg_popup_from_text_color" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/from" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:includeFontPadding="false" />
+                <TextView android:textSize="@dimen/msg_popup_from_text_size" android:textColor="@color/msg_popup_from_text_color" android:id="@id/tip" android:paddingLeft="@dimen/msg_popup_veri_from_padding_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/message_popup_veri_tip" android:singleLine="true" android:includeFontPadding="false" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/msg_popup_veri_msg_text_size" android:textColor="@color/msg_popup_msg_text_color" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/msgBody" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/msg_popup_veri_msg_margin_top" android:maxLines="2" android:includeFontPadding="true" android:lineSpacingExtra="@dimen/msg_popup_msg_lineSpacingExtra" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/msg_popup_veri_btns_height" android:divider="@drawable/shape_vertical_divider" android:showDividers="middle">
+            <Button android:id="@id/btn_close" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/message_popup_veri_close" android:layout_weight="1.0" style="@style/Widget.Flyme.Light.Button.Borderless.Small.Dialog" />
+            <Button android:textColor="@color/message_default_color" android:id="@id/btn_copy" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/message_popup_veri_copy" android:layout_weight="1.0" style="@style/Widget.Flyme.Light.Button.Borderless.Small.Dialog" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

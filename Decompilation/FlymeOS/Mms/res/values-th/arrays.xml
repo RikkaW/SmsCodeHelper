@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="default_smiley_names">
+        <item>ดีใจ</item>
+        <item>เศร้า</item>
+        <item>ขยิบตา</item>
+        <item>แลบลิ้น</item>
+        <item>ประหลาดใจ</item>
+        <item>จุมพิต</item>
+        <item>ตะโกน</item>
+        <item>น่าสนใจ</item>
+        <item>เงินปิดปาก</item>
+        <item>เท้าปิดปาก</item>
+        <item>อาย</item>
+        <item>เทพ</item>
+        <item>ไม่แน่ใจ</item>
+        <item>ร้องไห้</item>
+        <item>รูดซิปปาก</item>
+        <item>หัวเราะ</item>
+        <item>สับสน</item>
+        <item>หัวใจ</item>
+        <item>โกรธ</item>
+        <item>แสยะยิ้ม</item>
+        <item>หน้าโป๊กเกอร์</item>
+    </string-array>
+    <string-array name="empty_subject_strings">
+        <item>ไม่มีหัวเรื่อง</item>
+    </string-array>
+    <string-array name="prefEntries_vibrateWhen">
+        <item>ทุกครั้ง</item>
+        <item>เฉพาะเมื่อปิดเสียง</item>
+        <item>ไม่ต้องเลย</item>
+    </string-array>
+    <string-array name="select_dialog_items">
+        <item>1 วินาที</item>
+        <item>2 วินาที</item>
+        <item>3 วินาที</item>
+        <item>4 วินาที</item>
+        <item>5 วินาที</item>
+        <item>6 วินาที</item>
+        <item>7 วินาที</item>
+        <item>8 วินาที</item>
+        <item>9 วินาที</item>
+        <item>10 วินาที</item>
+        <item>อื่นๆ</item>
+    </string-array>
+</resources>

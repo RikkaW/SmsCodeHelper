@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:id="@id/banner_sms_promo" android:background="@drawable/class_zero_background" android:paddingLeft="@dimen/banner_sms_promo_paddingLeft" android:paddingTop="@dimen/banner_sms_promo_paddingTop" android:paddingRight="@dimen/banner_sms_promo_paddingRight" android:paddingBottom="@dimen/banner_sms_promo_paddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sum_actionbar_height_statusbar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/banner_sms_default_app_icon" android:layout_width="wrap_content" android:layout_height="@dimen/banner_sms_promo_icon_hight" android:src="@mipmap/ic_launcher_smsmms" android:importantForAccessibility="no" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/banner_sms_promo_paddingLeft" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center_vertical" android:id="@id/banner_sms_promo_title" android:paddingBottom="@dimen/banner_s_space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/banner_sms_promo_title_initial" android:singleLine="true" style="@style/BannerTitleText" />
+        <TextView android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/banner_sms_promo_message" android:singleLine="false" style="@style/BannerContentText" />
+    </LinearLayout>
+</LinearLayout>

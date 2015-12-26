@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_vertical" android:id="@id/countAndChangeFrm" android:paddingLeft="@dimen/cma_edit_paddingLeft" android:paddingTop="@dimen/cma_editcountfrm_count_margin_top" android:paddingRight="@dimen/cma_edit_paddingRight" android:paddingBottom="@dimen/cma_editcountfrm_count_margin_top" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/cma_edit_textCount_text_size" android:textStyle="bold" android:textColor="@color/mms_editor_sms_count_color" android:gravity="center_vertical" android:layout_gravity="left|center" android:id="@id/text_counter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" />
+    <ImageButton android:layout_gravity="right|center" android:id="@id/sms_mms_change_bak" android:background="@drawable/mms_sms_change_btn_bg" android:visibility="gone" android:layout_width="@dimen/cma_smsmms_change_btn_width" android:layout_height="@dimen/cma_smsmms_change_btn_height" />
+</FrameLayout>

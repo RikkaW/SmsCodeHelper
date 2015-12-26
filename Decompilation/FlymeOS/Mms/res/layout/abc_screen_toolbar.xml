@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.internal.widget.ActionBarOverlayLayout android:id="@id/decor_content_parent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/abc_screen_content_include" />
+    <android.support.v7.internal.widget.ActionBarContainer android:gravity="top" android:id="@id/action_bar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:touchscreenBlocksFocus="true" style="?attr/actionBarStyle">
+        <android.support.v7.widget.Toolbar android:id="@id/action_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:navigationContentDescription="@string/abc_action_bar_up_description" style="?attr/toolbarStyle" />
+        <android.support.v7.internal.widget.ActionBarContextView android:id="@id/action_context_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?attr/actionModeStyle" />
+    </android.support.v7.internal.widget.ActionBarContainer>
+    <android.support.v7.internal.widget.ActionBarContainer android:gravity="center" android:id="@id/split_action_bar" android:visibility="gone" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?attr/actionBarSplitStyle" />
+</android.support.v7.internal.widget.ActionBarOverlayLayout>

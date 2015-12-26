@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/message_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/message_body_list_stub" android:layout="@layout/message_item_list_body" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:layout_gravity="left" android:id="@id/btn_resend" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/resent_message" style="@style/MessageButton.Alert" />
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/group_send_count" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/TextAppearance.MessageDesc" />
+        <miui.widget.CircleProgressBar android:id="@id/group_send_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+    </LinearLayout>
+    <include layout="@layout/message_item_group_failed_layout" />
+</LinearLayout>

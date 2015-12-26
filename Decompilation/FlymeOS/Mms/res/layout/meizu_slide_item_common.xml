@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/mms_slide_file_name_size" android:textColor="@color/mms_slide_file_name_color" android:ellipsize="middle" android:linksClickable="false" android:id="@id/mms_file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <TextView android:textSize="@dimen/mms_view_attachment_size_text_size" android:textColor="@color/mms_slide_file_size_color" android:linksClickable="false" android:id="@id/mms_file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:singleLine="true" />
+</merge>

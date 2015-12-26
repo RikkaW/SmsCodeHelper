@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/duoqu_dialog_corner" android:layout_width="324.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/duoqu_alertdialog_title" android:paddingTop="19.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/duoqu_dialog_title" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff7d7d7d" android:id="@id/duoqu_alertdialog_content" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/duoqu_dialog_content" android:layout_below="@id/duoqu_alertdialog_title" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="9.0dip" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/duoqu_alertdialog_content">
+        <Button android:textSize="14.0sp" android:id="@id/duoqu_alertdialog_cancel" android:background="@drawable/duoqu_button_corner_selector" android:focusable="true" android:layout_width="137.0dip" android:layout_height="42.0dip" android:layout_marginLeft="22.0dip" android:layout_marginRight="3.0dip" android:text="@string/duoqu_cancel" />
+        <Button android:textSize="14.0sp" android:id="@id/duoqu_alertdialog_ok" android:background="@drawable/duoqu_button_corner_selector" android:focusable="true" android:layout_width="137.0dip" android:layout_height="42.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="22.0dip" android:text="@string/duoqu_confirm" />
+    </LinearLayout>
+</RelativeLayout>

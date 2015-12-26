@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:drawable/toast_frame" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sms_mms_not_delivered" />
+        <TextView android:textAppearance="?android:textAppearanceMediumInverse" android:textColor="@android:color/bright_foreground_dark" android:id="@id/title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/undelivered_msg_dialog_title" />
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@android:drawable/divider_horizontal_bright" />
+    <TextView android:textAppearance="?android:textAppearanceSmallInverse" android:textColor="@android:color/bright_foreground_dark" android:gravity="center" android:id="@id/body_text_view" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

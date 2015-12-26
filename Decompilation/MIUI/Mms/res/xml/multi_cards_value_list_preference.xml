@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.mms.ui.AdvancedValueListPreference android:persistent="false" android:key="pref_key_sim1" />
+    <com.android.mms.ui.AdvancedValueListPreference android:persistent="false" android:key="pref_key_sim2" />
+</PreferenceScreen>

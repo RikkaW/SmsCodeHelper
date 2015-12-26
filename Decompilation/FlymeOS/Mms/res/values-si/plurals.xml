@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="confirm_delete_conversation">
+        <item quantity="other">සංවාද %1$s ක් මැකෙනු ඇත.</item>
+        <item quantity="one">එක් සංවාදයක් මැකෙනු ඇත.</item>
+    </plurals>
+    <plurals name="message_count_notification_overflow">
+        <item quantity="other">+තවත් පණිවිඩ %1$s</item>
+        <item quantity="one">+තවත් පණිවිඩ %1$s</item>
+    </plurals>
+    <plurals name="recipient_count">
+        <item quantity="other">පුද්ගලයින් %1$s</item>
+    </plurals>
+    <plurals name="search_results_title">
+        <item quantity="other">\"%1$s\" සඳහා ප්‍රතිඑල %2$s</item>
+        <item quantity="one">\"%2$s\" සඳහා ප්‍රතිඑල %1$s</item>
+    </plurals>
+    <plurals name="slide_duration">
+        <item quantity="other">තත්පර %s</item>
+        <item quantity="one">තත්පර %s</item>
+        <item quantity="few">තත්පර %s</item>
+    </plurals>
+</resources>

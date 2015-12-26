@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="default_smiley_names">
+        <item>Laimīgs</item>
+        <item>Bēdīgs</item>
+        <item>Mirkšķina</item>
+        <item>Izbāzta mēle</item>
+        <item>Pārsteigts</item>
+        <item>Skūpsts</item>
+        <item>Kliedzošs</item>
+        <item>Kolosāli</item>
+        <item>Nauda mutē</item>
+        <item>Turēt mēli aiz zobiem</item>
+        <item>Nokaunējies</item>
+        <item>Eņģelis</item>
+        <item>Neizlēmīgs</item>
+        <item>Raudošs</item>
+        <item>Slēgtas lūpas</item>
+        <item>Smejas</item>
+        <item>Apmulsis</item>
+        <item>Sirds</item>
+        <item>Nikns</item>
+        <item>Smīns</item>
+        <item>Poker face</item>
+    </string-array>
+    <string-array name="empty_subject_strings">
+        <item>bez temata</item>
+    </string-array>
+    <string-array name="prefEntries_vibrateWhen">
+        <item>Vienmēr</item>
+        <item>Tikai klusuma režīmā</item>
+        <item>Nekad</item>
+    </string-array>
+    <string-array name="select_dialog_items">
+        <item>1 sekunde</item>
+        <item>2 sekundes</item>
+        <item>3 sekundes</item>
+        <item>4 sekundes</item>
+        <item>5 sekundes</item>
+        <item>6 sekundes</item>
+        <item>7 sekundes</item>
+        <item>8 sekundes</item>
+        <item>9 sekundes</item>
+        <item>10 sekundes</item>
+        <item>Cits</item>
+    </string-array>
+    <string-array name="confirm_dialog_titlet">
+        <item>Dzēst ziņojumu?</item>
+        <item>Dzēst atlasītos vienumus?</item>
+    </string-array>
+    <string-array name="phrases">
+        <item>Esmuaizņemts, sazināšos ar Jums vēlāk.</item>
+        <item>Lūdzu, piezvaniet vēlāk, paldies.</item>
+        <item>Labi, paldies.</item>
+        <item>Sastrēgumā, mazlietkavēšos.</item>
+    </string-array>
+    <string-array name="sns_error_msg">
+        <item>Nelegāls Weibo lietotājs</item>
+        <item>Ierobežota piekļuve</item>
+        <item>Lietotājs neeksistē</item>
+        <item>Saturs ir tukšs. Sūtīšana neizdevās</item>
+        <item>Neievadiet vairāk nekā 300 rakstzīmes</item>
+        <item>Pārkāpj attiecīgos noteikumus, nederīga darbība</item>
+        <item>To pašu saturu nevar publicēt atkal 10 minūšu laikā</item>
+        <item>Ievadītais URL šķiet nedrošs</item>
+        <item>Saskaņā ar piemērojamiem normatīvajiem aktiem, šo saturu nevar publicēt</item>
+        <item>Šī funkcija pašlaik nav pieejama</item>
+        <item>Konfidencialitātesiestatījumus dēļ šim lietotājam nevar nosūtīt privātus ziņojumus</item>
+        <item>Negaidīts pieteikšanās statuss</item>
+        <item>Konts ir bloķēts</item>
+        <item>Šis saturs īslaicīgi nav pieejams apskatei</item>
+        <item>Jūs nevarat nosūtīt privātus ziņojumus lietotājiem, kuri jums neseko</item>
+        <item>Neatļauts privāts ziņojums</item>
+        <item>Privātais ziņojums neeksistē</item>
+        <item>Jūs nevarat nosūtīt to pašu privāto ziņu vēlreiz</item>
+        <item>Neatļauts privātas ziņapmaiņas ID</item>
+        <item>Nosūtīti pārāk daudz privātie ziņojumi</item>
+        <item>Šis privātums pārkāpj atbilstīgos noteikumus un ir bloķēts</item>
+        <item>Ievērojot piemērojamos normatīvos aktus, jūs nevarat nosūtīt privātus ziņojumus</item>
+        <item>Pilnvaru termiņš beidzies</item>
+        <item>Jūs nevarat nosūtīt privātus ziņojumus lietotājaiestatījumu dēļ</item>
+        <item>Jūs jau esat iesūtījis. Vienreiz pietiek</item>
+    </string-array>
+</resources>

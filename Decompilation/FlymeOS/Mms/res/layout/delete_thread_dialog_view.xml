@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/msg_spam_checkbox_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/cma_list_item_mms_size_text_size" android:textColor="@color/mms_slide_text_color" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/textAppearanceMedium" />
+    <CheckBox android:textSize="@dimen/msg_popup_msg_text_size" android:textColor="@color/spam_delete_tip" android:layout_gravity="center_horizontal" android:id="@id/delete_locked" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/ask_delete_conversation" />
+    <CheckBox android:textSize="@dimen/msg_popup_msg_text_size" android:textColor="@color/spam_delete_tip" android:layout_gravity="center_horizontal" android:id="@id/delete_locked_notify" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/ask_delete_conversation" style="@style/Widget.DeviceDefault.Light.CompoundButton.CheckBox.Color.DodgerBlue" />
+</LinearLayout>

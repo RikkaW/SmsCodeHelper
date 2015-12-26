@@ -1,7 +1,7 @@
 SMSCodeHelper
 ===============
 
-![](./app/src/main/res/mipmap-xxxhdpi/ic_launcher.png)
+![](./ic_launcher.png)
 
 Copy verification code from SMS automatically.
 

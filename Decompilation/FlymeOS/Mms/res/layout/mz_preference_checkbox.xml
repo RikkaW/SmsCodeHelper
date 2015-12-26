@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:paddingRight="@dimen/mz_preference_item_padding_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/mz_preference_text_layout" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/preference_item_padding_side" android:paddingTop="6.0dip" android:paddingRight="@dimen/mz_preference_item_padding_inner" android:paddingBottom="6.0dip" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/mz_text_size_normal" android:ellipsize="end" android:id="@android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:maxLines="4" android:layout_below="@android:id/title" android:layout_alignLeft="@android:id/title" />
+    </RelativeLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/mz_preference_checkbox_divider_marginTop" android:layout_marginBottom="@dimen/mz_preference_checkbox_divider_marginTop" android:src="@drawable/mz_card_list_divider_light" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@android:id/widget_frame" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="@dimen/mz_preference_checkbox_widget_width" />
+</LinearLayout>

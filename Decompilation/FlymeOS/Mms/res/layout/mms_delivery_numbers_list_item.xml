@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/recipient_list_item_name_text_size" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/name_tv" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_dialog_single_line_height" android:layout_marginLeft="22.0dip" android:singleLine="true" />
+</RelativeLayout>

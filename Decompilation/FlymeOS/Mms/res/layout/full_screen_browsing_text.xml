@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/content_container" android:background="@color/full_screen_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/full_screen_browsing_text_size" android:textColor="@color/full_screen_text_color" android:gravity="center" android:id="@id/showText" android:paddingLeft="@dimen/full_screen_browsing_padding" android:paddingTop="@dimen/full_screen_padding_top" android:paddingRight="@dimen/full_screen_browsing_padding" android:paddingBottom="@dimen/full_screen_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxEms="@integer/full_screen_line_maxems" android:lineSpacingExtra="@dimen/full_screen_lineSpacingExtra" />
+    </ScrollView>
+</LinearLayout>

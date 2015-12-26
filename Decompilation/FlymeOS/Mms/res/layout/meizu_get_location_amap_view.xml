@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amap.api.maps2d.MapView android:id="@id/mapView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/location_pin_marginBottom" android:layout_centerInParent="true">
+        <ImageView android:layout_width="@dimen/location_marker_wh" android:layout_height="@dimen/location_marker_wh" android:src="@drawable/ic_map_pin_shadow" />
+        <ImageView android:id="@id/location_marker_iv" android:layout_width="@dimen/location_marker_wh" android:layout_height="@dimen/location_marker_wh" android:layout_marginTop="@dimen/location_marker_iv_marginTop" android:src="@drawable/ic_map_pin" />
+    </LinearLayout>
+    <ImageView android:id="@id/btn_reset_location" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/location_reset_btn_margin_left" android:layout_marginBottom="@dimen/location_reset_btn_margin_bottom" android:src="@drawable/location_reset_btn_src" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

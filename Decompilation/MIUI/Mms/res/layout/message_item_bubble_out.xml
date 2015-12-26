@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/message_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <View android:id="@id/timed_message_padding_view" android:background="@null" android:focusable="false" android:visibility="gone" android:clickable="false" android:longClickable="false" android:layout_width="@dimen/timed_message_padding_width" android:layout_height="1.0px" android:layout_alignParentLeft="true" />
+        <ViewStub android:layout_gravity="right" android:id="@id/group_send_to_panel" android:layout="@layout/group_send_to_panel_stub" android:inflatedId="@id/group_send_to_panel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" />
+        <include android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/timed_message_padding_view" android:layout_below="@id/group_send_to_panel" layout="@layout/message_item_bubble_out_body" />
+    </RelativeLayout>
+    <ViewStub android:id="@id/timed_message_indicator_stub" android:layout="@layout/timed_message_indicator_stub" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignLeft="@id/message_item" android:layout_alignTop="@id/message_item" android:layout_alignBottom="@id/message_item" />
+    <ImageView android:id="@id/favourite" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/favourite_bubble_out" android:layout_alignLeft="@id/message_item" android:layout_alignBottom="@id/message_item" />
+    <ViewStub android:id="@id/group_send_icon" android:layout="@layout/message_item_bubble_group_send_icon_stub" android:inflatedId="@id/group_send_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/message_item" />
+    <include android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/message_item" android:layout_below="@id/group_send_icon" android:layout_centerVertical="true" layout="@layout/message_item_bubble_deliver_text" />
+</RelativeLayout>

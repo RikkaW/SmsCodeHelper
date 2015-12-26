@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_window_focused="false" android:state_enabled="true" android:drawable="@drawable/mz_textfield_nocursor" android:state_multiline="true" />
+    <item android:state_window_focused="false" android:state_enabled="false" android:drawable="@drawable/mz_textfield_nocursor" android:state_multiline="true" />
+    <item android:state_focused="true" android:state_enabled="true" android:drawable="@drawable/mz_textfield_default" android:state_multiline="true" />
+    <item android:state_enabled="true" android:drawable="@drawable/mz_textfield_nocursor" android:state_activated="true" android:state_multiline="true" />
+    <item android:state_enabled="true" android:drawable="@drawable/mz_textfield_nocursor" android:state_multiline="true" />
+    <item android:state_focused="true" android:drawable="@drawable/mz_textfield_nocursor" android:state_multiline="true" />
+    <item android:drawable="@drawable/mz_textfield_nocursor" android:state_multiline="true" />
+    <item android:state_window_focused="false" android:state_enabled="true" android:drawable="@drawable/mz_textfield_nocursor" />
+    <item android:state_window_focused="false" android:state_enabled="false" android:drawable="@drawable/mz_textfield_nocursor" />
+    <item android:state_focused="true" android:state_enabled="true" android:drawable="@drawable/mz_textfield_default" />
+    <item android:state_enabled="true" android:drawable="@drawable/mz_textfield_nocursor" android:state_activated="true" />
+    <item android:state_enabled="true" android:drawable="@drawable/mz_textfield_nocursor" />
+    <item android:state_focused="true" android:drawable="@drawable/mz_textfield_nocursor" />
+    <item android:drawable="@drawable/mz_textfield_nocursor" />
+</selector>

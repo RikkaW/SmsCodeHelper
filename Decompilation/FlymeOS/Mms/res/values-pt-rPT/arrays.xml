@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="default_smiley_names">
+        <item>Feliz</item>
+        <item>Triste</item>
+        <item>A piscar o olho</item>
+        <item>Língua de fora</item>
+        <item>Surpreendido</item>
+        <item>Beijoqueiro</item>
+        <item>A gritar</item>
+        <item>Fixe</item>
+        <item>Interesseiro</item>
+        <item>Arrependido</item>
+        <item>Envergonhado</item>
+        <item>Anjo</item>
+        <item>Indeciso</item>
+        <item>Chorão</item>
+        <item>Boca fechada</item>
+        <item>Risonho</item>
+        <item>Confuso</item>
+        <item>Coração</item>
+        <item>Louco</item>
+        <item>Sorriso pretensioso</item>
+        <item>Inexpressivo</item>
+    </string-array>
+    <string-array name="empty_subject_strings">
+        <item>sem assunto</item>
+    </string-array>
+    <string-array name="prefEntries_vibrateWhen">
+        <item>Sempre</item>
+        <item>Apenas quando está em silêncio</item>
+        <item>Nunca</item>
+    </string-array>
+    <string-array name="select_dialog_items">
+        <item>1 segundo</item>
+        <item>2 segundos</item>
+        <item>3 segundos</item>
+        <item>4 segundos</item>
+        <item>5 segundos</item>
+        <item>6 segundos</item>
+        <item>7 segundos</item>
+        <item>8 segundos</item>
+        <item>9 segundos</item>
+        <item>10 segundos</item>
+        <item>Outra</item>
+    </string-array>
+</resources>

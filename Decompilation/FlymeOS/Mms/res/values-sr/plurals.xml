@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="confirm_delete_conversation">
+        <item quantity="other">Преписке (%1$s) ће бити избрисане.</item>
+        <item quantity="one">Једна преписка ће бити избрисана.</item>
+    </plurals>
+    <plurals name="message_count_notification_overflow">
+        <item quantity="other">и још %1$s поруке(а)</item>
+        <item quantity="one">и још %1$s порука</item>
+    </plurals>
+    <plurals name="recipient_count">
+        <item quantity="other">Особа: %1$s</item>
+    </plurals>
+    <plurals name="search_results_title">
+        <item quantity="other">%1$s резултата за „%2$s“</item>
+        <item quantity="one">%1$s резултат за „%2$s“</item>
+    </plurals>
+    <plurals name="slide_duration">
+        <item quantity="other">%s сек</item>
+        <item quantity="one">%s сек</item>
+        <item quantity="few">%s сек</item>
+    </plurals>
+</resources>

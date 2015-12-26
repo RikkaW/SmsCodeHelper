@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/bottom_menu" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/switch_to_editor" android:background="@drawable/message_edit_bottom_edit_mode" android:layout_width="wrap_content" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <TextView android:textSize="@dimen/message_edit_bottom_text_size" android:gravity="center" android:id="@id/textView1" android:background="@drawable/message_edit_bottom_menu_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/message_edit_bottom_text_size" android:gravity="center" android:id="@id/textView2" android:background="@drawable/message_edit_bottom_menu_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/message_edit_bottom_text_size" android:gravity="center" android:id="@id/textView3" android:background="@drawable/message_edit_bottom_menu_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/message_edit_bottom_text_size" android:gravity="center" android:id="@id/textView4" android:background="@drawable/message_edit_bottom_menu_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

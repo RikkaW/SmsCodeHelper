@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/mms_menu_copy_selector" android:id="@id/copy" android:title="@string/long_press_menu_copy" android:showAsAction="always|withText" app:showAsAction="always|withText" />
+    <item android:icon="@drawable/mms_menu_forward_selector" android:id="@id/forward" android:title="@string/long_press_menu_forward" android:showAsAction="always|withText" app:showAsAction="always|withText" />
+    <item android:icon="@drawable/ic_sb_delete_selector" android:id="@id/delete" android:title="@string/long_press_menu_delete" android:showAsAction="always|withText" app:showAsAction="always|withText" />
+</menu>

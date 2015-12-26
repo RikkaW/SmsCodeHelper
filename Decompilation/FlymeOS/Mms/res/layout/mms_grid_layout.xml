@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/avatar_container" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/foreground">
+        <ImageView android:id="@id/avatar" android:layout_width="@dimen/favorite_list_item_avatar_width" android:layout_height="@dimen/favorite_list_item_avatar_width" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/statuIcon" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/conv_status_text_size" android:textColor="@color/list_unread_text_color" android:layout_gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip" />
+    </FrameLayout>
+    <view android:textAppearance="?android:textAppearanceMedium" android:textSize="?conv_text1_size_attr" android:textColor="@color/list_text1_color" android:ellipsize="end" android:gravity="left|center" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="true" class="com.android.mms.view.MmsTextViewSnippet" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="?conv_top_icon_text_size_attr" android:textColor="@color/icon_top_color" android:gravity="center" android:id="@id/topIcon" android:background="@drawable/list_top_icon" android:paddingLeft="@dimen/conv_top_padding_lr" android:paddingTop="0.0dip" android:paddingRight="@dimen/conv_top_padding_lr" android:paddingBottom="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/top" />
+    <ImageView android:id="@id/msg_status_sim" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+    <view android:textAppearance="?android:textAppearanceSmall" android:textSize="?conv_text2_size_attr" android:textColor="@color/list_text2_color" android:ellipsize="end" android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/conv_text2_max_width" android:maxLines="2" android:includeFontPadding="true" android:lineSpacingExtra="@dimen/list_item_subject_line_padding" class="com.android.mms.view.MmsTextViewSnippet" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="?conv_text_warning_size_attr" android:textColor="@color/list_text_warning_color" android:id="@id/txt_warning" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/conv_date_text_size" android:textColor="@color/list_date_text_color" android:ellipsize="end" android:gravity="right|center" android:id="@id/mz_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <com.meizu.common.widget.AnimCheckBox android:id="@android:id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.DeviceDefault.CompoundButton.CheckButtonlessMultiple.Color.LimeGreen" />
+    <View android:id="@id/divider" android:background="@color/conv_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</merge>

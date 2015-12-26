@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="35.0dip" android:paddingStart="28.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearance" android:textSize="14.0sp" android:textColor="#80000000" android:ellipsize="end" android:gravity="center" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/message_recipient_directory_title" android:singleLine="true" />
+</LinearLayout>

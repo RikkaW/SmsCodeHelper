@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="anim" name="abc_fade_in">false</item>
+    <item type="anim" name="abc_fade_out">false</item>
+    <item type="anim" name="abc_slide_in_top">false</item>
+    <item type="anim" name="abc_slide_out_top">false</item>
+    <item type="anim" name="footer_appear">false</item>
+    <item type="anim" name="footer_disappear">false</item>
+    <item type="anim" name="mz_activity_extra_to_next_close_enter">false</item>
+    <item type="anim" name="mz_activity_extra_to_next_close_exit">false</item>
+    <item type="anim" name="mz_activity_extra_to_next_open_enter">false</item>
+    <item type="anim" name="mz_activity_extra_to_next_open_exit">false</item>
+    <item type="anim" name="mz_support_fragment_close_enter">false</item>
+    <item type="anim" name="mz_support_fragment_close_exit">false</item>
+    <item type="anim" name="mz_support_fragment_open_enter">false</item>
+    <item type="anim" name="mz_support_fragment_open_exit">false</item>
+</resources>

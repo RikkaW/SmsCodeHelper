@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_horizontal" android:id="@id/count_and_mms_indicate_frm" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/cma_edit_textCount_text_size" android:textStyle="bold" android:textColor="@color/mms_editor_sms_count_color" android:gravity="center" android:layout_gravity="center" android:id="@id/text_counter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <TextView android:textSize="@dimen/cma_edit_textCount_text_size" android:textStyle="bold" android:textColor="@color/mms_editor_sms_count_color" android:gravity="center" android:layout_gravity="center" android:id="@id/mms_indicator_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/multimedia_message" android:singleLine="true" />
+</FrameLayout>

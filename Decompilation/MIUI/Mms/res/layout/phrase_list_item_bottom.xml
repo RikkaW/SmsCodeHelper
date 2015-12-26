@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.ui.PhraseListItem android:gravity="center_vertical" android:id="@id/phrase_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/attachment_pharse_list_item_height" style="@style/BottomPhraseListItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.List.Primary.Normal" android:textColor="@color/text_color_attachment_type" android:id="@id/phrase_body" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.android.mms.ui.PhraseListItem>

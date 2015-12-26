@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/mz_cir_btn_radius_normal" />
+    <stroke android:width="1.0dip" android:color="#4c000000" />
+    <solid android:color="@color/white" />
+</shape>

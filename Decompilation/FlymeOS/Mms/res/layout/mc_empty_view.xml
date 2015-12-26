@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:id="@id/empty_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <com.meizu.common.widget.LimitedWHLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/content_panel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/empty_image" android:layout_centerHorizontal="true">
+            <TextView android:textAppearance="@style/TextAppearance.Small.EmptyView.Title" android:gravity="center" android:id="@id/empty_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mc_empty_title_margin_left" android:layout_marginRight="@dimen/mc_empty_title_margin_right" android:includeFontPadding="false" android:lineSpacingExtra="@dimen/mc_empty_tip_line_space" />
+            <TextView android:textAppearance="@style/TextAppearance.Small.EmptyView.Summary" android:gravity="center" android:id="@id/empty_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mc_empty_title_margin_left" android:layout_marginRight="@dimen/mc_empty_title_margin_right" android:layout_marginBottom="@dimen/mc_empty_summary_margin_bottom" android:includeFontPadding="false" />
+            <View android:id="@id/titleDivider" android:background="@drawable/mz_card_list_divider_light" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginTop="@dimen/mc_empty_title_divider_margin_top" android:layout_marginBottom="@dimen/mc_empty_title_divider_margin_Bottom" />
+            <LinearLayout android:orientation="vertical" android:id="@id/empty_tips_panel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mc_empty_tips_margin_left" android:layout_marginRight="@dimen/mc_empty_title_margin_right" />
+        </com.meizu.common.widget.LimitedWHLinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

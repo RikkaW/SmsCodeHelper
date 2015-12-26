@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.com.xy.sms.sdk.ui.popu.widget.DuoquRelativeLayout android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/duoqu_bubble_bottom_two" android:background="@color/duoqu_white" android:layout_width="fill_parent" android:layout_height="@dimen/bubble_bottom_two_height" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:duoqu="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/duoqu_bottom_split_line" android:background="@color/duoqu_split_line_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <ImageView android:id="@id/duoqu_btn_split_line" android:background="@color/duoqu_button_split_line_bg" android:visibility="gone" android:layout_width="2.0px" android:layout_height="@dimen/duoqu_bottom_div_hight" android:layout_below="@id/duoqu_bottom_split_line" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/duoqu_btn_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/duoqu_btn_split_line" android:layout_below="@id/duoqu_bottom_split_line" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/duoqu_bubble_bottom_text_size" android:gravity="center" android:layout_gravity="center" android:id="@id/duoqu_btn_text_2" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:drawablePadding="2.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/duoqu_btn_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/duoqu_btn_split_line" android:layout_below="@id/duoqu_bottom_split_line" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/duoqu_bubble_bottom_text_size" android:gravity="center" android:layout_gravity="center" android:id="@id/duoqu_btn_text_1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</cn.com.xy.sms.sdk.ui.popu.widget.DuoquRelativeLayout>

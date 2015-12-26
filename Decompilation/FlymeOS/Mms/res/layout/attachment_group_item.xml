@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.view.AttachmentItem android:orientation="vertical" android:layout_width="@dimen/attachment_group_item_width" android:layout_height="@dimen/attachment_group_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/attachment_group_icon_margin_top" />
+    <TextView android:textSize="@dimen/attachment_group_text_size" android:textColor="@color/attachment_group_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/attachment_group_text_margin_top" android:layout_marginBottom="@dimen/attachment_group_text_margin_bottom" />
+</com.android.mms.view.AttachmentItem>

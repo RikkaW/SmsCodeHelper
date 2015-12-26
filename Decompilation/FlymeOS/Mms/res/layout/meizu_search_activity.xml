@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:meizu="http://schemas.android.com/apk/res-auto">
+    <com.meizu.common.widget.EmptyView android:paddingBottom="0.0dip" meizu:mcTitle="@string/no_search_results" meizu:mcTitleTextAppearance="?empty_view_title_style" style="@style/EmptyViewStyle" />
+    <FrameLayout android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@android:id/list" android:paddingLeft="@dimen/mz_list_item_padding_left" android:paddingRight="@dimen/mz_list_item_padding_right" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:divider="@null" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/searching" android:paddingTop="@dimen/sum_actionbar_height_statusbar_height" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.meizu.common.widget.LoadingView android:layout_width="@dimen/loadingview_small_width" android:layout_height="@dimen/loadingview_small_width" meizu:mcLoadingRadius="@dimen/loadingview_small_radius" meizu:mcRingWidth="@dimen/loadingview_small_ringwidth" />
+        <TextView android:textSize="@dimen/mms_search_progress_text_size" android:gravity="center" android:layout_gravity="center" android:paddingLeft="@dimen/loadingview_small_width" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/searching" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="confirm_delete_conversation">
+        <item quantity="other">确定要删除所选的%1$s个会话吗？</item>
+        <item quantity="one">确定要删除该会话吗？</item>
+    </plurals>
+    <plurals name="slide_duration">
+        <item quantity="other">%s 秒</item>
+        <item quantity="one">%s 秒</item>
+        <item quantity="few">%s 秒</item>
+    </plurals>
+    <plurals name="slide_audio_duration">
+        <item quantity="other">%s 秒</item>
+        <item quantity="one">%s 秒</item>
+        <item quantity="few">%s 秒</item>
+    </plurals>
+    <plurals name="search_results_title">
+        <item quantity="other">%1$s 条符合“%2$s”的搜索结果</item>
+        <item quantity="one">%1$s 条符合“%2$s”的搜索结果</item>
+    </plurals>
+    <plurals name="recipient_count">
+        <item quantity="other">%1$s 个人</item>
+    </plurals>
+    <plurals name="cloud_sms_count">
+        <item quantity="other">%d条短信</item>
+    </plurals>
+    <plurals name="cloud_state_unsynced_count">
+        <item quantity="other">%d条短信尚未同步至小米云</item>
+    </plurals>
+    <plurals name="message_count">
+        <item quantity="other">%1$s条短信</item>
+    </plurals>
+</resources>

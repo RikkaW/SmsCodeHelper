@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LimitedWHLinearLayout android:orientation="vertical" android:id="@id/parentPanel" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/mask" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/topPanel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_template" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:layout_marginStart="27.0dip" android:layout_marginEnd="27.0dip">
+            <ImageView android:id="@android:id/icon" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@null" android:scaleType="fitCenter" />
+            <android.support.v7.internal.widget.DialogTitle android:ellipsize="end" android:gravity="center" android:id="@id/alertTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="?attr/android:windowTitleStyle" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/contentPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_weight="1.0">
+        <ScrollView android:id="@id/scrollView" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center_horizontal" android:id="@android:id/message" android:paddingLeft="?dialogPreferredPadding" android:paddingRight="?dialogPreferredPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextAppearance.Flyme.Light.Content" />
+                <View android:id="@id/textSpacerNoButtons" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="18.0dip" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+    <FrameLayout android:id="@id/customPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/custom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/buttonPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:divider="?android:dividerVertical" android:minHeight="47.599976dip" android:showDividers="beginning" android:dividerPadding="0.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/buttonBarPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:showDividers="middle" android:layoutDirection="locale" style="?attr/buttonBarStyle">
+            <Button android:id="@android:id/button3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="?attr/buttonBarNeutralButtonStyle" />
+            <Button android:id="@android:id/button2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="?attr/buttonBarNegativeButtonStyle" />
+            <Button android:id="@android:id/button1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="?attr/buttonBarPositiveButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.LimitedWHLinearLayout>

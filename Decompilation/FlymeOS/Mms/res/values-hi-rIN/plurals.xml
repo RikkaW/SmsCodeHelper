@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="confirm_delete_conversation">
+        <item quantity="other">%1$s वार्तालाप को मिटाएँ</item>
+        <item quantity="one">%1$s वार्तालाप को मिटाएँ</item>
+    </plurals>
+    <plurals name="message_count_notification_overflow">
+        <item quantity="other">+दूसरा %1$s संदेश</item>
+        <item quantity="one">+दूसरा %1$s संदेश</item>
+    </plurals>
+    <plurals name="recipient_count">
+        <item quantity="other">%1$s संपर्क</item>
+    </plurals>
+    <plurals name="search_results_title">
+        <item quantity="other">%1$s के लिए परिणाम %2$s</item>
+        <item quantity="one">%1$s के लिए परिणाम %2$s</item>
+    </plurals>
+    <plurals name="slide_duration">
+        <item quantity="other">%s s</item>
+        <item quantity="one">%s s</item>
+        <item quantity="few">%s s</item>
+    </plurals>
+    <plurals name="confirm_delete_messages">
+        <item quantity="other">मिटाए गए %1$s संदेश</item>
+        <item quantity="one">मिटाए गए %1$s संदेश</item>
+    </plurals>
+</resources>

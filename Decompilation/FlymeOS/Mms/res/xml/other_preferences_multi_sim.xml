@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/prv/res/android"
+  xmlns:flyme="http://schemas.android.com/apk/prv/res/flyme"
+  xmlns:mms="http://schemas.android.com/apk/res/com.android.mms.ui"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceScreen android:title="@string/pref_title_mms_read_reports" android:key="pref_key_mms_read_reports" android:summary="@string/pref_summary_mms_read_reports" android:defaultValue="false" />
+    <PreferenceScreen android:title="@string/pref_title_mms_allow_return_read_reports" android:key="pref_key_mms_allow_return_read_reports" android:summary="@string/pref_summary_allow_return_mms_read_reports" android:defaultValue="false" />
+    <Preference android:title="@string/pref_title_key_message_capacity" android:key="pref_key_message_capacity" />
+</PreferenceScreen>

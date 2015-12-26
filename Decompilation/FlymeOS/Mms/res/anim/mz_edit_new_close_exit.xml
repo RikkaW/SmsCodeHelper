@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:shareInterpolator="false" android:zAdjustment="top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <alpha android:interpolator="@interpolator/mz_edit_new_close_exit_alpha" android:duration="150" android:fillBefore="false" android:fillAfter="true" android:startOffset="100" android:fromAlpha="1.0" android:toAlpha="0.0" android:fillEnabled="true" />
+    <translate android:interpolator="@interpolator/mz_edit_new_close_exit_translate" android:duration="250" android:fillBefore="true" android:fillAfter="true" android:fromYDelta="0.0%" android:toYDelta="8.000004%" android:fillEnabled="true" />
+</set>

@@ -1,0 +1,17 @@
+version: 2.0.2
+apkFileName: MmsService.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '22'
+  targetSdkVersion: '22'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '22'
+  versionName: 5.1-1450668386
+sharedLibrary: false
+doNotCompress:
+- resources.arsc

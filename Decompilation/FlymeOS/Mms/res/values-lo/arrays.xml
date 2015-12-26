@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="select_dialog_items">
+        <item>1 ວິນາທີ</item>
+        <item>2 ວິນາທີ</item>
+        <item>3 ວິ​ນາ​ທີ</item>
+        <item>4 ວິ​ນາ​ທີ</item>
+        <item>5 ວິ​ນາ​ທີ</item>
+        <item>6 ວິ​ນາ​ທີ</item>
+        <item>7 ວິ​ນາ​ທີ</item>
+        <item>8 ວິ​ນາ​ທີ</item>
+        <item>9 ວິ​ນາ​ທີ</item>
+        <item>10 ວິ​ນາ​ທີ</item>
+        <item>ອື່ນໆ</item>
+    </string-array>
+</resources>

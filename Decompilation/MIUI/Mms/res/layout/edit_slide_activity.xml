@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.ui.BasicSlideEditorView android:orientation="vertical" android:id="@id/slide_editor_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:fadingEdge="none" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_above="@id/controler" android:layout_alignParentTop="true" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/slide_edit_padding_horizontal" android:paddingTop="@dimen/slide_edit_padding_top" android:paddingRight="@dimen/slide_edit_padding_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/slide_edit_image_bottom">
+                <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitStart" android:adjustViewBounds="true" android:maxWidth="@dimen/slide_edit_image_max_size" android:maxHeight="@dimen/slide_edit_image_max_size" />
+                <ImageView android:layout_gravity="center" android:id="@id/play_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_icon" />
+            </FrameLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/audio" android:background="@drawable/slide_audio_edit_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/slide_edit_image_bottom">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/slide_audio" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/slide_edit_audio_text_padding_horizontal" android:paddingRight="@dimen/slide_edit_audio_text_padding_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textAppearance="@style/TextAppearance.List.Primary.Normal" android:id="@id/audio_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    <TextView android:textAppearance="@style/TextAppearance.List.Secondary" android:id="@id/audio_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <EditText android:textAppearance="@style/TextAppearance.EditText.Slide" android:id="@id/text_message" android:background="@null" android:nextFocusRight="@id/done_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/type_to_compose_text_or_leave_blank" android:capitalize="sentences" android:autoText="true" android:inputType="textMultiLine">
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/controler" android:background="@drawable/slide_controler_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/pre_slide_button" android:background="@drawable/action_button_slide_pre" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:id="@id/next_slide_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/action_button_slide_next" android:layout_weight="1.0" />
+        <ImageView android:id="@id/remove_slide_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/action_button_slide_delete" android:layout_weight="1.0" />
+        <ImageView android:id="@id/done_button" android:background="@drawable/action_button_slide_done" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</com.android.mms.ui.BasicSlideEditorView>

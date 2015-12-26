@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/message_item" android:background="@drawable/message_bubble_out_alert_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bubble_special_margin" android:layout_alignParentRight="true">
+        <ViewStub android:id="@id/group_send_to_panel" android:layout="@layout/group_send_to_panel_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_marginBottom="@dimen/bubble_text_extra_padding" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <include android:id="@id/bubble_body" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/group_send_to_panel" android:layout_alignParentLeft="true" layout="@layout/message_item_bubble_out_alert_body" />
+        <include android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/bubble_body" android:layout_alignParentLeft="true" layout="@layout/message_item_group_failed_layout" />
+    </RelativeLayout>
+    <ImageView android:id="@id/favourite" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/favourite_bubble_out" android:layout_alignLeft="@id/message_item" android:layout_alignBottom="@id/message_item" />
+</RelativeLayout>

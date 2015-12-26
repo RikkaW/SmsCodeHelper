@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.mms.ui.SizeAwareLinearLayout android:orientation="vertical" android:id="@id/msg_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/history" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ListView android:id="@id/suggestion_list" android:background="@drawable/recipient_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@null" android:divider="@null" />
+            <com.android.mms.ui.StaticGridView android:id="@id/recent_contact_grid" android:background="@drawable/recent_contact_grid_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="top|left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/message_list_top_foreground" />
+            <ImageView android:layout_gravity="bottom|left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/message_list_bottom_foreground" />
+        </FrameLayout>
+        <include layout="@layout/message_edit_bottom_panel" />
+        <ViewStub android:id="@id/message_edit_attachment_stub" android:layout="@layout/message_edit_attachment_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.android.mms.ui.SizeAwareLinearLayout>
+    <include layout="@layout/new_message_contact_panel" />
+    <ViewStub android:id="@id/audio_btn_stub" android:layout="@layout/audio_btn_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>
