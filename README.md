@@ -35,6 +35,12 @@ releaseSigning : [
 
 ## Change Log
 
+### v0.0.2(2)
+
+[Release-v0.0.2.apk](./apk/me.gitai.smscodehelper-release-c1-v0.0.2-t12251854.apk)
+
+* New Logo
+
 ### v0.0.1(1)
 
 [Release-v0.0.1.apk](./apk/me.gitai.smscodehelper-release-c1-v0.0.1-t12251854.apk)
@@ -75,3 +81,9 @@ by gitai/dphdjy
 - [systembartint](https://github.com/jgilfelt/SystemBarTint)
 
 - [HostsEditor-HostsHub](https://github.com/HostsHub/HostsEditor-for-Android)
+
+
+## ~~Decompilation~~
+
+* [Flyme OS 5.5.12.22 beta ](./Decompilation/FlymeOS)
+* [miui_MI3WMI4W_5.12.4_1836e1cc3c_4.4](./Decompilation/MIUI)
