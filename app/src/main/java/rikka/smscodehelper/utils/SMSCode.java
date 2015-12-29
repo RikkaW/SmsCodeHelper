@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
  */
 public class SMSCode {
 
-    public static class SMSInfo{
+    public static class SMSInfo {
         public String sender;
         public String code;
 
@@ -47,6 +47,8 @@ public class SMSCode {
                 }
             }
         });
+
+        content = content.replace(sender.get(0), "");
 
         // 分出每个句子 并在有关键词的句子里找验证码
         ArrayList<String> sentence;
@@ -112,7 +114,9 @@ public class SMSCode {
         for (int i = 0; i < content.length() - 1; i++) {
             char ch = content.charAt(i);
 
-            if (/*ch == ',' || ch == '，' || */ch == '.' || ch == '。') {
+            if (ch == ',' || ch == '，'
+                    || ch == '.' || ch == '。'
+                    || ch == '!' || ch == '！') {
                 list.add(content.substring(last, i));
                 last = i + 1;
             }
