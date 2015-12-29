@@ -3,23 +3,11 @@ package rikka.smscodehelper.utils;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * Created by Rikka on 2015/12/14.
  */
 public class SMSCode {
-
-    public static class SMSInfo {
-        public String sender;
-        public String code;
-
-        public SMSInfo(String sender, String code){
-            this.sender = sender;
-            this.code = code;
-        }
-    }
 
     public static SMSInfo findSMSCode(String content) {
         if (content.length() == 0)
@@ -35,7 +23,7 @@ public class SMSCode {
         content = cutSenderFromString(sender, content, "【", "】");
 
         // 大概是最短的那个
-        Collections.sort(sender, new Comparator<String>(){
+        Collections.sort(sender, new Comparator<String>() {
             @Override
             public int compare(String o1, String o2) {
                 if (o1.length() > o2.length()) {
@@ -48,7 +36,10 @@ public class SMSCode {
             }
         });
 
-        content = content.replace(sender.get(0), "");
+        for (String oneSender : sender) {
+            content = content.replace(oneSender, "");
+        }
+
 
         // 分出每个句子 并在有关键词的句子里找验证码
         ArrayList<String> sentence;
@@ -73,7 +64,7 @@ public class SMSCode {
 
             curPos = content.indexOf(start, curPos);
             if (curPos != -1) {
-                curPos ++;
+                curPos++;
 
                 int endPos = content.indexOf(end, curPos);
 
@@ -154,5 +145,15 @@ public class SMSCode {
         }
 
         return null;
+    }
+
+    public static class SMSInfo {
+        public String sender;
+        public String code;
+
+        public SMSInfo(String sender, String code) {
+            this.sender = sender;
+            this.code = code;
+        }
     }
 }
