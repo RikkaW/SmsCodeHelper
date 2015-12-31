@@ -41,5 +41,7 @@ public class SMSCodeTest extends TestCase {
         SmsContactCodeMap.put(SMSContact5, "060973");
         String SMSContact6 = "您在付款，为防诈骗千万不要告诉他人验证码505513，商户为汇付天下，金额80元。如有疑问请停止操作。（短信编号：245747）【工商银行】";
         SmsContactCodeMap.put(SMSContact6, "505513");
+        String SMSContact7 = "任何向你索要验证码的都是骗子，千万别给！您正在向www（尾号4832）转账，验证码370000，100元。";
+        SmsContactCodeMap.put(SMSContact7, "370000");
     }
 }

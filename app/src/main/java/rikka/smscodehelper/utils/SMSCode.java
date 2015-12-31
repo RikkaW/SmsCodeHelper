@@ -43,7 +43,7 @@ public class SMSCode {
 
         // 分出每个句子 并在有关键词的句子里找验证码
         ArrayList<String> sentence;
-        sentence = findCodeSentence(content);
+        sentence = findSentence(content);
 
         for (String str : sentence) {
             if (findKeyWord(str) != -1) {
@@ -98,7 +98,7 @@ public class SMSCode {
         return codeFindStart;
     }
 
-    private static ArrayList<String> findCodeSentence(String content) {
+    private static ArrayList<String> findSentence(String content) {
         ArrayList<String> list = new ArrayList<>();
 
         int last = 0;
@@ -124,8 +124,22 @@ public class SMSCode {
         return ((ch >= 'A' && ch <= 'Z') || (ch >= '0' && ch <= '9'));
     }
 
+    private static String getStringAfter(String content, String string) {
+        int startPos = content.indexOf(string);
+        if (startPos == -1) {
+            return content;
+        } else {
+            return content.substring(startPos);
+        }
+    }
+
     private static String findCode(String content) {
         content += " ";
+
+        // 如果有冒号
+        content = getStringAfter(content, "：");
+        content = getStringAfter(content, ":");
+
 
         int startPos = -1;
         for (int i = 0; i < content.length(); i++) {
