@@ -1,14 +1,9 @@
 <resources>
     <string name="app_name">SmsCodeHelper</string>
-
     <string name="toast_format" formatted="false">%s has been copied to clipboard.</string>
-
     <string name="tip_m">After Android 6.0, permission should be authorized by user.\nApp will be hide from launcher if authorized.</string>
     <string name="tip">App will be hide from launcher.</string>
-
-    <string name="get_permission">GET PERMISSION</string>
-    <string name="ok">OK</string>
+    <string name="get_permission">Grant permission</string>
     <string name="exit">Exit</string>
     <string name="permission_denied">Denied..</string>
-
 </resources>

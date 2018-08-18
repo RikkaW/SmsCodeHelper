@@ -1,42 +1,42 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 28
 
     defaultConfig {
         applicationId "rikka.smscodehelper"
         minSdkVersion 15
-        targetSdkVersion 23
-        versionCode 10006
-        versionName "1.0.7"
+        targetSdkVersion 28
+        versionCode 10008
+        versionName "1.0.8"
+    }
+    signingConfigs {
+        sign
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        debug {
+            signingConfig signingConfigs.sign
         }
-    }
-    testOptions {
-        unitTests.returnDefaultValues = true
-    }
-
-    applicationVariants.all { variant ->
-        variant.outputs.each { output ->
-            if (output.outputFile != null && output.outputFile.name.endsWith('.apk')) {
-                output.outputFile = file("${output.outputFile.parent}/smscodehelper" +
-                        "-${variant.buildType.name.toLowerCase()}" +
-                        "-${variant.versionName}" +
-                        ".apk")
-            }
+        release {
+            signingConfig signingConfigs.sign
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 }
 
+android.applicationVariants.all { variant ->
+    variant.outputs.all {
+        outputFileName = "sms-code-helper-${variant.versionCode}.apk"
+    }
+}
+
+apply from: rootProject.file('signing.gradle')
+
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    // Unit testing dependencies
-    testCompile 'junit:junit:4.12'
-    testCompile "org.mockito:mockito-core:1.9.5"
-    compile 'com.android.support:appcompat-v7:23.1.1'
+    implementation 'androidx.core:core:1.0.0-rc01'
 }

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">驗證碼複製器</string>
+    <string name="toast_format">%s 已複製到剪貼簿</string>
     <string name="exit">退出</string>
-    <string name="get_permission">取得權限</string>
-    <string name="ok">確定</string>
+    <string name="get_permission">授予權限</string>
     <string name="permission_denied">被拒絕了..</string>
     <string name="tip">點擊確定後App將會被隱藏</string>
     <string name="tip_m">"Android 6.0以上需要由使用者授予權限,點擊授予後,如果沒有權限將跳出授權視窗。
 授權後App將會被隱藏。"</string>
-    <string name="toast_format">%s 已複製到剪貼簿</string>
 </resources>
